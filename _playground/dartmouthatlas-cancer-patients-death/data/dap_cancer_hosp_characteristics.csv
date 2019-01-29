@@ -1,0 +1,939 @@
+provider_id,hospital_name,city,state,type,size,status
+10001,Southeast Alabama Medical Center,Dothan,AL,Community,Large,Not-for-profit
+10006,Eliza Coffee Memorial Hospital,Florence,AL,Community,Large,Not-for-profit
+10023,Baptist Medical Center South,Montgomery,AL,Community,Large,Not-for-profit
+10024,Jackson Hospital and Clinic,Montgomery,AL,Community,Large,Not-for-profit
+10029,East Alabama Medical Center,Opelika,AL,Community,Medium,Not-for-profit
+10033,University of Alabama Hospital,Birmingham,AL,NCCN,Large,Not-for-profit
+10039,Huntsville Hospital,Huntsville,AL,Community,Large,Not-for-profit
+10040,Gadsden Regional Medical Center,Gadsden,AL,Community,Large,For-profit
+10055,Flowers Hospital,Dothan,AL,Community,Medium,For-profit
+10056,St. Vincent's Hospital,Birmingham,AL,Community,Large,Not-for-profit
+10078,NE Alabama Regional Medical Center,Anniston,AL,Community,Large,Not-for-profit
+10090,Providence Hospital,Mobile,AL,Community,Large,Not-for-profit
+10092,DCH Regional Medical Center,Tuscaloosa,AL,Community,Large,Not-for-profit
+10103,Baptist Princeton,Birmingham,AL,Community,Large,Not-for-profit
+10104,Trinity Medical Center,Birmingham,AL,Community,Large,For-profit
+10113,Mobile Infirmary Medical Center,Mobile,AL,Community,Large,Not-for-profit
+10139,Brookwood Medical Center,Birmingham,AL,Community,Large,For-profit
+20001,Providence Alaska Medical Center,Anchorage,AK,Community,Large,Not-for-profit
+30002,Banner Good Samaritan Medical Center,Phoenix,AZ,Community,Large,Not-for-profit
+30006,Tucson Medical Center,Tucson,AZ,Community,Large,Not-for-profit
+30012,Yavapai Regional Medical Center,Prescott,AZ,Community,Small,Not-for-profit
+30013,Yuma Regional Medical Center,Yuma,AZ,Community,Large,Not-for-profit
+30024,St. Joseph's Hospital & Medical Center,Phoenix,AZ,AMC,Large,Not-for-profit
+30036,Chandler Regional Hospital,Chandler,AZ,Community,Medium,Not-for-profit
+30038,Scottsdale Healthcare-Osborn,Scottsdale,AZ,Community,Large,For-profit
+30055,Kingman Regional Medical Center,Kingman,AZ,Community,Medium,Not-for-profit
+30061,Sun Health Boswell Hospital,Sun City,AZ,Community,Large,Not-for-profit
+30064,University Medical Center-Tucson,Tucson,AZ,NCI,Large,Not-for-profit
+30065,Banner Desert Medical Center,Mesa,AZ,Community,Large,Not-for-profit
+30085,Northwest Medical Center,Tucson,AZ,Community,Medium,For-profit
+30087,Scottsdale Healthcare-Shea,Scottsdale,AZ,Community,Large,For-profit
+30088,Banner Baywood Medical Center,Mesa,AZ,Community,Large,Not-for-profit
+30089,Banner Thunderbird Medical Center,Glendale,AZ,Community,Large,Not-for-profit
+30093,Del E. Webb Memorial Hospital,Sun City West,AZ,Community,Medium,Not-for-profit
+30101,Western Arizona Regional Medical Center,Bullhead City,AZ,Community,Small,For-profit
+30103,Mayo Clinic Hospital,Phoenix,AZ,Community,Medium,Not-for-profit
+40004,Washington Regional Medical Center,Fayetteville,AR,Community,Medium,Not-for-profit
+40007,St. Vincent Infirmary Medical Center,Little Rock,AR,Community,Small,Not-for-profit
+40014,White County Medical Center - South Campus,Searcy,AR,Community,Small,For-profit
+40016,UAMS Medical Center,Little Rock,AR,AMC,Large,Not-for-profit
+40020,St. Bernards Medical Center,Jonesboro,AR,Community,Large,Not-for-profit
+40026,St. Joseph's Mercy Health Center,Hot Springs,AR,Community,Medium,Not-for-profit
+40027,Baxter Regional Medical Center,Mountain Home,AR,Community,Medium,Not-for-profit
+40036,Baptist Health Medical Center,North Little Rock,AR,Community,Medium,Not-for-profit
+40055,Sparks Regional Medical Center,Fort Smith,AR,Community,Large,Not-for-profit
+40062,St. Edward Mercy Medical Center,Fort Smith,AR,Community,Large,Not-for-profit
+40071,Jefferson Regional Medical Center,Pine Bluff,AR,Community,Large,Not-for-profit
+40114,Baptist Health Medical Center,Little Rock,AR,Community,Large,Not-for-profit
+50007,Mills-Peninsula Health Services,Burlingame,CA,Community,Medium,Not-for-profit
+50026,Sharp Grossmont Hospital,La Mesa,CA,Community,Large,Not-for-profit
+50039,Enloe Medical Center,Chico,CA,Community,Large,For-profit
+50043,Alta Bates Summit Medical Center-Oakland,Oakland,CA,Community,Large,Not-for-profit
+50047,California Pacific Medical Center,San Francisco,CA,Community,Large,Not-for-profit
+50057,Kaweah Delta Health Care District,Visalia,CA,Community,Large,Not-for-profit
+50060,Community Medical Center,Fresno,CA,Community,Large,Not-for-profit
+50069,St. Joseph Hospital,Orange,CA,Community,Large,Not-for-profit
+50077,Scripps Mercy Hospital,San Diego,CA,Community,Large,Not-for-profit
+50084,St. Joseph's Medical Center,Stockton,CA,Community,Medium,Not-for-profit
+50093,St. Agnes Medical Center,Fresno,CA,Community,Large,Not-for-profit
+50100,Sharp Memorial Hospital,San Diego,CA,Community,Medium,Not-for-profit
+50108,Sutter Medical Center,Sacramento,CA,Community,Large,Not-for-profit
+50115,Palomar Medical Center,Escondido,CA,Community,Medium,Not-for-profit
+50128,Tri-City Medical Center,Oceanside,CA,Community,Large,Not-for-profit
+50133,Rideout Memorial Hospital,Marysville,CA,Community,Small,Not-for-profit
+50145,Community Hospital Monterey Peninsula,Monterey,CA,Community,Medium,Not-for-profit
+50146,City of Hope National Medical Center,Duarte,CA,NCCN,Medium,Not-for-profit
+50150,Sierra Nevada Memorial Hospital,Grass Valley,CA,Community,Small,Not-for-profit
+50153,O'Connor Hospital,San Jose,CA,Community,Large,Not-for-profit
+50168,St. Jude Medical Center,Fullerton,CA,Community,Medium,Not-for-profit
+50174,Santa Rosa Memorial Hospital,Santa Rosa,CA,Community,Medium,Not-for-profit
+50180,John Muir Medical Center,Walnut Creek,CA,Community,Medium,Not-for-profit
+50222,Sharp Chula Vista Medical Center,Chula Vista,CA,Community,Medium,Not-for-profit
+50224,Hoag Memorial Hospital Presbyterian,Newport Beach,CA,Community,Large,Not-for-profit
+50235,Providence St. Joseph Center,Burbank,CA,Community,Large,Not-for-profit
+50238,Methodist Hospital of Southern California,Arcadia,CA,Community,Medium,Not-for-profit
+50239,Glendale Adventist Medical Center,Glendale,CA,Community,Large,Not-for-profit
+50242,Dominican Hospital,Santa Cruz,CA,Community,Large,Not-for-profit
+50243,Desert Regional Medical Center,Palm Springs,CA,Community,Large,Not-for-profit
+50262,UCLA Medical Center,Los Angeles,CA,NCI,Large,Not-for-profit
+50280,Mercy Medical Center Redding,Redding,CA,Community,Medium,Not-for-profit
+50289,Seton Medical Center,Daly City,CA,Community,Large,Not-for-profit
+50290,St. John's Health Center,Santa Monica,CA,Community,Medium,Not-for-profit
+50305,Alta Bates Summit Medical Center-Berkeley,Berkeley,CA,Community,Large,Not-for-profit
+50308,El Camino Hospital,Mountain View,CA,Community,Large,Not-for-profit
+50309,Sutter Roseville Medical Center,Roseville,CA,Community,Medium,Not-for-profit
+50324,Scripps Memorial Hospital-La Jolla,La Jolla,CA,Community,Medium,Not-for-profit
+50327,Loma Linda University Medical Center,Loma Linda,CA,AMC,Large,Not-for-profit
+50334,Salinas Valley Memorial Healthcare System,Salinas,CA,Community,Medium,Not-for-profit
+50336,Lodi Memorial Hospital,Lodi,CA,Community,Small,Not-for-profit
+50351,Torrance Memorial Medical Center,Torrance,CA,Community,Large,Not-for-profit
+50353,Providence-Little Company of Mary,Torrance,CA,Community,Medium,Not-for-profit
+50380,Good Samaritan Hospital,San Jose,CA,Community,Large,For-profit
+50394,Community Memorial Hospital,Ventura,CA,Community,Medium,Not-for-profit
+50396,Santa Barbara Cottage Hospital,Santa Barbara,CA,Community,Large,Not-for-profit
+50438,Huntington Memorial Hospital,Pasadena,CA,Community,Large,Not-for-profit
+50441,Stanford Hospital and Clinics,Stanford,CA,NCCN,Large,Not-for-profit
+50444,Mercy Medical Center Merced,Merced,CA,Community,Medium,Not-for-profit
+50454,UCSF Medical Center,San Francisco,CA,NCCN,Large,Not-for-profit
+50464,Doctors Medical Center,Modesto,CA,Community,Large,For-profit
+50471,Good Samaritan Hospital,Los Angeles,CA,Community,Large,For-profit
+50485,Long Beach Memorial Medical Center,Long Beach,CA,Community,Large,Not-for-profit
+50496,John Muir Medical Center,Concord,CA,Community,Medium,Not-for-profit
+50502,St. Vincent Medical Center,Los Angeles,CA,Community,Large,Not-for-profit
+50516,Mercy San Juan Medical Center,Carmichael,CA,Community,Medium,Not-for-profit
+50549,Los Robles Hospital & Medical Center,Thousand Oaks,CA,Community,Medium,For-profit
+50570,Fountain Valley Regional Hospital,Fountain Valley,CA,Community,Large,For-profit
+50573,Eisenhower Medical Hospital,Rancho Mirage,CA,Community,Medium,Not-for-profit
+50599,University of California Davis Medical Center,Sacramento,CA,AMC,Large,Not-for-profit
+50601,Encino-Tarzana Regional Medical Center,Tarzana,CA,Community,Medium,For-profit
+50603,Saddleback Memorial Medical Center,Laguna Hills,CA,Community,Medium,Not-for-profit
+50625,Cedars-Sinai Medical Center,Los Angeles,CA,AMC,Large,Not-for-profit
+50733,Shasta Regional Medical Center,Redding,CA,Community,Medium,For-profit
+50739,Centinela Freeman Regional Medical Center - Centinela Camp,Inglewood,CA,Community,Medium,For-profit
+60001,North Colorado Medical Center,Greeley,CO,Community,Large,Not-for-profit
+60009,Exempla Lutheran Medical Center,Wheat Ridge,CO,Community,Medium,Not-for-profit
+60010,Poudre Valley Hospital,Fort Collins,CO,Community,Medium,Not-for-profit
+60020,Parkview Medical Center,Pueblo,CO,Community,Medium,Not-for-profit
+60022,Memorial Health System,Colorado Springs,CO,Community,Large,Not-for-profit
+60031,Penrose-St. Francis Health Services,Colorado Springs,CO,Community,Large,Not-for-profit
+60034,Swedish Medical Center,Englewood,CO,Community,Large,Not-for-profit
+60100,Medical Center of Aurora,Aurora,CO,Community,Medium,For-profit
+70001,Hospital of St. Raphael,New Haven,CT,AMC,Large,Not-for-profit
+70002,St. Francis Hospital and Medical Center,Hartford,CT,AMC,Large,Not-for-profit
+70005,Waterbury Hospital,Waterbury,CT,Community,Large,Not-for-profit
+70006,Stamford Health System,Stamford,CT,Community,Medium,Not-for-profit
+70007,Lawrence & Memorial Hospital,New London,CT,Community,Medium,Not-for-profit
+70010,Bridgeport Hospital,Bridgeport,CT,AMC,Medium,Not-for-profit
+70011,The Charlotte Hungerford Hospital,Torrington,CT,Community,Small,Not-for-profit
+70016,St. Mary's Hospital,Waterbury,CT,Community,Large,Not-for-profit
+70017,MidState Medical Center,Meriden,CT,Community,Small,Not-for-profit
+70018,Greenwich Hospital,Greenwich,CT,Community,Medium,Not-for-profit
+70020,Middlesex Hospital,Middletown,CT,Community,Medium,Not-for-profit
+70022,Yale-New Haven Hospital,New Haven,CT,NCI,Large,Not-for-profit
+70024,William W. Backus Hospital,Norwich,CT,Community,Small,Not-for-profit
+70025,Hartford Hospital,Hartford,CT,AMC,Large,Not-for-profit
+70027,Manchester Memorial Hospital,Manchester,CT,Community,Medium,Not-for-profit
+70028,St. Vincent's Medical Center,Bridgeport,CT,Community,Large,Not-for-profit
+70029,Bristol Hospital,Bristol,CT,Community,Small,Not-for-profit
+70033,Danbury Hospital,Danbury,CT,Community,Large,Not-for-profit
+70034,Norwalk Hospital,Norwalk,CT,Community,Medium,Not-for-profit
+70035,New Britain General Hospital,New Britain,CT,Community,Large,Not-for-profit
+80001,Christiana Care Health System,Newark,DE,Community,Large,For-profit
+80004,Bayhealth Medical Center,Dover,DE,Community,Medium,Not-for-profit
+80007,Beebe Medical Center,Lewes,DE,Community,Small,For-profit
+90004,MedStar-Georgetown Medical Center,Washington,DC,NCI,Large,Not-for-profit
+90005,Sibley Memorial Hospital,Washington,DC,Community,Large,Not-for-profit
+90006,Providence Hospital,Washington,DC,Community,Large,Not-for-profit
+90011,Washington Hospital Center,Washington,DC,AMC,Large,Not-for-profit
+100001,Shands Jacksonville Medical Center,Jacksonville,FL,AMC,Large,Not-for-profit
+100002,Bethesda Memorial Hospital,Boynton Beach,FL,Community,Large,Not-for-profit
+100006,Orlando Regional Medical Center,Orlando,FL,Community,Large,Not-for-profit
+100007,Florida Hospital,Orlando,FL,Community,Large,Not-for-profit
+100008,Baptist Hospital of Miami,Miami,FL,Community,Large,Not-for-profit
+100012,Lee Memorial Health System,Fort Myers,FL,Community,Large,Not-for-profit
+100017,Halifax Community Health System,Daytona Beach,FL,Community,Large,Not-for-profit
+100018,Naples Community Hospital,Naples,FL,Community,Large,Not-for-profit
+100019,Holmes Regional Medical Center,Melbourne,FL,Community,Large,Not-for-profit
+100022,Jackson Memorial Hospital,Miami,FL,AMC,Large,Not-for-profit
+100023,Citrus Memorial Hospital,Inverness,FL,Community,Small,Not-for-profit
+100025,Sacred Heart Hospital of Pensacola,Pensacola,FL,Community,Large,Not-for-profit
+100026,Bay Medical Center,Panama City,FL,Community,Large,Not-for-profit
+100028,Parrish Medical Center,Titusville,FL,Community,Medium,Not-for-profit
+100034,Mount Sinai Medical Center,Miami Beach,FL,Community,Large,Not-for-profit
+100035,Manatee Memorial Hospital,Bradenton,FL,Community,Medium,Not-for-profit
+100038,Memorial Regional Hospital,Hollywood,FL,Community,Large,Not-for-profit
+100040,St. Vincent's Medical Center,Jacksonville,FL,Community,Large,Not-for-profit
+100044,Martin Memorial Health Systems,Stuart,FL,Community,Large,Not-for-profit
+100052,Winter Haven Hospital,Winter Haven,FL,Community,Large,Not-for-profit
+100057,Florida Hospital Waterman,Tavares,FL,Community,Medium,Not-for-profit
+100061,Mercy Hospital,Miami,FL,Community,Large,Not-for-profit
+100062,Munroe Regional Medical Center,Ocala,FL,Community,Large,Not-for-profit
+100067,St. Anthony's Hospital,Saint Petersburg,FL,Community,Small,Not-for-profit
+100068,Florida Hospital Ormond Memorial,Ormond Beach,FL,Community,Medium,Not-for-profit
+100070,Venice Regional Medical Center,Venice,FL,Community,Medium,For-profit
+100073,Holy Cross Hospital,Fort Lauderdale,FL,Community,Large,Not-for-profit
+100075,St. Joseph's Hospital,Tampa,FL,Community,Large,Not-for-profit
+100080,JFK Medical Center,Atlantis,FL,Community,Large,Not-for-profit
+100084,Leesburg Regional Medical Center,Leesburg,FL,Community,Medium,Not-for-profit
+100087,Sarasota Memorial Hospital,Sarasota,FL,Community,Large,Not-for-profit
+100088,Baptist Medical Center,Jacksonville,FL,Community,Large,Not-for-profit
+100090,Flagler Hospital,Saint Augustine,FL,Community,Medium,Not-for-profit
+100092,Wuesthoff Medical Center,Rockledge,FL,Community,Medium,Not-for-profit
+100093,Baptist Hospital,Pensacola,FL,Community,Large,Not-for-profit
+100105,Indian River Memorial Hospital,Vero Beach,FL,Community,Large,Not-for-profit
+100109,Florida Hospital Heartland,Sebring,FL,Community,Small,Not-for-profit
+100113,Shands at the University of Florida,Gainesville,FL,AMC,Large,Not-for-profit
+100127,Morton Plant Hospital,Clearwater,FL,Community,Large,Not-for-profit
+100128,Tampa General Hospital,Tampa,FL,AMC,Large,Not-for-profit
+100131,Aventura Hospital & Medical Center,Aventura,FL,Community,Large,Not-for-profit
+100135,Tallahassee Memorial HealthCare,Tallahassee,FL,Community,Large,Not-for-profit
+100151,St. Luke's Hospital,Jacksonville,FL,Community,Medium,Not-for-profit
+100154,South Miami Hospital,Miami,FL,Community,Large,Not-for-profit
+100157,Lakeland Regional Medical Center,Lakeland,FL,Community,Large,Not-for-profit
+100168,Boca Raton Community Hospital,Boca Raton,FL,Community,Large,Not-for-profit
+100173,University Community Hospital,Tampa,FL,Community,Large,Not-for-profit
+100179,Memorial Hospital of Jacksonville,Jacksonville,FL,Community,Medium,Not-for-profit
+100191,Community Hospital,New Port Richey,FL,Community,Large,For-profit
+100204,North Florida Regional Medical Center,Gainesville,FL,Community,Medium,For-profit
+100212,Ocala Regional Medical Center,Ocala,FL,Community,Medium,For-profit
+100213,Blake Medical Center,Bradenton,FL,Community,Large,For-profit
+100220,Southwest Florida Regional Medical Center,Fort Myers,FL,Community,Large,For-profit
+100223,Fort Walton Beach Medical Center,Ft Walton Beach,FL,Community,Medium,For-profit
+100224,University Hospital,Tamarac,FL,Community,Medium,For-profit
+100226,Orange Park Medical Center,Orange Park,FL,Community,Medium,For-profit
+100228,Westside Regional Medical Center,Plantation,FL,Community,Medium,For-profit
+100231,West Florida Hospital,Pensacola,FL,Community,Large,For-profit
+100236,Fawcett Memorial Hospital,Port Charlotte,FL,Community,Medium,For-profit
+100242,Gulf Coast Medical Center,Panama City,FL,Community,Medium,For-profit
+100244,Cape Coral Hospital,Cape Coral,FL,Community,Small,Not-for-profit
+100248,Largo Medical Center,Largo,FL,Community,Medium,For-profit
+100249,Seven Rivers Regional Medical Center,Crystal River,FL,Community,Small,For-profit
+100253,Jupiter Medical Center,Jupiter,FL,Community,Medium,Not-for-profit
+100256,Regional Medical Center,Hudson,FL,Community,Medium,For-profit
+100258,Delray Medical Center,Delray Beach,FL,Community,Large,For-profit
+100260,St. Lucie Medical Center,Port Saint Lucie,FL,Community,Medium,For-profit
+100264,Oak Hill Hospital,Brooksville,FL,Community,Medium,For-profit
+100265,Mease Countryside Hospital,Safety Harbor,FL,Community,Medium,Not-for-profit
+100271,H. Lee Moffitt Cancer Center,Tampa,FL,NCCN,Medium,Not-for-profit
+100287,Good Samaritan Medical Center,West Palm Beach,FL,Community,Large,For-profit
+100290,The Villages Regional Hospital,The Villages,FL,Community,Small,Not-for-profit
+110001,Hamilton Medical Center,Dalton,GA,Community,Medium,Not-for-profit
+110007,Phoebe Putney Memorial Hospital,Albany,GA,Community,Large,Not-for-profit
+110010,Emory University Hospital,Atlanta,GA,AMC,Large,Not-for-profit
+110024,Candler Hospital,Savannah,GA,Community,Medium,Not-for-profit
+110025,Southeast Georgia Health System,Brunswick,GA,Community,Medium,Not-for-profit
+110028,University Health Care System,Augusta,GA,Community,Large,Not-for-profit
+110029,Northeast Georgia Medical Center,Gainesville,GA,Community,Large,Not-for-profit
+110035,WellStar Kennestone Hospital,Marietta,GA,Community,Large,Not-for-profit
+110036,Memorial Health,Savannah,GA,Community,Large,Not-for-profit
+110043,St. Joseph's Hospital,Savannah,GA,Community,Medium,Not-for-profit
+110064,The Medical Center,Columbus,GA,Community,Large,Not-for-profit
+110074,Athens Regional Medical Center,Athens,GA,Community,Medium,Not-for-profit
+110076,DeKalb Medical Center,Decatur,GA,Community,Large,Not-for-profit
+110078,Emory Crawford Long Hospital,Atlanta,GA,Community,Large,Not-for-profit
+110082,St. Joseph's Hospital of Atlanta,Atlanta,GA,Community,Large,Not-for-profit
+110083,Piedmont Hospital,Atlanta,GA,Community,Large,Not-for-profit
+110087,Gwinnett Hospital System,Lawrenceville,GA,Community,Medium,Not-for-profit
+110107,Medical Center of Central Georgia,Macon,GA,Community,Large,Not-for-profit
+110122,South Georgia Medical Center,Valdosta,GA,Community,Medium,Not-for-profit
+110129,St. Francis Hospital,Columbus,GA,Community,Large,Not-for-profit
+110143,WellStar Cobb Hospital,Austell,GA,Community,Large,Not-for-profit
+110165,Southern Regional Medical Center,Riverdale,GA,Community,Medium,Not-for-profit
+110168,Redmond Regional Medical Center,Rome,GA,Community,Medium,For-profit
+110215,Piedmont Fayette Hospital,Fayetteville,GA,Community,Small,Not-for-profit
+120001,Queen's Medical Center,Honolulu,HI,Community,Large,Not-for-profit
+130006,St. Luke's Regional Medical Center,Boise,ID,Community,Large,Not-for-profit
+130007,St. Alphonsus Regional Medical Center,Boise,ID,Community,Medium,Not-for-profit
+130049,Kootenai Medical Center,Coeur D'alene,ID,Community,Medium,Not-for-profit
+140007,Provena St. Joseph Medical Center,Joliet,IL,Community,Small,Not-for-profit
+140010,Evanston Northwestern Healthcare,Evanston,IL,AMC,Large,Not-for-profit
+140015,Blessing Hospital,Quincy,IL,Community,Medium,Not-for-profit
+140030,Sherman Hospital,Elgin,IL,Community,Large,Not-for-profit
+140051,Rush North Shore Medical Center,Skokie,IL,Community,Medium,Not-for-profit
+140053,St. John's Hospital,Springfield,IL,Community,Large,Not-for-profit
+140054,MacNeal Hospital,Berwyn,IL,AMC,Large,Not-for-profit
+140062,Palos Community Hospital,Palos Heights,IL,Community,Large,Not-for-profit
+140065,Adventist La Grange Memorial Hospital,La Grange,IL,Community,Medium,Not-for-profit
+140067,OSF St. Francis Medical Center,Peoria,IL,Community,Large,Not-for-profit
+140080,St. Francis Hospital,Evanston,IL,Community,Large,Not-for-profit
+140084,Vista Medical Center East,Waukegan,IL,Community,Large,Not-for-profit
+140088,University of Chicago Hospital,Chicago,IL,NCI,Large,Not-for-profit
+140091,Carle Foundation Hospital,Urbana,IL,Community,Medium,Not-for-profit
+140114,Swedish Covenant Hospital,Chicago,IL,Community,Medium,Not-for-profit
+140116,Centegra Northern Illinois Medical Center,Mchenry,IL,Community,Small,Not-for-profit
+140117,Resurrection Medical Center,Chicago,IL,Community,Large,Not-for-profit
+140119,Rush University Medical Center,Chicago,IL,AMC,Large,Not-for-profit
+140122,Adventist Hinsdale Hospital,Hinsdale,IL,Community,Large,Not-for-profit
+140135,Decatur Memorial Hospital,Decatur,IL,Community,Large,Not-for-profit
+140148,Memorial Medical Center,Springfield,IL,AMC,Large,Not-for-profit
+140172,St. James Hospitals & Health Centers,Olympia Fields,IL,Community,Small,For-profit
+140179,Little Company of Mary Hospital,Evergreen Park,IL,Community,Large,Not-for-profit
+140185,Memorial Hospital,Belleville,IL,Community,Large,Not-for-profit
+140191,Ingalls Memorial Hospital,Harvey,IL,Community,Large,Not-for-profit
+140200,Elmhurst Memorial Hospital,Elmhurst,IL,Community,Large,Not-for-profit
+140202,Condell Medical Center,Libertyville,IL,Community,Medium,Not-for-profit
+140208,Advocate Christ Medical Center,Oak Lawn,IL,AMC,Large,Not-for-profit
+140209,Methodist Medical Center of Illinois,Peoria,IL,Community,Large,Not-for-profit
+140213,Silver Cross Hospital,Joliet,IL,Community,Medium,Not-for-profit
+140223,Advocate Lutheran General Hospital,Park Ridge,IL,AMC,Large,Not-for-profit
+140228,SwedishAmerican Hospital,Rockford,IL,Community,Large,Not-for-profit
+140231,Edward Hospital,Naperville,IL,Community,Medium,Not-for-profit
+140233,OSF St. Anthony Medical Center,Rockford,IL,Community,Medium,Not-for-profit
+140239,Rockford Memorial Hospital,Rockford,IL,Community,Large,Not-for-profit
+140242,Central DuPage Hospital,Winfield,IL,Community,Large,Not-for-profit
+140252,Northwest Community Healthcare,Arlington Heights,IL,Community,Large,Not-for-profit
+140258,Alexian Brothers Medical Center,Elk Grove Village,IL,Community,Large,Not-for-profit
+140276,Loyola University Medical Center,Maywood,IL,AMC,Large,Not-for-profit
+140280,Trinity Medical Center-West,Rock Island,IL,Community,Medium,Not-for-profit
+140281,Northwestern Memorial Hospital,Chicago,IL,NCCN,Large,Not-for-profit
+140288,Advocate Good Samaritan Hospital,Downers Grove,IL,Community,Large,Not-for-profit
+140291,Advocate Good Shepherd Hospital,Barrington,IL,Community,Small,Not-for-profit
+150002,Methodist Hospitals,Gary,IN,Community,Large,Not-for-profit
+150004,St. Margaret Mercy Health Centers,Hammond,IN,Community,Small,Not-for-profit
+150009,Clark Memorial Hospital,Jeffersonville,IN,Community,Medium,Not-for-profit
+150012,St. Joseph Regional Medical Center-South Bend,South Bend,IN,Community,Medium,Not-for-profit
+150017,Lutheran Hospital of Indiana,Fort Wayne,IN,Community,Large,Not-for-profit
+150018,Elkhart General Hospital,Elkhart,IN,Community,Medium,Not-for-profit
+150021,Parkview Hospital,Fort Wayne,IN,Community,Large,Not-for-profit
+150023,Union Hospital,Terre Haute,IN,Community,Medium,Not-for-profit
+150033,St. Francis Hospital & Health Centers,Beech Grove,IN,Community,Medium,Not-for-profit
+150034,St. Mary Medical Center,Hobart,IN,Community,Medium,Not-for-profit
+150035,Porter-Valparaiso Hospital Campus,Valparaiso,IN,Community,Medium,Not-for-profit
+150042,Good Samaritan Hospital,Vincennes,IN,Community,Small,Not-for-profit
+150044,Floyd Memorial Hospital & Health Services,New Albany,IN,Community,Small,Not-for-profit
+150048,Reid Hospital & Health Care Services,Richmond,IN,Community,Medium,Not-for-profit
+150051,Bloomington Hospital,Bloomington,IN,Community,Medium,Not-for-profit
+150056,Clarian Health Partners,Indianapolis,IN,AMC,Large,Not-for-profit
+150058,Memorial Hospital of South Bend,South Bend,IN,Community,Medium,Not-for-profit
+150074,Community Health Network,Indianapolis,IN,Community,Medium,Not-for-profit
+150082,Deaconess Hospital,Evansville,IN,Community,Large,Not-for-profit
+150084,St. Vincent Hospital & Health Services,Indianapolis,IN,Community,Large,Not-for-profit
+150089,Ball Memorial Hospital,Muncie,IN,Community,Medium,Not-for-profit
+150100,St. Mary's Medical Center,Evansville,IN,Community,Large,Not-for-profit
+150112,Columbus Regional Hospital,Columbus,IN,Community,Medium,Not-for-profit
+150125,Community Hospital,Munster,IN,Community,Large,Not-for-profit
+160030,Mary Greeley Medical Center,Ames,IA,Community,Medium,Not-for-profit
+160033,Genesis Medical Center,Davenport,IA,Community,Large,Not-for-profit
+160045,St. Luke's Hospital,Cedar Rapids,IA,Community,Large,Not-for-profit
+160058,University of Iowa Hospitals & Clinics,Iowa City,IA,NCI,Large,Not-for-profit
+160064,Mercy Medical Center-Mason City,Mason City,IA,Community,Medium,Not-for-profit
+160079,Mercy Medical Center-Cedar Rapids,Cedar Rapids,IA,Community,Large,Not-for-profit
+160082,Iowa Methodist Medical Center,Des Moines,IA,Community,Large,Not-for-profit
+160083,Mercy Medical Center-Des Moines,Des Moines,IA,Community,Large,Not-for-profit
+160153,Mercy Medical Center-Sioux City,Sioux City,IA,Community,Medium,Not-for-profit
+170016,St. Francis Health Center,Topeka,KS,Community,Large,Not-for-profit
+170020,Hutchinson Hospital Corporation,Hutchinson,KS,Community,Medium,Not-for-profit
+170040,University of Kansas Hospital,Kansas City,KS,AMC,Large,Not-for-profit
+170049,Olathe Medical Center,Olathe,KS,Community,Small,Not-for-profit
+170086,Stormont-Vail HealthCare,Topeka,KS,Community,Large,Not-for-profit
+170104,Shawnee Mission Medical Center,Shawnee Mission,KS,Community,Large,Not-for-profit
+170122,Via Christi Regional Medical Center,Wichita,KS,Community,Large,Not-for-profit
+170123,Wesley Medical Center,Wichita,KS,Community,Large,For-profit
+170146,Providence Medical Center,Kansas City,KS,Community,Large,Not-for-profit
+180009,King's Daughters Medical Center,Ashland,KY,Community,Large,For-profit
+180010,St. Joseph Hospital,Lexington,KY,Community,Large,Not-for-profit
+180012,Hardin Memorial Hospital,Elizabethtown,KY,Community,Medium,Not-for-profit
+180013,Medical Center-Bowling Green,Bowling Green,KY,Community,Large,Not-for-profit
+180035,St. Elizabeth Medical Center-South,Covington,KY,Community,Large,Not-for-profit
+180038,Owensboro Medical Health System,Owensboro,KY,Community,Large,Not-for-profit
+180040,Jewish Hospital-Louisville,Louisville,KY,Community,Large,Not-for-profit
+180048,Ephraim McDowell Regional Medical Center,Danville,KY,Community,Small,Not-for-profit
+180067,University of Kentucky Hospital,Lexington,KY,AMC,Large,Not-for-profit
+180088,Norton Hospital,Louisville,KY,Community,Large,Not-for-profit
+180093,Regional Medical Center of Hopkins County,Madisonville,KY,Community,Large,Not-for-profit
+180103,Central Baptist Hospital,Lexington,KY,Community,Large,Not-for-profit
+180104,Western Baptist Hospital,Paducah,KY,Community,Large,Not-for-profit
+180130,Baptist Hospital East,Louisville,KY,Community,Large,Not-for-profit
+180132,Lake Cumberland Regional Hospital,Somerset,KY,Community,Medium,For-profit
+190002,Lafayette General Medical Center,Lafayette,LA,Community,Medium,Not-for-profit
+190008,Terrebonne General Medical Center,Houma,LA,Community,Medium,Not-for-profit
+190019,Christus St. Frances Hospital,Alexandria,LA,Community,Medium,Not-for-profit
+190026,Rapides Regional Medical Center,Alexandria,LA,Community,Medium,For-profit
+190027,Christus St. Patrick Hospital,Lake Charles,LA,Community,Large,Not-for-profit
+190036,Ochsner Clinic Foundation,New Orleans,LA,AMC,Large,Not-for-profit
+190041,Christus Schumpert Health System,Shreveport,LA,Community,Large,Not-for-profit
+190064,Our Lady of Lake Regional Medical Center,Baton Rouge,LA,Community,Large,Not-for-profit
+190065,Baton Rouge General Medical Center,Baton Rouge,LA,Community,Large,Not-for-profit
+190102,Our Lady of Lourdes Regional Center,Lafayette,LA,Community,Medium,Not-for-profit
+190111,Willis-Knighton Medical Center,Shreveport,LA,Community,Large,Not-for-profit
+190125,St. Francis Medical Center,Monroe,LA,Community,Large,Not-for-profit
+190146,East Jefferson General Hospital,Metairie,LA,Community,Large,Not-for-profit
+200009,Maine Medical Center,Portland,ME,AMC,Large,Not-for-profit
+200024,Central Maine Medical Center,Lewiston,ME,Community,Medium,Not-for-profit
+200033,Eastern Maine Medical Center,Bangor,ME,Community,Large,Not-for-profit
+200039,MaineGeneral Medical Center,Augusta,ME,Community,Medium,Not-for-profit
+210001,Washington County Health System,Hagerstown,MD,Community,Medium,Not-for-profit
+210002,University of Maryland Medical Center,Baltimore,MD,AMC,Large,Not-for-profit
+210004,Holy Cross Hospital,Silver Spring,MD,Community,Large,Not-for-profit
+210005,Frederick Memorial Hospital,Frederick,MD,Community,Medium,Not-for-profit
+210007,St. Joseph Medical Center,Towson,MD,Community,Large,Not-for-profit
+210008,Mercy Medical Center,Baltimore,MD,Community,Medium,Not-for-profit
+210009,Johns Hopkins Hospital,Baltimore,MD,NCCN,Large,Not-for-profit
+210011,St. Agnes HealthCare,Baltimore,MD,Community,Large,Not-for-profit
+210012,Sinai Hospital of Baltimore,Baltimore,MD,Community,Large,Not-for-profit
+210015,Franklin Square Hospital Center,Baltimore,MD,Community,Large,Not-for-profit
+210018,Montgomery General Hospital,Olney,MD,Community,Medium,Not-for-profit
+210019,Peninsula Regional Health System,Salisbury,MD,Community,Large,Not-for-profit
+210022,Suburban Hospital Healthcare System,Bethesda,MD,Community,Large,Not-for-profit
+210023,Anne Arundel Medical Center,Annapolis,MD,Community,Large,Not-for-profit
+210024,Union Memorial Hospital,Baltimore,MD,Community,Large,Not-for-profit
+210027,Sacred Heart Hospital,Cumberland,MD,Community,Medium,Not-for-profit
+210029,Johns Hopkins Bayview Medical Center,Baltimore,MD,AMC,Large,Not-for-profit
+210033,Carroll Hospital Center,Westminster,MD,Community,Medium,Not-for-profit
+210034,Harbor Hospital Center,Baltimore,MD,Community,Large,Not-for-profit
+210037,Memorial Hospital at Easton,Easton,MD,Community,Medium,Not-for-profit
+210040,Northwest Hospital Center,Randallstown,MD,Community,Medium,Not-for-profit
+210043,Baltimore Washington Medical Center,Glen Burnie,MD,Community,Large,Not-for-profit
+210044,Greater Baltimore Medical Center,Baltimore,MD,Community,Large,Not-for-profit
+210048,Howard County General Hospital,Columbia,MD,Community,Medium,Not-for-profit
+210049,Upper Chesapeake Medical Center,Bel Air,MD,Community,Medium,Not-for-profit
+210051,Doctors Community Hospital,Lanham,MD,Community,Medium,For-profit
+210054,Southern Maryland Hospital Center,Clinton,MD,Community,Large,For-profit
+210056,Good Samaritan Hospital,Baltimore,MD,Community,Small,Not-for-profit
+210057,Shady Grove Adventist Hospital,Rockville,MD,Community,Medium,Not-for-profit
+220012,Cape Cod Hospital,Hyannis,MA,Community,Medium,Not-for-profit
+220031,Boston Medical Center,Boston,MA,AMC,Small,Not-for-profit
+220033,Beverly Hospital,Beverly,MA,Community,Medium,Not-for-profit
+220035,North Shore Medical Center,Salem,MA,Community,Large,Not-for-profit
+220036,Caritas St. Elizabeth's Medical Center,Brighton,MA,AMC,Medium,Not-for-profit
+220046,Berkshire Medical Center,Pittsfield,MA,AMC,Medium,Not-for-profit
+220060,Jordan Hospital,Plymouth,MA,Community,Small,Not-for-profit
+220066,Mercy Medical Center,Springfield,MA,Community,Medium,Not-for-profit
+220070,Hallmark Health System,Melrose,MA,Community,Small,Not-for-profit
+220071,Massachusetts General Hospital,Boston,MA,AMC,Large,Not-for-profit
+220074,Southcoast Hospitals Group,Fall River,MA,Community,Large,Not-for-profit
+220077,Baystate Medical Center,Springfield,MA,AMC,Large,Not-for-profit
+220080,Caritas Holy Family Hospital,Methuen,MA,Community,Medium,Not-for-profit
+220086,Beth Israel Deaconess Medical Center,Boston,MA,AMC,Large,Not-for-profit
+220100,South Shore Hospital,South Weymouth,MA,Community,Medium,Not-for-profit
+220101,Newton-Wellesley Hospital,Newton,MA,Community,Medium,Not-for-profit
+220105,Winchester Hospital,Winchester,MA,Community,Small,Not-for-profit
+220110,Brigham and Women's Hospital,Boston,MA,NCCN,Large,Not-for-profit
+220126,Caritas Norwood Hospital,Norwood,MA,Community,Medium,Not-for-profit
+220163,UMass Memorial Medical Center,Worcester,MA,AMC,Medium,Not-for-profit
+220171,Lahey Clinic Hospital,Burlington,MA,AMC,Medium,Not-for-profit
+220175,MetroWest Medical Center,Framingham,MA,Community,Large,Not-for-profit
+230002,St. Mary Mercy Hospital,Livonia,MI,Community,Medium,Not-for-profit
+230017,Bronson Methodist Hospital,Kalamazoo,MI,Community,Large,Not-for-profit
+230019,Providence Hospital & Medical Center,Southfield,MI,Community,Large,Not-for-profit
+230020,Oakwood Hospital & Medical Center,Dearborn,MI,Community,Large,Not-for-profit
+230021,Lakeland Hospital-St. Joseph,St Joseph,MI,Community,Medium,Not-for-profit
+230024,Sinai-Grace Hospital,Detroit,MI,AMC,Large,Not-for-profit
+230029,St. Joseph Mercy Oakland,Pontiac,MI,Community,Large,Not-for-profit
+230038,Spectrum Health,Grand Rapids,MI,Community,Large,Not-for-profit
+230041,Bay Regional Medical Center,Bay City,MI,Community,Large,Not-for-profit
+230046,University of Michigan Hospitals,Ann Arbor,MI,NCCN,Large,Not-for-profit
+230047,St. Joseph's Medical Center,Clinton Township,MI,Community,Medium,Not-for-profit
+230053,Henry Ford Hospital,Detroit,MI,AMC,Large,Not-for-profit
+230054,Marquette General Health System,Marquette,MI,Community,Medium,Not-for-profit
+230059,St. Mary's Health Care,Grand Rapids,MI,Community,Medium,Not-for-profit
+230066,Hackley Health,Muskegon,MI,Community,Small,Not-for-profit
+230070,Covenant Medical Center,Saginaw,MI,Community,Large,Not-for-profit
+230075,Battle Creek Health System,Battle Creek,MI,Community,Small,Not-for-profit
+230077,St. Mary's of Michigan Medical Center,Saginaw,MI,Community,Medium,Not-for-profit
+230089,Bon Secours Hospital,Grosse Pointe,MI,Community,Medium,Not-for-profit
+230092,Foote Health System,Jackson,MI,Community,Large,Not-for-profit
+230097,Munson Medical Center,Traverse City,MI,Community,Large,Not-for-profit
+230104,Harper University Hospital,Detroit,MI,NCI,Large,Not-for-profit
+230117,Borgess Medical Center,Kalamazoo,MI,Community,Large,Not-for-profit
+230130,Beaumont Hospital - Royal Oak,Royal Oak,MI,AMC,Large,For-profit
+230141,McLaren Regional Medical Center,Flint,MI,AMC,Medium,Not-for-profit
+230146,Henry Ford Wyandotte Hospital,Wyandotte,MI,Community,Medium,Not-for-profit
+230151,Botsford General Hospital,Farmington Hills,MI,Community,Medium,Not-for-profit
+230156,St. Joseph Mercy Hospital,Ann Arbor,MI,AMC,Large,Not-for-profit
+230165,St. John Hospital & Medical Center,Detroit,MI,AMC,Large,Not-for-profit
+230167,Ingham Regional Medical Center,Lansing,MI,AMC,Large,Not-for-profit
+230195,St. John Macomb Hospital,Warren,MI,Community,Medium,Not-for-profit
+230197,Genesys Regional Medical Center,Grand Blanc,MI,Community,Large,Not-for-profit
+230222,MidMichigan Medical Center,Midland,MI,Community,Medium,Not-for-profit
+230227,Mount Clemens General Hospital,Mount Clemens,MI,Community,Medium,Not-for-profit
+230230,Sparrow Health System,Lansing,MI,Community,Large,Not-for-profit
+230244,Garden City Hospital,Garden City,MI,Community,Medium,Not-for-profit
+230254,Crittenton Hospital Medical Center,Rochester,MI,Community,Medium,Not-for-profit
+230269,Beaumont Hospital - Troy,Troy,MI,Community,Medium,Not-for-profit
+240001,North Memorial Health Care,Robbinsdale,MN,Community,Large,Not-for-profit
+240002,St. Mary's Medical Center,Duluth,MN,Community,Large,Not-for-profit
+240010,St. Mary's Hospital,Rochester,MN,NCI,Large,Not-for-profit
+240036,St. Cloud Hospital,Saint Cloud,MN,Community,Large,Not-for-profit
+240038,United Hospital,Saint Paul,MN,Community,Large,Not-for-profit
+240047,St. Luke's Hospital,Duluth,MN,Community,Medium,Not-for-profit
+240053,Methodist Hospital,Saint Louis Park,MN,Community,Large,Not-for-profit
+240057,Abbott Northwestern Hospital,Minneapolis,MN,Community,Large,Not-for-profit
+240061,Rochester Methodist Hospital,Rochester,MN,Community,Large,Not-for-profit
+240078,Fairview Southdale Hospital,Edina,MN,Community,Large,Not-for-profit
+240080,University of Minnesota Medical Center,Minneapolis,MN,NCI,Large,Not-for-profit
+240093,Immanuel St. Joseph's Health,Mankato,MN,Community,Medium,Not-for-profit
+240210,St. John's Hospital,Maplewood,MN,Community,Medium,Not-for-profit
+250004,North Mississippi Medical Center-Tupelo,Tupelo,MS,Community,Large,Not-for-profit
+250019,Memorial Hospital at Gulfport,Gulfport,MS,Community,Large,Not-for-profit
+250040,Singing River Hospital System,Pascagoula,MS,Community,Large,Not-for-profit
+250048,St. Dominic-Jackson Memorial Hospital,Jackson,MS,Community,Large,Not-for-profit
+250078,Forrest General Hospital,Hattiesburg,MS,Community,Large,Not-for-profit
+250100,Baptist Memorial Hospital-Golden,Columbus,MS,Community,Medium,Not-for-profit
+250102,Mississippi Baptist Medical Center,Jackson,MS,Community,Large,Not-for-profit
+250104,Jeff Anderson Regional Medical Center,Meridian,MS,Community,Medium,Not-for-profit
+250141,Baptist Memorial Hospital-Desoto,Southaven,MS,Community,Small,Not-for-profit
+260001,St. John's Regional Medical Center,Joplin,MO,Community,Large,Not-for-profit
+260006,Heartland Regional Medical Center,Saint Joseph,MO,Community,Large,Not-for-profit
+260020,St. John's Mercy Medical Center,Saint Louis,MO,Community,Large,Not-for-profit
+260027,Research Medical Center,Kansas City,MO,Community,Large,For-profit
+260032,Barnes-Jewish Hospital,Saint Louis,MO,NCCN,Large,Not-for-profit
+260040,Lester E. Cox Medical Centers,Springfield,MO,Community,Large,Not-for-profit
+260065,St. John's Hospital,Springfield,MO,Community,Large,Not-for-profit
+260068,Boone Hospital Center,Columbia,MO,Community,Large,Not-for-profit
+260077,St. Anthony's Medical Center,Saint Louis,MO,Community,Large,Not-for-profit
+260085,St. Joseph Medical Center,Kansas City,MO,Community,Medium,Not-for-profit
+260091,SSM St. Mary's Health Center,Richmond Heights,MO,AMC,Large,Not-for-profit
+260095,Independence Regional Health Center,Independence,MO,Community,Large,Not-for-profit
+260096,North Kansas City Hospital,North Kansas City,MO,Community,Large,Not-for-profit
+260104,SSM DePaul Health Center,Bridgeton,MO,Community,Large,Not-for-profit
+260108,Missouri Baptist Medical Center,Town And Country,MO,Community,Large,Not-for-profit
+260110,Southeast Missouri Hospital,Cape Girardeau,MO,Community,Medium,Not-for-profit
+260119,Poplar Bluff Regional Medical Center,Poplar Bluff,MO,Community,Medium,Not-for-profit
+260137,Freeman Health System,Joplin,MO,Community,Large,Not-for-profit
+260138,St. Luke's Hospital,Kansas City,MO,AMC,Large,Not-for-profit
+260141,University of Missouri Hospital & Clinic,Columbia,MO,AMC,Large,Not-for-profit
+260179,St. Luke's Hospital,Chesterfield,MO,Community,Large,Not-for-profit
+260180,Christian Hospital,Saint Louis,MO,Community,Large,Not-for-profit
+270004,Billings Clinic,Billings,MT,Community,Medium,Not-for-profit
+270012,Benefis Healthcare,Great Falls,MT,Community,Large,For-profit
+270014,St. Patrick Hospital,Missoula,MT,Community,Medium,Not-for-profit
+270049,St. Vincent Healthcare,Billings,MT,Community,Medium,Not-for-profit
+280003,BryanLGH Medical Center,Lincoln,NE,Community,Large,Not-for-profit
+280013,Nebraska Medical Center,Omaha,NE,NCCN,Large,Not-for-profit
+280020,St. Elizabeth Regional Medical Center,Lincoln,NE,Community,Medium,Not-for-profit
+280040,Nebraska Methodist Hospital,Omaha,NE,Community,Large,Not-for-profit
+280060,Alegent Health Bergan Mercy Center,Omaha,NE,Community,Large,Not-for-profit
+290001,Washoe Medical Center,Reno,NV,Community,Large,Not-for-profit
+290003,Sunrise Hospital & Medical Center,Las Vegas,NV,Community,Large,For-profit
+290019,Carson Tahoe Hospital,Carson City,NV,Community,Small,Not-for-profit
+290022,Desert Springs Hospital Medical Center,Las Vegas,NV,Community,Large,For-profit
+290039,MountainView Hospital,Las Vegas,NV,Community,Medium,For-profit
+290041,Summerlin Hospital Medical Center,Las Vegas,NV,Community,Medium,For-profit
+290045,St. Rose Dominican Hospital-Siena,Henderson,NV,Community,Medium,Not-for-profit
+300001,Concord Hospital,Concord,NH,Community,Medium,Not-for-profit
+300003,Dartmouth-Hitchcock Medical Center,Lebanon,NH,NCI,Large,Not-for-profit
+300012,Elliot Hospital,Manchester,NH,Community,Medium,Not-for-profit
+310001,Hackensack University Medical Center,Hackensack,NJ,Community,Large,Not-for-profit
+310002,Newark Beth Israel Medical Center,Newark,NJ,AMC,Large,Not-for-profit
+310005,Hunterdon Medical Center,Flemington,NJ,Community,Medium,Not-for-profit
+310008,Holy Name Hospital,Teaneck,NJ,Community,Large,Not-for-profit
+310009,Clara Maass Medical Center,Belleville,NJ,Community,Large,Not-for-profit
+310010,University Medical Center at Princeton,Princeton,NJ,Community,Medium,Not-for-profit
+310011,Burdette Tomlin Memorial Hospital,Cape May Court House,NJ,Community,Medium,Not-for-profit
+310012,Valley Hospital,Ridgewood,NJ,Community,Large,Not-for-profit
+310014,Cooper Health System,Camden,NJ,AMC,Large,Not-for-profit
+310015,Morristown Memorial Hospital,Morristown,NJ,Community,Large,Not-for-profit
+310016,Christ Hospital,Jersey City,NJ,Community,Large,Not-for-profit
+310017,Chilton Memorial Hospital,Pompton Plains,NJ,Community,Medium,Not-for-profit
+310019,St. Joseph's Regional Medical Center,Paterson,NJ,Community,Large,Not-for-profit
+310022,Virtua West Jersey Hospital,Berlin,NJ,Community,Large,Not-for-profit
+310024,Robert Wood Johnson University Hospital - Rahway,Rahway,NJ,Community,Medium,Not-for-profit
+310025,Bayonne Medical Center,Bayonne,NJ,Community,Medium,Not-for-profit
+310029,Our Lady of Lourdes Medical Center,Camden,NJ,Community,Large,Not-for-profit
+310032,Regional Medical Center,Vineland,NJ,Community,Medium,Not-for-profit
+310034,Riverview Medical Center,Red Bank,NJ,Community,Large,Not-for-profit
+310038,Robert Wood Johnson University Hospital,New Brunswick,NJ,NCI,Large,Not-for-profit
+310039,Raritan Bay Medical Center,Perth Amboy,NJ,Community,Large,Not-for-profit
+310041,Community Medical Center,Toms River,NJ,Community,Large,Not-for-profit
+310045,Englewood Hospital & Medical Center,Englewood,NJ,Community,Large,Not-for-profit
+310047,Shore Memorial Hospital,Somers Point,NJ,Community,Large,Not-for-profit
+310048,Somerset Medical Center,Somerville,NJ,Community,Large,Not-for-profit
+310050,St. Clare's Hospital,Denville,NJ,Community,Large,Not-for-profit
+310051,Overlook Hospital,Summit,NJ,Community,Large,Not-for-profit
+310052,Ocean Medical Center,Brick,NJ,Community,Large,Not-for-profit
+310054,Mountainside Hospital,Montclair,NJ,Community,Large,Not-for-profit
+310057,Virtua Memorial Hospital of Burlington,Mount Holly,NJ,Community,Large,Not-for-profit
+310064,Atlanticare Regional Medical Center,Atlantic City,NJ,Community,Large,Not-for-profit
+310070,St. Peter's University Hospital,New Brunswick,NJ,Community,Large,Not-for-profit
+310073,Jersey Shore University Medical Center,Neptune,NJ,Community,Large,Not-for-profit
+310075,Monmouth Medical Center,Long Branch,NJ,AMC,Large,Not-for-profit
+310076,St. Barnabas Medical Center,Livingston,NJ,Community,Large,Not-for-profit
+310081,Underwood-Memorial Hospital,Woodbury,NJ,Community,Large,Not-for-profit
+310084,Kimball Medical Center,Lakewood,NJ,Community,Medium,Not-for-profit
+310086,Kennedy Memorial Hospitals-University Medical Center,Stratford,NJ,Community,Large,Not-for-profit
+310108,JFK Medical Center,Edison,NJ,Community,Large,Not-for-profit
+310110,Robert Wood Johnson University Hospital - Hamilton,Hamilton,NJ,Community,Medium,Not-for-profit
+310111,CentraState Healthcare System,Freehold,NJ,Community,Medium,Not-for-profit
+310113,Southern Ocean County Hospital,Manahawkin,NJ,Community,Small,Not-for-profit
+320021,Presbyterian Hospital,Albuquerque,NM,Community,Large,Not-for-profit
+330005,Kaleida Health-Buffalo General Hospital,Buffalo,NY,AMC,Large,Not-for-profit
+330011,Our Lady of Lourdes Memorial Hospital,Binghamton,NY,Community,Medium,Not-for-profit
+330013,Albany Medical Center,Albany,NY,AMC,Large,Not-for-profit
+330023,Vassar Brothers Medical Center,Poughkeepsie,NY,Community,Medium,Not-for-profit
+330024,Mount Sinai Hospital,New York,NY,AMC,Large,Not-for-profit
+330043,Southside Hospital,Bay Shore,NY,Community,Large,Not-for-profit
+330044,Faxton-St. Luke's Healthcare,Utica,NY,Community,Large,Not-for-profit
+330045,Huntington Hospital,Huntington,NY,Community,Large,Not-for-profit
+330046,St. Luke's-Roosevelt Hospital Center,New York,NY,AMC,Large,Not-for-profit
+330055,New York Hospital Queens,Flushing,NY,Community,Large,Not-for-profit
+330057,St. Peter's Hospital,Albany,NY,Community,Large,Not-for-profit
+330059,Montefiore Medical Center,Bronx,NY,AMC,Large,For-profit
+330061,Lawrence Hospital Center,Bronxville,NY,Community,Medium,Not-for-profit
+330090,Arnot Ogden Medical Center,Elmira,NY,Community,Medium,Not-for-profit
+330101,New York-Presbyterian Hospital,New York,NY,NCI,Large,Not-for-profit
+330104,Nyack Hospital,Nyack,NY,Community,Large,Not-for-profit
+330106,North Shore University Hospital,Manhasset,NY,AMC,Large,Not-for-profit
+330119,Lenox Hill Hospital,New York,NY,AMC,Large,Not-for-profit
+330125,Rochester General Hospital,Rochester,NY,Community,Large,Not-for-profit
+330126,Orange Regional Medical Center,Goshen,NY,Community,Small,Not-for-profit
+330136,Mary Imogene Bassett Hospital,Cooperstown,NY,AMC,Medium,Not-for-profit
+330140,St. Joseph's Hospital Health Center,Syracuse,NY,Community,Large,Not-for-profit
+330141,Brookhaven Memorial Hospital Medical Center,Patchogue,NY,Community,Large,Not-for-profit
+330153,Ellis Hospital,Schenectady,NY,Community,Large,Not-for-profit
+330154,Memorial Sloan-Kettering Cancer Center,New York,NY,NCCN,Large,Not-for-profit
+330158,Good Samaritan Hospital,Suffern,NY,Community,Large,Not-for-profit
+330159,Community General Hospital,Syracuse,NY,Community,Medium,Not-for-profit
+330160,Staten Island University Hospital,Staten Island,NY,AMC,Large,Not-for-profit
+330162,Northern Westchester Hospital,Mount Kisco,NY,Community,Medium,Not-for-profit
+330167,Winthrop-University Hospital,Mineola,NY,AMC,Large,Not-for-profit
+330169,Beth Israel Medical Center,New York,NY,AMC,Large,Not-for-profit
+330181,Glen Cove Hospital,Glen Cove,NY,Community,Medium,Not-for-profit
+330182,St. Francis Hospital,Roslyn,NY,Community,Medium,Not-for-profit
+330185,John T. Mather Memorial Hospital,Port Jefferson,NY,Community,Medium,Not-for-profit
+330191,Glens Falls Hospital,Glens Falls,NY,Community,Large,Not-for-profit
+330194,Maimonides Medical Center,Brooklyn,NY,AMC,Large,Not-for-profit
+330195,Long Island Jewish Medical Center,New Hyde Park,NY,AMC,Large,Not-for-profit
+330198,South Nassau Communities Hospital,Oceanside,NY,Community,Large,Not-for-profit
+330203,Crouse Hospital,Syracuse,NY,Community,Large,Not-for-profit
+330214,New York University Medical Center,New York,NY,AMC,Large,Not-for-profit
+330224,Benedictine Hospital,Kingston,NY,Community,Medium,Not-for-profit
+330234,Westchester Medical Center,Valhalla,NY,AMC,Large,Not-for-profit
+330236,New York Methodist Hospital,Brooklyn,NY,AMC,Large,Not-for-profit
+330241,Upstate Medical University,Syracuse,NY,AMC,Large,Not-for-profit
+330259,Mercy Medical Center,Rockville Centre,NY,Community,Large,Not-for-profit
+330261,Phelps Memorial Hospital Center,Sleepy Hollow,NY,Community,Medium,Not-for-profit
+330264,St. Luke's Cornwall Hospital,Newburgh,NY,Community,Medium,Not-for-profit
+330279,Mercy Hospital,Buffalo,NY,Community,Large,Not-for-profit
+330285,Strong Memorial Hospital,Rochester,NY,AMC,Large,Not-for-profit
+330286,Good Samaritan Hospital Medical Center,West Islip,NY,Community,Large,Not-for-profit
+330290,St. Vincent's Hospital-Manhattan,New York,NY,AMC,Large,Not-for-profit
+330304,White Plains Hospital Center,White Plains,NY,Community,Medium,Not-for-profit
+330306,Lutheran Medical Center,Brooklyn,NY,Community,Large,Not-for-profit
+330331,North Shore University Hospital,Plainview,NY,Community,Medium,For-profit
+330354,Roswell Park Cancer Institute,Buffalo,NY,NCCN,Small,Not-for-profit
+330357,Mary Immaculate Hospital,Jamaica,NY,Community,Large,Not-for-profit
+330393,Stony Brook University Hospital,Stony Brook,NY,AMC,Large,Not-for-profit
+330394,United Health Services Hospitals,Johnson City,NY,Community,Large,Not-for-profit
+330401,St. Catherine of Siena Medical Center,Smithtown,NY,Community,Medium,Not-for-profit
+340001,NorthEast Medical Center,Concord,NC,Community,Large,Not-for-profit
+340002,Mission Hospitals,Asheville,NC,Community,Large,Not-for-profit
+340004,High Point Regional Health System,High Point,NC,Community,Large,Not-for-profit
+340010,Wayne Memorial Hospital,Goldsboro,NC,Community,Medium,Not-for-profit
+340014,Forsyth Medical Center,Winston-Salem,NC,Community,Large,Not-for-profit
+340017,Margaret R. Pardee Memorial Hospital,Hendersonville,NC,Community,Medium,Not-for-profit
+340028,Cape Fear Valley Health System,Fayetteville,NC,Community,Large,Not-for-profit
+340030,Duke University Hospital,Durham,NC,NCCN,Large,Not-for-profit
+340032,Gaston Memorial Hospital,Gastonia,NC,Community,Large,Not-for-profit
+340040,Pitt County Memorial Hospital,Greenville,NC,AMC,Large,Not-for-profit
+340047,North Carolina Baptist Hospital,Winston-Salem,NC,NCI,Large,Not-for-profit
+340050,Southeastern Regional Medical Center,Lumberton,NC,Community,Medium,Not-for-profit
+340053,Presbyterian Hospital,Charlotte,NC,Community,Large,Not-for-profit
+340061,University of North Carolina Hospitals,Chapel Hill,NC,NCI,Large,Not-for-profit
+340069,WakeMed Raleigh Campus,Raleigh,NC,Community,Large,Not-for-profit
+340070,Alamance Regional Medical Center,Burlington,NC,Community,Medium,Not-for-profit
+340091,Moses Cone Health System,Greensboro,NC,Community,Large,Not-for-profit
+340109,Albemarle Hospital,Elizabeth City,NC,Community,Medium,Not-for-profit
+340113,Carolinas Medical Center,Charlotte,NC,AMC,Large,Not-for-profit
+340114,Rex Healthcare,Raleigh,NC,Community,Large,Not-for-profit
+340115,FirstHealth Moore Regional Hospital,Pinehurst,NC,Community,Large,Not-for-profit
+340126,Wilson Medical Center,Wilson,NC,Community,Medium,Not-for-profit
+340131,Craven Regional Medical Center,New Bern,NC,Community,Medium,Not-for-profit
+340141,New Hanover Regional Medical Center,Wilmington,NC,Community,Large,Not-for-profit
+340143,Catawba Valley Medical Center,Hickory,NC,Community,Medium,Not-for-profit
+340147,Nash Health Care Systems,Rocky Mount,NC,Community,Medium,Not-for-profit
+340155,Durham Regional Hospital,Durham,NC,Community,Medium,Not-for-profit
+350011,MeritCare Medical Center,Fargo,ND,Community,Large,Not-for-profit
+350019,Altru Health System,Grand Forks,ND,Community,Medium,Not-for-profit
+360001,Mercy Hospital Anderson,Cincinnati,OH,Community,Small,Not-for-profit
+360003,University Hospital-Cincinnati,Cincinnati,OH,AMC,Large,Not-for-profit
+360006,Riverside Methodist Hospital,Columbus,OH,Community,Large,Not-for-profit
+360008,Southern Ohio Medical Center,Portsmouth,OH,Community,Medium,Not-for-profit
+360012,Mount Carmel St. Ann's,Westerville,OH,Community,Medium,Not-for-profit
+360016,Jewish Hospital,Cincinnati,OH,Community,Large,Not-for-profit
+360017,Grant Medical Center,Columbus,OH,Community,Large,Not-for-profit
+360020,Summa Health System,Akron,OH,AMC,Large,Not-for-profit
+360025,Firelands Regional Health System,Sandusky,OH,Community,Medium,Not-for-profit
+360027,Akron General Medical Center,Akron,OH,AMC,Large,Not-for-profit
+360035,Mount Carmel,Columbus,OH,Community,Large,Not-for-profit
+360039,Genesis HealthCare System,Zanesville,OH,Community,Large,Not-for-profit
+360041,Parma Community General Hospital,Parma,OH,Community,Medium,Not-for-profit
+360051,Miami Valley Hospital,Dayton,OH,Community,Large,Not-for-profit
+360052,Good Samaritan Hospital,Dayton,OH,Community,Large,Not-for-profit
+360055,Trumbull Memorial Hospital,Warren,OH,Community,Large,Not-for-profit
+360056,Mercy Hospital Fairfield,Fairfield,OH,Community,Small,Not-for-profit
+360059,MetroHealth Medical Center,Cleveland,OH,AMC,Large,Not-for-profit
+360064,St. Elizabeth Health Center,Youngstown,OH,Community,Large,Not-for-profit
+360066,St. Rita's Medical Center,Lima,OH,Community,Large,Not-for-profit
+360068,The Toledo Hospital,Toledo,OH,Community,Large,Not-for-profit
+360070,Mercy Medical Center,Canton,OH,Community,Large,Not-for-profit
+360072,Fairfield Medical Center,Lancaster,OH,Community,Medium,Not-for-profit
+360077,Fairview Hospital,Cleveland,OH,Community,Large,Not-for-profit
+360079,Charles F. Kettering Memorial Hospital,Kettering,OH,Community,Large,Not-for-profit
+360084,Aultman Hospital,Canton,OH,Community,Large,Not-for-profit
+360085,Ohio State University Medical Center,Columbus,OH,NCCN,Large,Not-for-profit
+360095,BLANCHARD VALLEY HOSPITAL,Findlay,OH,Community,Medium,Not-for-profit
+360098,Lake Hospital System,Painesville,OH,Community,Large,Not-for-profit
+360112,St. Vincent Mercy Medical Center,Toledo,OH,Community,Large,Not-for-profit
+360113,Mercy Franciscan Hospital Western Hills,Cincinnati,OH,Community,Medium,Not-for-profit
+360118,MedCentral Health System,Mansfield,OH,Community,Medium,Not-for-profit
+360134,Good Samaritan Hospital,Cincinnati,OH,Community,Large,Not-for-profit
+360137,University Hospitals of Cleveland,Cleveland,OH,NCI,Large,Not-for-profit
+360141,Western Reserve Care System,Youngstown,OH,AMC,Large,Not-for-profit
+360143,Marymount Hospital,Garfield Heights,OH,Community,Medium,Not-for-profit
+360144,South Pointe Hospital,Warrensville Heights,OH,Community,Small,Not-for-profit
+360155,Southwest General Health Center,Middleburg Heights,OH,Community,Medium,Not-for-profit
+360163,Christ Hospital,Cincinnati,OH,Community,Large,Not-for-profit
+360172,Community Health Partners,Lorain,OH,Community,Medium,Not-for-profit
+360179,Bethesda North Hospital,Cincinnati,OH,Community,Large,Not-for-profit
+360180,Cleveland Clinic Foundation,Cleveland,OH,AMC,Large,Not-for-profit
+360230,Hillcrest Hospital,Mayfield Heights,OH,Community,Medium,Not-for-profit
+360234,Mercy Franciscan Hospital Mount Airy,Cincinnati,OH,Community,Large,Not-for-profit
+360242,James Cancer Hospital,Columbus,OH,Community,Medium,Not-for-profit
+370008,Norman Regional Hospital,Norman,OK,Community,Medium,Not-for-profit
+370013,Mercy Health Center,Oklahoma City,OK,Community,Medium,Not-for-profit
+370025,Muskogee Regional Medical Center,Muskogee,OK,Community,Large,Not-for-profit
+370028,Integris Baptist Medical Center,Oklahoma City,OK,Community,Large,Not-for-profit
+370091,St. Francis Hospital,Tulsa,OK,Community,Large,Not-for-profit
+370093,Oklahoma University Medical Center,Oklahoma City,OK,AMC,Large,For-profit
+370094,Midwest Regional Medical Center,Midwest City,OK,Community,Medium,For-profit
+370106,Integris Southwest Medical Center,Oklahoma City,OK,Community,Medium,Not-for-profit
+370114,St. John Medical Center,Tulsa,OK,Community,Large,Not-for-profit
+380004,Providence St. Vincent Medical Center,Portland,OR,Community,Large,Not-for-profit
+380018,Rogue Valley Medical Center,Medford,OR,Community,Large,Not-for-profit
+380033,Sacred Heart Medical Center,Eugene,OR,Community,Large,Not-for-profit
+380051,Salem Hospital,Salem,OR,Community,Medium,Not-for-profit
+380061,Providence Portland Medical Center,Portland,OR,Community,Large,Not-for-profit
+380075,Providence Medford Medical Center,Medford,OR,Community,Medium,Not-for-profit
+380090,Bay Area Hospital,Coos Bay,OR,Community,Medium,Not-for-profit
+390002,UPMC McKeesport,Mc Keesport,PA,Community,Small,Not-for-profit
+390004,Holy Spirit Hospital,Camp Hill,PA,Community,Medium,Not-for-profit
+390006,Geisinger Medical Center,Danville,PA,AMC,Medium,Not-for-profit
+390009,St. Vincent Health Center,Erie,PA,Community,Medium,Not-for-profit
+390028,Mercy Hospital of Pittsburgh,Pittsburgh,PA,AMC,Large,Not-for-profit
+390031,Good Samaritan Regional Medical Center,Pottsville,PA,Community,Small,Not-for-profit
+390032,Alle-Kiski Medical Center,Natrona,PA,Community,Medium,Not-for-profit
+390036,The Medical Center,Beaver,PA,Community,Medium,Not-for-profit
+390044,Reading Hospital and Medical Center,Reading,PA,Community,Large,Not-for-profit
+390045,Susquehanna Health System,Williamsport,PA,Community,Small,Not-for-profit
+390046,York Hospital,York,PA,AMC,Large,Not-for-profit
+390049,St. Luke's Hospital,Bethlehem,PA,AMC,Large,Not-for-profit
+390050,Allegheny General Hospital,Pittsburgh,PA,AMC,Medium,Not-for-profit
+390063,Hamot Medical Center,Erie,PA,Community,Medium,Not-for-profit
+390066,Good Samaritan Hospital,Lebanon,PA,Community,Small,Not-for-profit
+390067,PinnacleHealth System,Harrisburg,PA,Community,Large,Not-for-profit
+390073,Altoona Regional Health System,Altoona,PA,Community,Large,Not-for-profit
+390079,Robert Packer Hospital,Sayre,PA,Community,Medium,Not-for-profit
+390096,St. Joseph Medical Center,Reading,PA,Community,Medium,Not-for-profit
+390097,Holy Redeemer Hospital and Medical Center,Meadowbrook,PA,Community,Medium,Not-for-profit
+390100,Lancaster General Hospital,Lancaster,PA,Community,Large,Not-for-profit
+390102,UPMC St. Margaret,Pittsburgh,PA,Community,Medium,Not-for-profit
+390107,UPMC Passavant,Pittsburgh,PA,Community,Medium,Not-for-profit
+390110,Memorial Medical Center,Johnstown,PA,Community,Medium,Not-for-profit
+390111,Hospital of the University of Pennsylvania,Philadelphia,PA,NCI,Large,Not-for-profit
+390115,Frankford Hospital,Philadelphia,PA,Community,Large,Not-for-profit
+390119,Moses Taylor Hospital,Scranton,PA,Community,Small,Not-for-profit
+390133,Lehigh Valley Hospital,Allentown,PA,Community,Large,Not-for-profit
+390137,Wyoming Valley Health Care System,Wilkes-Barre,PA,Community,Medium,Not-for-profit
+390139,Bryn Mawr Hospital,Bryn Mawr,PA,Community,Medium,Not-for-profit
+390145,Excela Westmoreland Regional Hospital,Greensburg,PA,Community,Medium,Not-for-profit
+390151,Chambersburg Hospital,Chambersburg,PA,Community,Small,Not-for-profit
+390156,Mercy Catholic Medical Center,Darby,PA,Community,Medium,Not-for-profit
+390162,Easton Hospital,Easton,PA,Community,Medium,Not-for-profit
+390164,UPMC Presbyterian Shadyside,Pittsburgh,PA,NCI,Large,Not-for-profit
+390174,Thomas Jefferson University Hospital,Philadelphia,PA,AMC,Large,Not-for-profit
+390180,Crozer-Chester Medical Center,Upland,PA,Community,Large,Not-for-profit
+390185,Hazleton General Hospital,Hazleton,PA,Community,Small,Not-for-profit
+390195,Lankenau Hospital,Wynnewood,PA,AMC,Medium,Not-for-profit
+390196,Fox Chase Cancer Center,Philadelphia,PA,NCCN,Small,Not-for-profit
+390201,Pocono Medical Center,East Stroudsburg,PA,Community,Medium,Not-for-profit
+390228,St. Clair Memorial Hospital,Pittsburgh,PA,Community,Medium,Not-for-profit
+390231,Abington Memorial Hospital,Abington,PA,Community,Medium,Not-for-profit
+390237,Mercy Hospital of Scranton,Scranton,PA,Community,Medium,Not-for-profit
+390256,Penn State Hershey Medical Center,Hershey,PA,AMC,Medium,Not-for-profit
+390258,St. Mary Medical Center,Langhorne,PA,Community,Medium,Not-for-profit
+390263,Lehigh Valley Hospital-Muhlenberg,Bethlehem,PA,Community,Small,Not-for-profit
+390265,Jefferson Regional Medical Center,Pittsburgh,PA,Community,Medium,Not-for-profit
+390268,Mount Nittany Medical Center,State College,PA,Community,Small,Not-for-profit
+410007,Rhode Island Hospital,Providence,RI,AMC,Large,Not-for-profit
+410009,Kent County Memorial Hospital,Warwick,RI,Community,Large,Not-for-profit
+410012,Miriam Hospital,Providence,RI,Community,Medium,Not-for-profit
+420002,Piedmont Medical Center,Rock Hill,SC,Community,Medium,For-profit
+420004,MUSC Medical Center,Charleston,SC,AMC,Large,Not-for-profit
+420007,Spartanburg Regional Medical Center,Spartanburg,SC,Community,Large,Not-for-profit
+420018,Palmetto Health Richland,Columbia,SC,Community,Large,Not-for-profit
+420023,St. Francis Health System,Greenville,SC,Community,Medium,Not-for-profit
+420027,AnMed Health Medical Center,Anderson,SC,Community,Large,Not-for-profit
+420051,McLeod Health,Florence,SC,Community,Large,Not-for-profit
+420070,Tuomey Healthcare System,Sumter,SC,Community,Medium,Not-for-profit
+420073,Lexington Medical Center,West Columbia,SC,Community,Medium,Not-for-profit
+420078,Greenville Memorial Hospital,Greenville,SC,Community,Large,Not-for-profit
+420079,Trident Medical Center,Charleston,SC,Community,Large,Not-for-profit
+420085,Grand Strand Regional Medical Center,Myrtle Beach,SC,Community,Medium,For-profit
+420086,Palmetto Health Baptist Columbia,Columbia,SC,Community,Large,Not-for-profit
+420087,Roper Hospital,Charleston,SC,Community,Large,Not-for-profit
+430016,Avera McKennan Hospital,Sioux Falls,SD,Community,Large,Not-for-profit
+430027,Sioux Valley Hospital University Medical Center,Sioux Falls,SD,Community,Large,Not-for-profit
+430077,Rapid City Regional Hospital,Rapid City,SD,Community,Large,Not-for-profit
+440002,Jackson-Madison County General Hospital,Jackson,TN,Community,Large,Not-for-profit
+440006,Skyline Medical Center,Nashville,TN,Community,Large,For-profit
+440011,Blount Memorial Hospital,Maryville,TN,Community,Medium,Not-for-profit
+440012,Wellmont Bristol Regional Medical Center,Bristol,TN,Community,Medium,Not-for-profit
+440015,University of Tennessee Medical Center,Knoxville,TN,NCCN,Large,Not-for-profit
+440017,Wellmont Holston Valley Medical Center,Kingsport,TN,Community,Large,Not-for-profit
+440019,Baptist Hospital of East Tennessee,Knoxville,TN,Community,Large,Not-for-profit
+440034,Methodist Medical Center of Oak Ridge,Oak Ridge,TN,Community,Medium,Not-for-profit
+440039,Vanderbilt University Medical Center,Nashville,TN,NCCN,Large,Not-for-profit
+440048,Baptist Memorial Hospital-Memphis,Memphis,TN,Community,Large,Not-for-profit
+440049,Methodist Healthcare-University Hospital,Memphis,TN,Community,Large,Not-for-profit
+440059,Cookeville Regional Medical Center,Cookeville,TN,Community,Medium,Not-for-profit
+440063,Johnson City Medical Center,Johnson City,TN,Community,Large,Not-for-profit
+440073,Maury Regional Hospital,Columbia,TN,Community,Medium,Not-for-profit
+440082,St. Thomas Hospital,Nashville,TN,Community,Large,Not-for-profit
+440091,Memorial Health Care System,Chattanooga,TN,Community,Large,Not-for-profit
+440104,Erlanger Medical Center,Chattanooga,TN,AMC,Large,Not-for-profit
+440120,St. Mary's Medical Center,Knoxville,TN,Community,Large,Not-for-profit
+440125,Fort Sanders Regional Medical Center,Knoxville,TN,Community,Large,Not-for-profit
+440133,Baptist Hospital,Nashville,TN,Community,Large,Not-for-profit
+440156,Parkridge Medical Center,Chattanooga,TN,Community,Large,For-profit
+440161,CENTENNIAL MEDICAL CENTER,Nashville,TN,Community,Large,For-profit
+440173,Parkwest Medical Center,Knoxville,TN,Community,Medium,Not-for-profit
+440183,St. Francis Hospital,Memphis,TN,Community,Large,For-profit
+450002,Providence Memorial Hospital,El Paso,TX,Community,Large,Not-for-profit
+450010,United Regional Health Care System,Wichita Falls,TX,Community,Large,Not-for-profit
+450011,St. Joseph Regional Health Center,Bryan,TX,Community,Medium,Not-for-profit
+450018,University of Texas Medical Branch Hospitals,Galveston,TX,AMC,Large,Not-for-profit
+450021,Baylor University Medical Center,Dallas,TX,Community,Large,Not-for-profit
+450023,Citizens Medical Center,Victoria,TX,Community,Medium,Not-for-profit
+450033,Valley Baptist Health System,Harlingen,TX,Community,Large,Not-for-profit
+450034,Christus Hospital-St. Elizabeth,Beaumont,TX,Community,Large,Not-for-profit
+450037,Good Shepherd Medical Center,Longview,TX,Community,Medium,Not-for-profit
+450040,Covenant Medical Center,Lubbock,TX,Community,Large,Not-for-profit
+450042,Providence Health Center,Waco,TX,Community,Small,Not-for-profit
+450044,University Hospital - St. Paul,Dallas,TX,Community,Large,Not-for-profit
+450046,Christus Spohn Hospital Memorial,Corpus Christi,TX,Community,Large,Not-for-profit
+450051,Methodist Dallas Medical Center,Dallas,TX,Community,Large,Not-for-profit
+450054,Scott and White Memorial Hospital,Temple,TX,AMC,Large,Not-for-profit
+450056,Seton Medical Center,Austin,TX,Community,Large,Not-for-profit
+450058,Baptist Medical Center,San Antonio,TX,Community,Large,For-profit
+450064,Arlington Memorial Hospital,Arlington,TX,Community,Large,Not-for-profit
+450076,University of Texas M.D. Anderson Cancer Center,Houston,TX,NCCN,Large,Not-for-profit
+450083,East Texas Medical Center Tyler,Tyler,TX,Community,Large,Not-for-profit
+450101,Hillcrest Baptist Medical Center,Waco,TX,Community,Large,Not-for-profit
+450102,Trinity Mother Frances System,Tyler,TX,Community,Medium,Not-for-profit
+450128,Knapp Medical Center,Weslaco,TX,Community,Medium,Not-for-profit
+450132,Medical Center Hospital,Odessa,TX,Community,Medium,Not-for-profit
+450133,Midland Memorial Hospital,Midland,TX,Community,Medium,Not-for-profit
+450135,Harris Methodist Fort Worth,Fort Worth,TX,Community,Large,Not-for-profit
+450137,Baylor All Saints Medical Center,Fort Worth,TX,Community,Large,Not-for-profit
+450184,Memorial Hermann Southwest Hospital,Houston,TX,Community,Large,Not-for-profit
+450193,St. Luke's Episcopal Hospital,Houston,TX,Community,Large,Not-for-profit
+450196,Paris Regional Medical Center,Paris,TX,Community,Medium,For-profit
+450211,Memorial Health System of East Texas,Lufkin,TX,Community,Medium,Not-for-profit
+450222,Conroe Regional Medical Center,Conroe,TX,Community,Small,For-profit
+450229,Hendrick Health System,Abilene,TX,Community,Large,Not-for-profit
+450231,Baptist St. Anthony Health System,Amarillo,TX,Community,Large,Not-for-profit
+450280,Baylor Medical Center at Garland,Garland,TX,Community,Medium,Not-for-profit
+450324,Texoma Medical Center,Denison,TX,Community,Medium,Not-for-profit
+450346,Memorial Hermann Baptist Beaumont Hospital,Beaumont,TX,Community,Medium,Not-for-profit
+450358,The Methodist Hospital,Houston,TX,Community,Large,Not-for-profit
+450388,Methodist Hospital,San Antonio,TX,Community,Large,For-profit
+450462,Presbyterian Hospital Dallas,Dallas,TX,Community,Large,Not-for-profit
+450469,Wilson N. Jones Medical Center,Sherman,TX,Community,Medium,Not-for-profit
+450610,Memorial Hermann Memorial City Hospital,Houston,TX,Community,Small,Not-for-profit
+450617,Clear Lake Regional Medical Center,Webster,TX,Community,Large,For-profit
+450638,Houston Northwest Medical Center,Houston,TX,Community,Large,For-profit
+450639,Harris Methodist HEB Hospital,Bedford,TX,Community,Small,Not-for-profit
+450646,Del Sol Medical Center,El Paso,TX,Community,Small,For-profit
+450647,Medical City Dallas Hospital,Dallas,TX,Community,Large,For-profit
+450651,Medical Center of Plano,Plano,TX,Community,Large,For-profit
+450668,Sierra Medical Center,El Paso,TX,Community,Medium,For-profit
+450686,University Medical Center-Lubbock,Lubbock,TX,AMC,Small,Not-for-profit
+450711,Rio Grande Regional Hospital,Mcallen,TX,Community,Large,For-profit
+450713,South Austin Hospital,Austin,TX,Community,Medium,For-profit
+450723,Methodist Charlton Medical Center,Dallas,TX,Community,Medium,Not-for-profit
+450788,Corpus Christi Medical Center,Corpus Christi,TX,Community,Large,For-profit
+450801,Christus St. Michael Health System,Texarkana,TX,Community,Medium,Not-for-profit
+450811,McAllen Medical Center,Mcallen,TX,Community,Large,For-profit
+460009,University of Utah Hospital,Salt Lake City,UT,NCCN,Large,Not-for-profit
+460010,LDS Hospital,Murray,UT,Community,Large,Not-for-profit
+460021,Dixie Regional Medical Center,St George,UT,Community,Small,Not-for-profit
+460047,St. Mark's Hospital,Salt Lake City,UT,Community,Medium,For-profit
+470003,Fletcher Allen Health Care,Burlington,VT,AMC,Large,Not-for-profit
+490004,Rockingham Memorial Hospital,Harrisonburg,VA,Community,Medium,Not-for-profit
+490005,Winchester Medical Center,Winchester,VA,Community,Large,Not-for-profit
+490007,Sentara Norfolk General Hospital,Norfolk,VA,Community,Large,Not-for-profit
+490009,University of Virginia Medical Center,Charlottesville,VA,AMC,Large,Not-for-profit
+490011,Bon Secours DePaul Medical Center,Norfolk,VA,Community,Medium,Not-for-profit
+490017,Maryview Medical Center,Portsmouth,VA,Community,Medium,Not-for-profit
+490018,Augusta Health Care,Fishersville,VA,Community,Medium,Not-for-profit
+490021,Centra Health,Lynchburg,VA,Community,Medium,Not-for-profit
+490022,Mary Washington Hospital,Fredericksburg,VA,Community,Large,Not-for-profit
+490024,Carilion Medical Center,Roanoke,VA,Community,Large,Not-for-profit
+490032,VCU Health System,Richmond,VA,AMC,Large,Not-for-profit
+490040,Inova Alexandria Hospital,Alexandria,VA,Community,Large,Not-for-profit
+490044,Louise Obici Memorial Hospital,Suffolk,VA,Community,Small,Not-for-profit
+490046,Sentara Leigh Hospital,Norfolk,VA,Community,Medium,Not-for-profit
+490048,Lewis-Gale Medical Center,Salem,VA,Community,Large,For-profit
+490050,Virginia Hospital Center,Arlington,VA,Community,Medium,Not-for-profit
+490052,Riverside Regional Medical Center,Newport News,VA,Community,Large,Not-for-profit
+490057,Sentara Virginia Beach Hospital,Virginia Beach,VA,Community,Medium,Not-for-profit
+490059,Bon Secours St. Mary's Hospital,Richmond,VA,Community,Large,Not-for-profit
+490063,Inova Fairfax Hospital,Falls Church,VA,Community,Large,Not-for-profit
+490066,Sentara Williamsburg Community Hospital,Williamsburg,VA,Community,Small,Not-for-profit
+490067,Southside Regional Medical Center,Petersburg,VA,Community,Large,For-profit
+490069,Memorial Regional Medical Center,Mechanicsville,VA,Community,Medium,Not-for-profit
+490075,Danville Regional Medical Center,Danville,VA,Community,Large,For-profit
+490077,Martha Jefferson Hospital,Charlottesville,VA,Community,Medium,Not-for-profit
+490079,Memorial Hospital,Martinsville,VA,Community,Medium,For-profit
+490093,Sentara CarePlex Hospital,Hampton,VA,Community,Medium,Not-for-profit
+490112,CJW Medical Center,Richmond,VA,Community,Large,For-profit
+490118,Henrico Doctors' Hospital,Richmond,VA,Community,Large,For-profit
+490120,Chesapeake General Hospital,Chesapeake,VA,Community,Medium,Not-for-profit
+500001,Northwest Hospital,Seattle,WA,Community,Small,Not-for-profit
+500005,Virginia Mason Medical Center,Seattle,WA,Community,Large,Not-for-profit
+500008,University of Washington Medical Center,Seattle,WA,NCCN,Large,Not-for-profit
+500014,Providence Everett Medical Center,Everett,WA,Community,Medium,Not-for-profit
+500016,Central Washington Hospital,Wenatchee,WA,Community,Small,Not-for-profit
+500024,Providence St. Peter Hospital,Olympia,WA,Community,Large,Not-for-profit
+500027,Swedish Health Services,Seattle,WA,Community,Large,Not-for-profit
+500030,St. Joseph Hospital,Bellingham,WA,Community,Medium,Not-for-profit
+500036,Yakima Valley Memorial Hospital,Yakima,WA,Community,Medium,Not-for-profit
+500039,Harrison Medical Center,Bremerton,WA,Community,Medium,Not-for-profit
+500044,Deaconess Medical Center,Spokane,WA,Community,Medium,Not-for-profit
+500050,Southwest Washington Medical Center,Vancouver,WA,Community,Medium,Not-for-profit
+500051,Overlake Hospital Medical Center,Bellevue,WA,Community,Medium,Not-for-profit
+500054,Sacred Heart Medical Center,Spokane,WA,Community,Large,Not-for-profit
+500072,Olympic Medical Center,Port Angeles,WA,Community,Small,Not-for-profit
+500077,Holy Family Hospital,Spokane,WA,Community,Medium,Not-for-profit
+500079,Good Samaritan Community Healthcare,Puyallup,WA,Community,Medium,Not-for-profit
+500088,Valley Medical Center,Renton,WA,Community,Medium,Not-for-profit
+500108,St. Joseph Medical Center,Tacoma,WA,Community,Medium,Not-for-profit
+500124,Evergreen Healthcare,Kirkland,WA,Community,Medium,Not-for-profit
+500129,Tacoma General Hospital,Tacoma,WA,Community,Large,Not-for-profit
+510001,West Virginia University Hospitals,Morgantown,WV,AMC,Large,Not-for-profit
+510006,United Hospital Center,Clarksburg,WV,Community,Large,Not-for-profit
+510007,St. Mary's Medical Center,Huntington,WV,Community,Large,Not-for-profit
+510022,Charleston Area Medical Center,Charleston,WV,Community,Large,Not-for-profit
+510029,Thomas Memorial Hospital,South Charleston,WV,Community,Medium,Not-for-profit
+510050,Wheeling Hospital,Wheeling,WV,Community,Medium,Not-for-profit
+510058,Camden-Clark Memorial Hospital,Parkersburg,WV,Community,Large,For-profit
+520008,Waukesha Memorial Hospital,Waukesha,WI,Community,Large,Not-for-profit
+520013,Sacred Heart Hospital,Eau Claire,WI,Community,Large,Not-for-profit
+520021,United Health System,Kenosha,WI,Community,Large,Not-for-profit
+520030,Aspirus Wausau Hospital,Wausau,WI,Community,Medium,For-profit
+520037,St. Joseph's Hospital,Marshfield,WI,Community,Large,Not-for-profit
+520051,Columbia St. Mary's-Milwaukee,Milwaukee,WI,Community,Medium,Not-for-profit
+520075,St. Vincent Hospital,Green Bay,WI,Community,Large,Not-for-profit
+520083,St. Mary's Hospital Medical Center-Madison,Madison,WI,Community,Large,Not-for-profit
+520087,Gundersen Lutheran Medical Center,La Crosse,WI,Community,Large,Not-for-profit
+520096,All Saints Healthcare,Racine,WI,Community,Medium,Not-for-profit
+520098,University of Wisconsin Hospital & Clinics,Madison,WI,NCI,Large,Not-for-profit
+520136,St. Joseph's Regional Medical Center,Milwaukee,WI,Community,Large,Not-for-profit
+520138,Aurora St. Luke's Medical Center,Milwaukee,WI,Community,Large,Not-for-profit
+520139,West Allis Memorial Hospital,West Allis,WI,Community,Small,Not-for-profit
+520160,Appleton Medical Center,Appleton,WI,Community,Medium,Not-for-profit
+520177,Froedtert Memorial Lutheran Hospital,Milwaukee,WI,AMC,Large,Not-for-profit
+530012,Wyoming Medical Center,Casper,WY,Community,Medium,Not-for-profit
