@@ -15,7 +15,7 @@ class Command(BaseCommand):
             # parse CSV
             with open(filename, 'r') as csvfile:
                 spamreader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-                
+
                 # go through each line
                 for row in spamreader:
                     print(row)
