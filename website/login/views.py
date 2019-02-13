@@ -10,14 +10,16 @@ def home(request):
 def mylogin(request):
 	if request.method == 'GET':
 		return render(request, 'login.html')
-	username = request.POST.get('username','')
-	password = request.POST.get('password','')
-	user = authenticate(request, username=username, password=password)
-	if user is not None:
-		login(request, user)
-		return redirect(reverse('login:home')) #the url name 'home' under 'login' app
-	else:
-		return render(request,'login.html',{'username':username, 'password':password,})
+
+	elif request.method == 'POST':
+		username = request.POST.get('username','')
+		password = request.POST.get('password','')
+		user = authenticate(request, username=username, password=password)
+		if user is not None:
+			login(request, user)
+			return redirect(reverse('login:home')) #the url name 'home' under 'login' app
+		else:
+			return render(request,'login.html',{'username':username, 'password':password,})
 
 def register(request):
 	if request.method == 'GET':
