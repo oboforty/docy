@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 
-@login_required(login_url='/login')
+#@login_required(login_url='/login')
 def home(request):
 	return render(request, 'home.html',{'username': request.user.username})
 
@@ -30,7 +30,7 @@ def register(request):
 	user.save()
 	return redirect(reverse('login:login'))
 
-@login_required(login_url='/login')
+#@login_required(login_url='/login')
 def change_password(request):
 	if request.method == 'GET':
 		return render(request, 'change_password.html',{'username': request.user.username})
