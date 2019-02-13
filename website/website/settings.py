@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # User Model hack for the auth system
-# AUTH_USER_MODEL = "login.DoctorUser"
+AUTH_USER_MODEL = "login.DoctorUser"
 
 
 # Internationalization
