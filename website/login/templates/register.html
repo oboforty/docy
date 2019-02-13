@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+	<h1>Register</h1>
+    <form action="{% url 'login:register' %}" method="post">
+        {% csrf_token %}
+        <label for="username">UserName:</label>
+        <input id="username" type="text" name="username" value="{{ username }}"><br/>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" value="{{ password }}"><br/>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
