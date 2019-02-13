@@ -1,3 +1,6 @@
+# SQLite
+website/db.sqlite3
+
 # IDE
 .idea/
 
