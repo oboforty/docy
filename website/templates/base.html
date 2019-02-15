@@ -1,9 +1,75 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Markella</title>
-</head>
-<body>
- {% block content %}{% endblock %}
-</body>
+
+{% block html %}
+<html lang="en">
+
+    {% block head %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        {% block title %}{% endblock %}
+
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">        
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        {% block extra_css %}{% endblock %}
+    </head>
+    {% endblock %}
+
+    {% block body %}
+    <body>
+        {% block nav %}
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+            {% block nav_content %}
+                {% block navbar_brand %}
+                    <a class="navbar-brand" href="#">Docy</a>
+                {% endblock %}
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                {% block navbar_collapse %}
+                <div class="collapse navbar-collapse" id="navbar">
+
+                    {% block navbar_collapse_nav %}{% endblock %}
+
+                </div>
+                {% endblock %}
+
+            {% endblock %}
+
+        </nav>
+        {% endblock %}
+
+        <div class="mt-5"></div>
+
+        {% block navbar_after %}{% endblock %}
+
+        {% block body_content %}
+            <div class="container">
+                {% block container %}{% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block foot %}
+            <footer>
+                {% block footer %}{% endblock %}
+            </footer>
+        {% endblock %}
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/js.cookie.js' %}"></script>
+        <script src="{% static 'js/csrf.js' %}"></script>
+        {% block extra_js %}{% endblock %}
+
+    </body>
+    {% endblock %}
+
 </html>
+{% endblock %}
