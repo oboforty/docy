@@ -129,6 +129,6 @@ STATIC_URL = '/static/'
 ##
 STATICFILES_DIRS = [
 
-    os.path.join(BASE_DIR, 'login', 'static', 'scans'),
+    os.path.join(BASE_DIR, 'static'),
 
 ]
