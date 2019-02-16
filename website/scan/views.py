@@ -8,4 +8,4 @@ def index(request):
 	return render(request,'index.html', params)
 
 def change(request):
-	return render(request,'patient.html')
+	return render(request,'upload_form.html')
