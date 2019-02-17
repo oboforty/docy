@@ -18,9 +18,10 @@ def mylogin(request):
 		user = authenticate(request, username=username, password=password)
 		if user is not None:
 			login(request, user)
-			return redirect(reverse('login:home')) #the url name 'home' under 'login' app
+			# the url name 'home' under 'login' app
+			return redirect(reverse('login:home'))
 		else:
-			return render(request,'login.html',{'username':username, 'password':password,})
+			return render(request, 'login.html', {'username': username, 'password': password,})
 
 def register(request):
 	if request.method == 'GET':

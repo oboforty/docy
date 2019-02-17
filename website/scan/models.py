@@ -5,9 +5,9 @@ from django.conf import settings
 
 # Create your models here.
 class Patient(models.Model):
-    GENDER_CHOICES=(
-        (1,'Male'),
-        (2,'Female'),
+    GENDER_CHOICES = (
+        (1, 'Male'),
+        (2, 'Female'),
         )
     pid = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=20)
@@ -23,12 +23,14 @@ class Patient(models.Model):
     insulin = models.BooleanField()
     weight = models.FloatField()
 
+
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
     pid = models.ForeignKey('Patient',on_delete=models.CASCADE)
     dia_id = models.ForeignKey('Diagnosis',on_delete=models.CASCADE)
 
     doctor = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+
 
 class Diagnosis(models.Model):
     dia_id = models.AutoField(primary_key=True)

@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 
-{% block html %}
 <html lang="en">
 
     {% block head %}
@@ -51,7 +50,7 @@
 
         {% block body_content %}
             <div class="container">
-                {% block container %}{% endblock %}
+                {% block content %}{% endblock %}
             </div>
         {% endblock %}
 
@@ -72,4 +71,3 @@
     {% endblock %}
 
 </html>
-{% endblock %} 
