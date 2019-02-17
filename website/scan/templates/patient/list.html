@@ -5,19 +5,29 @@
 
 {% block content %}
 
-  <div class="table table-condensed table-hover table-striped">
-    <thead>
+  <table class="table table-condensed table-hover table-striped">
 
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Sex</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Actions</th>
+      </tr>
     </thead>
     <tbody>
       {% for patient in patients %}
         <tr>
-          <td>{{ patient|docyname }}</td>
+          <td>{{ patient.pid }}</td>
           <td>{{ patient|docygender }}</td>
+          <td><a href="/scans/{{ patient.pid }}">{{ patient|docyname }}</a></td>
+          <td>{{ patient.age }} ({{ patient.birth_date }})</td>
+          <td></td>
         </tr>
       {% endfor %}
     </tbody>
-  </div>
+  </table>
 
 {% endblock %}
 

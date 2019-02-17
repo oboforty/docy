@@ -13,8 +13,8 @@
 
   <title>Docy Admin - Dashboard</title>
 
-<<<<<<< HEAD
   <!-- Custom fonts for this template-->
+<<<<<<< HEAD
   <link href=" {% static'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 =======
         <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
@@ -23,12 +23,23 @@
     </head>
     {% endblock %}
 
+=======
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+  {% block extra_css %}{% endblock %}
+>>>>>>> f6e2bd8d8d63c29b78645b160bb7e302dc716421
 
   <!-- Page level plugin CSS-->
-  <link href=" {% static'vendor/datatables/dataTables.bootstrap4.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/datatables/dataTables.bootstrap4.css' %}" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
+
+  <!-- Bootstrap & bootstrap-vue.css -->
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+
 
 </head>
 
@@ -136,6 +147,7 @@
     <div id="content-wrapper">
 
       <div class="container-fluid">
+<<<<<<< HEAD
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
@@ -231,6 +243,9 @@
             </div>
           
 
+=======
+        {% block content %}{% endblock %}
+>>>>>>> f6e2bd8d8d63c29b78645b160bb7e302dc716421
       </div>
       <!-- /.container-fluid -->
 
@@ -273,24 +288,10 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% 'vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="{% static'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-
-  <!-- Page level plugin JavaScript-->
-  <script src="{% static'vendor/chart.js/Chart.min.js' %}"></script>
-  <script src="{% static'vendor/datatables/jquery.dataTables.js"></script>
-  <script src="{% static'vendor/datatables/dataTables.bootstrap4.js' %}"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="{% static'js/sb-admin.min.js' %}"></script>
-
-  <!-- Demo scripts for this page-->
-  <script src="{% static'js/demo/datatables-demo.js' %}"></script>
-  <script src="{% static'js/demo/chart-area-demo.js' %} "></script>
+  <!-- Vue.js & vue-bootstrap.js -->
+  <script src="//unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
 </body>
 

@@ -2,3 +2,7 @@
 
 .text-babyblue { color: #90CFF0; }
 .text-babypink { color: #FFB6C1; }
+
+
+.bg-babyblue { background-color: #90CFF0; color: white; font-size: 16px }
+.bg-babypink { background-color: #FFB6C1; color: white; font-size: 16px }
