@@ -11,8 +11,10 @@
     
         {% block title %}{% endblock %}
 
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">        
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+        <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+
         {% block extra_css %}{% endblock %}
     </head>
     {% endblock %}
@@ -20,7 +22,7 @@
     {% block body %}
     <body>
         {% block nav %}
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
             {% block nav_content %}
                 {% block navbar_brand %}
@@ -60,10 +62,12 @@
             </footer>
         {% endblock %}
 
-        <script src="{% static 'js/jquery.min.js' %}"></script>
-        <script src="{% static 'js/popper.min.js' %}"></script>
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/js.cookie.js' %}"></script>
+
+        <script src="//unpkg.com/vue@2.5.16/dist/vue.js"></script>
+        <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+        <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+
         <script src="{% static 'js/csrf.js' %}"></script>
         {% block extra_js %}{% endblock %}
 
