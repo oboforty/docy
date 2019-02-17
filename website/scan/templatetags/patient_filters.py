@@ -19,6 +19,6 @@ def docyname(patient: Patient):
 @register.filter(name='docygender')
 def docygender(patient: Patient):
     if patient.gender == 1:
-        return mark_safe('<b class="text-babyblue">♂</b>')
+        return mark_safe('<span class="badge bg-babyblue">♂</span>')
     else:
-        return mark_safe('<b class="text-babypink">♀</b>')
+        return mark_safe('<span class="badge bg-babypink">♀</span>')
