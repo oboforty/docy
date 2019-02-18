@@ -4,6 +4,7 @@
 {% load i18n %}
 
 {% block content %}
+  <a href="/scan/add/">add</a>
 
   <table class="table table-condensed table-hover table-striped">
 
@@ -23,7 +24,10 @@
           <td>{{ patient|docygender }}</td>
           <td><a href="/scans/{{ patient.pid }}">{{ patient|docyname }}</a></td>
           <td>{{ patient.age }} ({{ patient.birth_date }})</td>
-          <td></td>
+          <td>
+            <a href="/scan/delete/{{ patient.pid }}">delete</a>
+            <a href="/scan/edit/{{ patient.pid }}">edit</a>
+          </td>
         </tr>
       {% endfor %}
     </tbody>

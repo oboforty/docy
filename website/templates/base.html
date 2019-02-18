@@ -29,9 +29,9 @@
   {% block extra_css %}{% endblock %}
 
 </head>
-
 <body id="page-top">
 
+<<<<<<< HEAD
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <a class="navbar-brand mr-1" href="base.html">Docy</a>
@@ -126,6 +126,12 @@
           <a class="dropdown-item" href="report2000.html">2000</a>
       </li>
     </ul>
+=======
+  {% include "_navbar.html" %}
+
+  <div id="wrapper">
+    {% include "_sidebar.html" %}
+>>>>>>> 65e80b79f5b3d67f13f09b04caf8cb933392931f
 
     <div id="content-wrapper">
 
@@ -138,17 +144,9 @@
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Docy 2019</span>
-          </div>
-        </div>
-      </footer>
-
+      {% include "_footer.html" %}
     </div>
     <!-- /.content-wrapper -->
-
   </div>
   <!-- /#wrapper -->
 
@@ -181,6 +179,10 @@
   <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
   <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
+  <script type="text/javascript" src="{% static 'js/bootstrap-native-v4.min.js' %}"></script>
+
+
+  {% block extra_js %}{% endblock %}
 </body>
 
 </html>

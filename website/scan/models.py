@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
-#not sure if this user can be used for foreignkey
+from django.forms import ModelForm
+from django import forms
 
 
 # Create your models here.
@@ -23,15 +24,64 @@ class Patient(models.Model):
     insulin = models.BooleanField()
     weight = models.FloatField()
 
+    def toView(self):
+        # Converts to frontend view representation
+
+        return {
+            'pid': self.pid,
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'birth_date': self.birth_date,
+            'gender': self.gender,
+            'age': self.age,
+            'Chemo': self.Chemo,
+            'Last_Chemo': self.Last_Chemo,
+            'smoker': self.smoker,
+            'Packs_yearly': self.Packs_yearly,
+            'diabetes': self.diabetes,
+            'insulin': self.insulin,
+            'weight': self.weight,
+        }
+
+
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
+class PatientForm(ModelForm):
+    class Meta:
+        model = Patient
+        fields = '__all__'
+        widgets = {
+            'birth_date': DateInput(),
+            'Last_Chemo': DateInput()
+        }
+
 
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
-    pid = models.ForeignKey('Patient',on_delete=models.CASCADE)
-    dia_id = models.ForeignKey('Diagnosis',on_delete=models.CASCADE)
 
-    doctor = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+    doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    diagnosis = models.ForeignKey('diagnosis', on_delete=models.CASCADE)
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
+
+    def toView(self):
+        # Converts to frontend view representation
+
+        return {
+            'sid': self.sid,
+            'diagnosis': self.diagnosis.toView(),
+        }
 
 
 class Diagnosis(models.Model):
     dia_id = models.AutoField(primary_key=True)
     diagnosis = models.CharField(max_length=20)
+
+    def toView(self):
+        # Converts to frontend view representation
+
+        return {
+            'dia_id': self.dia_id,
+            'diagnosis': self.diagnosis,
+        }
