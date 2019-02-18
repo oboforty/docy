@@ -11,5 +11,10 @@ urlpatterns = [
     path('upload_form/', views.change, name='upload_form'),
     path('test/', views.test, name='test'),
 
+    path('patient_list/', views.patient_list, name='patient_list'),
+    path('add/', views.edit, name='add'),
+    path('edit/<int:pid>/', views.edit, name='edit'),
+    path('delete/<int:pid>/', views.delete, name='delete'),
+
 
 ]

@@ -1,5 +1,7 @@
 from django.db import models
 from django.conf import settings
+from django.forms import ModelForm
+from django import forms
 #not sure if this user can be used for foreignkey
 
 
@@ -23,6 +25,17 @@ class Patient(models.Model):
     insulin = models.BooleanField()
     weight = models.FloatField()
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+class PatientForm(ModelForm):
+    class Meta:
+        model = Patient
+        fields = '__all__'
+        widgets = {
+            'birth_date': DateInput(),
+            'Last_Chemo': DateInput()
+        }
 
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
