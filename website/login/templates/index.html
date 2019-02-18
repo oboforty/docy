@@ -1,5 +1,5 @@
 
-{%load static_index %}
+ {%load static %} %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +13,10 @@
   <title>Docy</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="./img/core-img/logo.png">
+  <link rel="icon" href="./img_index/core-img/logo.png">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="{% static_index 'style.css '%}">
+  <link rel="stylesheet" href="{% static 'style_index.css '%}">
 
 
   <style type="text/css">
@@ -53,10 +53,10 @@
         <nav class="classy-navbar justify-content-between" id="monaNav">
 
           <!-- Background Curve -->
-          <div class="bg-curve" style="background-image: url({% static_index './img/core-img/curve.png'%});"></div>
+          <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png'%});"></div>
 
           <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="{% static_index './img/core-img/logo.png'%}" alt="" height="42" width="42"></a>
+          <a class="nav-brand" href="index.html"><img src="{% static'./img_index/core-img/logo.png'%}" alt="" height="42" width="42"></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -127,9 +127,9 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static_index './img/core-img/curve.png'%});"></div>
+        <div class="bg-curve" style="background-image: url({% static '_index./img/core-img/curve.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static_index './img/bg-img/final.png'%})"
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static'./img_index/bg-img/final.png'%})"
         height="42" width="42" ></div>
         <!-- Welcome Text -->
         <div class="container h-100">
@@ -153,9 +153,9 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static_index './img/core-img/curve.png'%});"></div>
+        <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static_index './img/bg-img/19.png'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static './img_index/bg-img/19.png'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -180,9 +180,9 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static_index './img/core-img/curve.png);"></div>
+        <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png);"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url( {% static_index './img/bg-img/20.png'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url( {% static'./img_index/bg-img/20.png'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -217,7 +217,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="100ms">
             <span class="line"></span>
-            <img src="{% static_index './img/bg-img/final.png '%}" alt="">
+            <img src="{% static'./img_index/bg-img/final.png '%}" alt="">
             <span class="line2"></span>
           </div>
         </div>
@@ -226,7 +226,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="400ms">
             <span class="line"></span>
-            <img src="{% static_index './img/bg-img/19.png'%}" alt="">
+            <img src="{% static'./img_index/bg-img/19.png'%}" alt="">
             <span class="line2"></span>
           </div>
         </div>
@@ -250,7 +250,7 @@
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-              <i class="icon-folder-open-alt "></i>
+              <!-- <i class="icon-folder-open-alt "></i> -->
               <h5>Easy Access</h5>
               <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
             </div>
@@ -259,7 +259,7 @@
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-              <i class="icon_calendar"></i>
+              <!-- <i class="icon_calendar"></i> -->
               <h5>Time Saver</h5>
               <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
             </div>
@@ -268,7 +268,7 @@
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-              <i class="icon_male"></i>
+              <!-- <i class="icon_male"></i> -->
               <h5>Best Clinical Dissusions</h5>
               <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
             </div>
@@ -277,7 +277,7 @@
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-              <i class="icon_file"></i>
+              <!-- <i class="icon_file"></i> -->
               <h5>Annually Reports</h5>
               <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
             </div>
@@ -357,7 +357,7 @@
              <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static_index './img/bg-img/final.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static'./img_index/bg-img/final.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-title">lorenn</a>
@@ -371,7 +371,7 @@
             <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static_index './img/bg-img/20.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static'./img_index/bg-img/20.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-title">lorenn</a>
@@ -384,7 +384,7 @@
             <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="700ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static_index './img/bg-img/19.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static'./img_index/bg-img/19.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-title">test/a>
@@ -409,7 +409,7 @@
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
           <div class="single-footer-widget mb-60">
             <!-- Logo -->
-            <a href="#" class="d-block mb-4"><img src=" {% static_index './img/core-img/logo.png ' %}" alt="" height="45" width="45"></a>
+            <a href="#" class="d-block mb-4"><img src=" {% static'./img_index/core-img/logo.png ' %}" alt="" height="45" width="45"></a>
             <p>Integer vehicula mauris libero, at molestie eros imperdiet sit amet. Suspendisse mattis ante sit amet ante.</p>
             <div class="copywrite-text">
               <p>&copy; 
