@@ -55,8 +55,12 @@ def test(request: HttpRequest):
 
 	#
 	patient = Patient.objects.order_by('?').first()
+	scan = Scan.objects.order_by('?').first()
 
-	return render(request, 'upload_form.html', {"patient": patient})
+	return render(request, 'viewer.html', {
+		"patient": patient.toView() if patient else None,
+		"scan": scan.toView() if scan else None,
+	})
 
 def edit(request, pid=-1):
 	if pid != -1:

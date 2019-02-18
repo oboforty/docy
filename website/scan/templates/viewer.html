@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block content %}
+  <div id="app-viewer" class="">
+    <docy-viewer ref="viewer"></docy-viewer>
+  </div>
+{% endblock %}
+
+{% block extra_js %}
+  {% if patient %}
+    {{ patient|json_script:"patient" }}
+  {% endif %}
+
+  {% if scan %}
+    {{ scan|json_script:"scan" }}
+  {% endif %}
+
+  <script type="module">
+    import {viewer} from "/static/js/vue/viewer.js";
+
+    export let app = new Vue({
+      el: '#app-viewer',
+      data: {
+      },
+      created: function(){
+      },
+      methods: {
+        addPatient: function(patient) {
+          this.$refs.viewer.patient = patient;
+        },
+
+        addScan: function(scan) {
+          this.$refs.viewer.scan = scan;
+        }
+      }
+    });
+
+    // TODO: temporal code: we will fetch patient & scan using HTTP API
+    {% if patient %}
+      let patient = JSON.parse(document.getElementById('patient').textContent);
+
+      app.addPatient(patient);
+    {% endif %}
+
+
+  </script>
+{% endblock %}
