@@ -58,10 +58,6 @@ def test(request: HttpRequest):
 
 	return render(request, 'upload_form.html', {"patient": patient})
 
-def patient_list(request):
-	entries = Patient.objects.all()
-	return render(request, 'patient_list.html', {'patient_list':entries})
-
 def edit(request, pid=-1):
 	if pid != -1:
 		obj = Patient.objects.filter(pk=pid).first()
