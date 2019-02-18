@@ -1,0 +1,31 @@
+/* :: 15.0 CTA CSS */
+.mona-cta-area {
+  position: relative;
+  z-index: 1;
+  background-color: $primary;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: $white;
+    @media #{$breakpoint-lg} {
+      font-size: 42px;
+    }
+    @media #{$breakpoint-md} {
+      font-size: 36px;
+    }
+    @media #{$breakpoint-xs} {
+      font-size: 30px;
+    }
+  }
+  h6 {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 30px;
+  }
+}

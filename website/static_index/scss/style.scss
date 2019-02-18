@@ -1,0 +1,98 @@
+/* *********************************************
+[Master Stylesheet]
+
+Template Name: Mona - Model Agency HTML5 Template
+Template Author: Colorlib
+Template Author URL: http://colorlib.com
+Version: 1.0.0
+Last Update: Dec 21, 2018
+
+*********************************************
+
+[Tables of CSS Content]
+
++ body
+  - 1.0 Reboot CSS
+  - 2.0 Spacing CSS
+  - 3.0 Preloader CSS
+  - 4.0 Heading CSS
+  - 5.0 Backtotop CSS
+  - 6.0 Buttons CSS
+  - 7.0 Header CSS
+  - 8.0 Hero CSS
+  - 9.0 Gallery CSS
+  - 10.0 Testimonial CSS
+  - 11.0 Model CSS
+  - 12.0 About CSS
+  - 13.0 Breadcrumb CSS
+  - 14.0 Blog CSS
+  - 15.0 Cta CSS
+  - 16.0 Team CSS
+  - 17.0 Widget CSS
+  - 18.0 Footer CSS
+  - 19.0 Contact CSS
+  ---------------------------------------------
+  [Color Codes]
+
+  $heading: #232323; [Heading Color]
+  $text: #666666; [Text Color]
+  $bg-gray: #f0f0f0; [Gray Background]
+  $primary: #ed489d; [Primary Color]
+  $white: #ffffff; [White Color]
+  $dark: #000000; [Dark Color]
+  $border: #ebebeb; [Border Color]
+  $hover: #ed489d; [Hover Color]
+  $secondary: #a6a6a6; [Secondary Color]
+
+  ---------------------------------------------
+  [Font Family: 'HK Grotesk']
+--------------------------------------------- */
+
+/* Import Fonts & All CSS */
+@import 'css/default-assets/hkgrotesk-fonts.css';
+@import 'css/bootstrap.min.css';
+@import 'css/animate.css';
+@import 'css/default-assets/classy-nav.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/magnific-popup.css';
+@import 'css/font-awesome.min.css';
+@import 'css/default-assets/slick.css';
+@import 'css/style.css';
+
+// **************
+// Utilities
+// **************
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/responsive";
+@import "utilities/color";
+
+// *************
+// Mixins
+// *************
+
+@import "mixins/flex";
+@import "mixins/miscellaneous";
+
+// **************
+// Stylesheet
+// *************
+@import "reboot";
+@import "spacing";
+@import "preloader";
+@import "heading";
+@import "backtotop";
+@import "buttons";
+@import "header";
+@import "hero";
+@import "gallery";
+@import "testimonial";
+@import "model";
+@import "about";
+@import "breadcrumb";
+@import "blog";
+@import "cta";
+@import "team";
+@import "widget";
+@import "footer";
+@import "contact";

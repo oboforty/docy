@@ -1,0 +1,151 @@
+/* :: 10.0 Testimonial CSS */
+
+.clients-feedback-area {
+  position: relative;
+  z-index: 1;
+
+  .client-feedback-text {
+    position: relative;
+    z-index: 1;
+
+    .quote-icon {
+      i {
+        display: block;
+        font-size: 72px;
+        margin-bottom: 20px;
+        color: $primary;
+        @include transform(rotate(180deg));
+      }
+    }
+
+    .client-description {
+      h4 {
+        margin-bottom: 30px;
+        @media #{$breakpoint-xs} {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .ratings {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+
+      i {
+        color: #e99d19;
+        font-size: 14px;
+      }
+    }
+
+    .client-name {
+      h5 {
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+
+      span {
+        color: $secondary;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .slick-dots {
+    @include display-flex(flex);
+    @include justify-content-center;
+
+    li {
+      button {
+        width: 12px;
+        height: 12px;
+        text-indent: -999999999999999999999999px;
+        border: 3px solid $border;
+        background-color: $white;
+        border-radius: 50%;
+        margin: 5.5px;
+        outline: none;
+      }
+
+      &.slick-active {
+        button {
+          background-color: $primary;
+          border-color: $primary;
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    &.client-thumbnail {
+      @include display-flex(flex);
+      @include justify-content-center;
+      @include align-items-center;
+      height: 129px;
+    }
+
+    img {
+      display: block;
+      width: 80px !important;
+      height: 80px !important;
+      border-radius: 50%;
+      border: 5px solid $white;
+      @include box-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+      @media #{$breakpoint-md} {
+        width: 60px !important;
+        height: 60px !important;
+      }
+      @media #{$breakpoint-xs} {
+        width: 60px !important;
+        height: 60px !important;
+      }
+    }
+
+    &.slick-current {
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+
+      img {
+        width: 100px !important;
+        height: 100px !important;
+        @media #{$breakpoint-md} {
+          width: 80px !important;
+          height: 80px !important;
+        }
+        @media #{$breakpoint-xs} {
+          width: 80px !important;
+          height: 80px !important;
+        }
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    width: 30px;
+    background-color: $white;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #b5aec4;
+    display: block;
+    line-height: 550%;
+    left: 0;
+    z-index: 90;
+    cursor: pointer;
+
+    &.fa-angle-right {
+      left: auto;
+      right: 0;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/* :: 6.0 Buttons CSS */
+.mona-btn {
+  position: relative;
+  z-index: 1;
+  min-width: 180px;
+  height: 50px;
+  line-height: 46px;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $white;
+  border-radius: 40px;
+  background-color: $primary;
+  @include transition-duration(500ms);
+  border: 2px solid $white;
+
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    background-color: $dark;
+    color: $white;
+    border-color: $dark;
+  }
+
+  &.btn-2 {
+    border-color: $primary;
+    color: $primary;
+    background-color: $white;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}

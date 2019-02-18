@@ -1,0 +1,81 @@
+/* :: 13.0 Breadcrumb CSS */
+
+.breadcumb-area {
+  position: relative;
+  z-index: 1;
+  height: 270px;
+  @media #{$breakpoint-md} {
+    height: 220px;
+  }
+  @media #{$breakpoint-xs} {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    @media #{$breakpoint-lg} {
+      font-size: 48px;
+    }
+    @media #{$breakpoint-md} {
+      font-size: 36px;
+    }
+    @media #{$breakpoint-xs} {
+      font-size: 30px;
+    }
+  }
+
+  .breadcumb--con {
+    .breadcrumb {
+      padding: 0;
+      margin-bottom: 0;
+      list-style: none;
+      background-color: transparent;
+      border-radius: 0;
+
+      .breadcrumb-item,
+      .breadcrumb-item > a,
+      .breadcrumb-item.active {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $heading;
+        font-weight: 500;
+        letter-spacing: normal;
+        @media #{$breakpoint-xs} {
+          font-size: 14px;
+        }
+
+        &:focus,
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      .breadcrumb-item.active {
+        color: $secondary;
+
+        &:focus,
+        &:hover {
+          color: $secondary;
+        }
+      }
+
+      .page-item:first-child .page-link {
+        margin-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .page-item:last-child .page-link {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: "\f105";
+        font-family: 'FontAwesome';
+      }
+    }
+  }
+}

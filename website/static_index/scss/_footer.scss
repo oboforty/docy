@@ -1,0 +1,133 @@
+/* :: 18.0 Footer CSS */
+
+.footer-area {
+  position: relative;
+  z-index: 1;
+  background-color: $footer-color;
+}
+
+.single-footer-widget {
+  position: relative;
+  z-index: 1;
+
+  .widget-title {
+    color: $heading;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 600;
+  }
+
+  p {
+    color: $text;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .footer-social-info {
+    a {
+      display: inline-block;
+      color: $white;
+      margin-right: 5px;
+      background-color: $primary;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 40px;
+
+      &.facebook {
+        background-color: #4c60ac;
+      }
+
+      &.twitter {
+        background-color: #00bae3;
+      }
+
+      &.pinterest {
+        background-color: #d91a18;
+      }
+
+      &.instagram {
+        background-color: #0085d7;
+      }
+
+      &.youtube {
+        background-color: #e20000;
+      }
+      @media #{$breakpoint-lg} {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .our-link {
+    position: relative;
+    z-index: 1;
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+
+    li {
+      @include flex(0 0 50%);
+      max-width: 50%;
+      width: 50%;
+
+      a {
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 17px;
+        display: block;
+        font-weight: 500;
+
+        &:focus,
+        &:hover {
+          color: $heading;
+        }
+      }
+
+      &:last-child {
+        a {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    position: relative;
+    z-index: 1;
+
+    h4 {
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+
+    h6 {
+      color: $secondary;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.copywrite-text {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+
+  p {
+    font-size: 16px;
+    color: $secondary;
+    margin-bottom: 0;
+
+    a {
+      color: $secondary;
+
+      &:focus,
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

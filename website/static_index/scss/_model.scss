@@ -1,0 +1,255 @@
+/* 11.0 Model CSS */
+
+.model-tab-area {
+  position: relative;
+  z-index: 1;
+
+  .nav-tabs {
+    border-bottom: none;
+    @include justify-content-center;
+
+    .nav-link {
+      border: none;
+      border-radius: 0;
+      padding: 0 30px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: $secondary;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &.active {
+        color: $heading;
+      }
+      @media #{$breakpoint-xs} {
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.mona-tab-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 3%;
+}
+
+.single-model-item {
+  position: relative;
+  z-index: 1;
+
+  .model-thumbnail {
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+
+    .first-thumbnail {
+      @include transition-duration(500ms);
+      position: relative;
+      z-index: 1;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .second-thumbnail {
+      @include transition-duration(800ms);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .share-info {
+      @include transition-duration(800ms);
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+
+      .share-icon a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: $heading;
+        color: $white;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+
+        i {
+          @include transition-duration(800ms);
+        }
+
+        &:focus,
+        &:hover {
+          background-color: $primary;
+
+          i {
+            @include transform(rotate(-180deg));
+          }
+        }
+      }
+
+      .others-icon {
+        @include transition-duration(500ms);
+        position: absolute;
+        width: calc(100% - 50px);
+        height: 50px;
+        visibility: hidden;
+        opacity: 0;
+
+        a {
+          display: inline-block;
+          position: absolute;
+          text-align: center;
+          width: 20%;
+          height: 50px;
+          top: 0;
+          left: 0;
+          color: $white;
+          line-height: 50px;
+          background-color: $heading;
+
+          &:focus,
+          &:hover {
+            background-color: $primary;
+          }
+
+          &:nth-child(2) {
+            top: 0;
+            left: 20%;
+          }
+
+          &:nth-child(3) {
+            top: 0;
+            left: 40%;
+          }
+
+          &:nth-child(4) {
+            top: 0;
+            left: 60%;
+          }
+
+          &:nth-child(5) {
+            top: 0;
+            left: 80%;
+          }
+        }
+      }
+
+      &:focus,
+      &:hover {
+        width: 100%;
+
+        .others-icon {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .model-info {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+
+    h3 {
+      @include transition-duration(500ms);
+      margin-bottom: 5px;
+      font-size: 24px;
+      @media #{$breakpoint-md} {
+        font-size: 22px;
+      }
+      @media #{$breakpoint-xs} {
+        font-size: 22px;
+      }
+    }
+
+    h6 {
+      margin-bottom: 0;
+      letter-spacing: 2px;
+      color: $secondary;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    .model-thumbnail {
+      .first-thumbnail {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .second-thumbnail {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .model-info {
+      h3 {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.mona-actor-slide,
+.mona-all-model-slide,
+.mona-models-slide,
+.mona-singer-slide {
+  position: relative;
+  z-index: 1;
+
+  .owl-next,
+  .owl-prev {
+    @include transition-duration(500ms);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: $white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: -25px;
+
+    &.owl-next {
+      left: auto;
+      right: -25px;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+
+.mona-model-area.model-page {
+  .mona-tab-content {
+    .col-xl {
+      @media #{$breakpoint-xl} {
+        @include flex(0 0 20%);
+        min-width: 20%;
+        width: 20%;
+      }
+    }
+  }
+}
