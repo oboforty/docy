@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+
+  {% if user.is_authenticated %}
+      <p>Hello, {{ user.get_username }}. Thanks for logging in.</p>
+  {% else %}
+      <p>Hello, new user. Please log in.</p>
+  {% endif %}
+
+{% endblock %}
+

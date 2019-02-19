@@ -5,18 +5,17 @@ from .models import PatientForm
 from typing import Sequence
 
 
-# def index(request: HttpRequest):
-# 	"""
-# 	Doctor's dashboard
-# 	- lists patients
-#
-# 	"""
-#
-#
-#
-# 	return render(request, 'index.html', {
-#
-# 	})
+def dashboard(request: HttpRequest):
+	"""
+	Doctor's dashboard
+	- lists patients
+	- Doctor information
+	- additional information
+	"""
+
+	return render(request, 'dashboard.html', {
+
+	})
 
 def scan_list(request: HttpRequest):
 	"""
