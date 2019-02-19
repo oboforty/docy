@@ -14,4 +14,5 @@ urlpatterns = [
     path('add/', views.edit, name='add'),
     path('edit/<int:pid>/', views.edit, name='edit'),
     path('delete/<int:pid>/', views.delete, name='delete'),
+    path('view/<int:pid>/', views.view, name='view')
 ]

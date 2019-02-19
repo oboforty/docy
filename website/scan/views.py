@@ -71,7 +71,7 @@ def edit(request, pid=-1):
 			form = PatientForm(request.POST)#add
 		if form.is_valid():
 			form.save()
-			return redirect(reverse('scan:patient_list'))
+			return redirect(reverse('scan:patients'))
 		return render(request, 'edit.html', {'form':form})
 	else:
 		if pid != -1:
@@ -83,4 +83,9 @@ def edit(request, pid=-1):
 def delete(request, pid):
 	obj = Patient.objects.filter(pk=pid)
 	obj.delete()
-	return redirect(reverse('scan:patient_list'))
+	return redirect(reverse('scan:patients'))
+
+def view(request, pid):
+	obj = Patient.objects.filter(pk=pid).first()
+	form = PatientForm(instance=obj)
+	return render(request, 'view.html', {'form':form})
