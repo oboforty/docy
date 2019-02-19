@@ -17,11 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 # mapping for opening roots into views, if you type this url with show this views and this block of code
-from scan import views
+from landing import views
 
 urlpatterns = [
     # Index page:
-    path('', views.dashboard, name='dashboard'),
+    path('', views.landing, name='landing'),
 
     path('admin/', admin.site.urls),
     path('user/', include('login.urls')),
