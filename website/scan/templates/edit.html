@@ -27,7 +27,7 @@
         <label class="required" for="id_weight">Weight:</label>
         <input type="number" name="weight" step="any" required id="id_weight" value="{{ form.weight.value }}"><br/>
 
-        <input type="checkbox" name="Chemo" id="id_Chemo"><label class="vCheckboxLabel" for="id_Chemo">Chemo</label><br/>
+        {{ form.Chemo }}<label class="vCheckboxLabel" for="id_Chemo">Chemo</label><br/>
         <label class="required" for="id_Last_Chemo">Last Chemo:</label>
         <input type="date" name="Last_Chemo" class="vDateField" size="10" required id="id_Last_Chemo" value="{{ form.Last_Chemo.value|date:'Y-m-d' }}"><br/>
 
