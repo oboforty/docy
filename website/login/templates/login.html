@@ -1,6 +1,7 @@
-{%extends "base.html"%}
+{%extends "base_landing.html"%}
 {% block content %}
-  <br><br><br><br><br>
+  <div class="container">
+
     <form action="{% url 'login:login' %}" method="post">
         {% csrf_token %}
         <label for="username">UserName:</label>
@@ -9,4 +10,6 @@
         <input id="password" type="password" name="password" value="{{ password }}"><br/>
         <input type="submit" value="Login">
     </form>
+
+  </div>
 {% endblock %}

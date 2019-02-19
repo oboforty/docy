@@ -22,7 +22,7 @@
         <tr>
           <td>{{ patient.pid }}</td>
           <td>{{ patient|docygender }}</td>
-          <td><a href="/scans/{{ patient.pid }}">{{ patient|docyname }}</a></td>
+          <td><a href="/scan/view/{{ patient.pid }}">{{ patient|docyname }}</a></td>
           <td>{{ patient.age }} ({{ patient.birth_date }})</td>
           <td>
             <a href="/scan/delete/{{ patient.pid }}">delete</a>

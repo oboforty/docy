@@ -1,0 +1,184 @@
+
+ {%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mona - Model Agency HTML5 Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Docy</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'img/landing/core-img/logo.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/landing/style_index.css'%}">
+
+
+  <style type="text/css">
+
+    .mona-cta-area {
+      position: relative;
+      z-index: 1;
+      background-color: #399075;
+    }
+    .mona-btn{
+
+      background:  black;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="42" width="42"></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+
+                <li><a href="./aboutus.html">About Us</a></li>
+
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="{% url 'login:login' %}">Sign IN</a></li>
+                <li><a href="./register.html">Sign Up</a></li>
+
+
+              </ul>
+
+              <!-- Search Icon -->
+              <div class="search-icon" data-toggle="modal" data-target="#searchModal">
+                <i class="icon_search"></i>
+              </div>
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Top Search Area Start ***** -->
+  <div class="top-search-area">
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- Close Button -->
+            <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
+            <!-- Form -->
+            <form action="index.html" method="post">
+              <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Top Search Area End ***** -->
+
+  {% block content %}{% endblock %}
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Logo -->
+            <a href="#" class="d-block mb-4"><img src=" {% static 'img/landing/core-img/logo.png'%}" alt="" height="45" width="45"></a>
+            <p>Integer vehicula mauris libero, at molestie eros imperdiet sit amet. Suspendisse mattis ante sit amet ante.</p>
+            <div class="copywrite-text">
+              <p>&copy;
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Us</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Contact</h4>
+            <!-- Footer Content -->
+            <div class="footer-content mb-30">
+              <h4>dlaldsf@docy.com</h4>
+              <h6></h6>
+            </div>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              s
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'js/landing/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'js/landing/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/landing/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'js/landing/mona.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'js/landing/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
