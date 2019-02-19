@@ -1,5 +1,5 @@
 
- {%load static %} 
+ {%load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,26 +13,26 @@
   <title>Docy</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="./img_index/core-img/logo.png">
+  <link rel="icon" href="{% static 'img/landing/core-img/logo.png' %}">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="{% static 'style_index.css '%}">
+  <link rel="stylesheet" href="{% static 'css/landing/style_index.css'%}">
 
 
   <style type="text/css">
-    
-    .mona-cta-area {
-    position: relative;
-    z-index: 1;
-    background-color: #399075;
-  }
-  .mona-btn{
 
-    background:  black;
-  }
-    
+    .mona-cta-area {
+      position: relative;
+      z-index: 1;
+      background-color: #399075;
+    }
+    .mona-btn{
+
+      background:  black;
+    }
+
   </style>
-  }
+
 
 </head>
 
@@ -53,10 +53,10 @@
         <nav class="classy-navbar justify-content-between" id="monaNav">
 
           <!-- Background Curve -->
-          <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png'%});"></div>
+          <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
 
           <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="{% static'./img_index/core-img/logo.png'%}" alt="" height="42" width="42"></a>
+          <a class="nav-brand" href="index.html"><img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="42" width="42"></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -74,14 +74,14 @@
             <div class="classynav">
               <ul id="nav">
                 <li class="current-item"><a href="./index.html">Home</a></li>
-               
+
                 <li><a href="./aboutus.html">About Us</a></li>
 
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./login.html">Sign IN</a></li>
                 <li><a href="./register.html">Sign Up</a></li>
-                
-      
+
+
               </ul>
 
               <!-- Search Icon -->
@@ -127,9 +127,9 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static '_index./img/core-img/curve.png'%});"></div>
+        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static'./img_index/bg-img/final.png'%})"
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static 'img/landing/bg-img/final.png' %})"
         height="42" width="42" ></div>
         <!-- Welcome Text -->
         <div class="container h-100">
@@ -138,12 +138,12 @@
               <div class="welcome-text">
                 <h5 data-animation="bounceInUp" data-delay="100ms">GUI<br>
                 </h5>
-              
+
               </div>
             </div>
           </div>
         </div>
-       
+
         <!-- Pager -->
         <div class="slide-pager">
          <!--  <a href="#">Ne</a> -->
@@ -153,24 +153,24 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png'%});"></div>
+        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static './img_index/bg-img/19.png'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static 'img/landing/bg-img/19.png'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
               <div class="welcome-text">
                 <h5 data-animation="bounceInUp" data-delay="100ms">Sign in<br></h5>
-                 
-            
-                
+
+
+
               </div>
             </div>
           </div>
         </div>
         <!-- Social Info -->
-        
+
         <!-- Pager -->
         <div class="slide-pager">
       <!--     <a href="#">Next: Shaila Ritu</a> -->
@@ -180,9 +180,9 @@
       <!-- Single Welcome Slide -->
       <div class="single-welcome-slide">
         <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static './img_index/core-img/curve.png);"></div>
+        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url( {% static'./img_index/bg-img/20.png'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url( {% static 'img/landing/bg-img/20.png'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -190,14 +190,14 @@
               <div class="welcome-text">
                 <h5 data-animation="bounceInUp" data-delay="100ms">Sign up <br>
                   </h5>
-             
-               
+
+
               </div>
             </div>
           </div>
         </div>
         <!-- Social Info -->
-        
+
         <!-- Pager -->
         <div class="slide-pager">
          <!--  <a href="#">Next: Jesse Edwards</a> -->
@@ -217,7 +217,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="100ms">
             <span class="line"></span>
-            <img src="{% static'./img_index/bg-img/final.png '%}" alt="">
+            <img src="{% static 'img/landing/bg-img/final.png'%}" alt="">
             <span class="line2"></span>
           </div>
         </div>
@@ -226,7 +226,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="400ms">
             <span class="line"></span>
-            <img src="{% static'./img_index/bg-img/19.png'%}" alt="">
+            <img src="{% static 'img/landing/bg-img/19.png'%}" alt="">
             <span class="line2"></span>
           </div>
         </div>
@@ -290,8 +290,8 @@
   <!-- ***** About Us Area End ***** -->
 
   <!-- ***** Model Area Start ***** -->
-  
-             
+
+
   <!-- ***** Model Area End ***** -->
 
   <!-- ***** Client Feedback Area Start ***** -->
@@ -310,11 +310,14 @@
                 <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 .”</h4>
               </div>
-              
+            </div>
+
         </div>
 
         <!-- Client Thumbnail Area -->
-        
+        </div>
+      </div>
+    </div>
   </section>
   <!-- ***** Client Feedback Area End ***** -->
 
@@ -348,7 +351,7 @@
 
       <div class="row">
         <!-- Single Blog Post -->
-      
+
 
         <div class="col-12 col-lg-8">
           <div class="row">
@@ -357,7 +360,7 @@
              <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static'./img_index/bg-img/final.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/final.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-title">lorenn</a>
@@ -365,13 +368,13 @@
                 </div>
               </div>
             </div>
-            
+
 
             <!-- Single Blog Post -->
             <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static'./img_index/bg-img/20.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/20.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-title">lorenn</a>
@@ -384,10 +387,10 @@
             <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="700ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static'./img_index/bg-img/19.png'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/19.png'%}" alt=""></a>
                 </div>
                 <div class="post-content">
-                  <a href="#" class="post-title">test/a>
+                  <a href="#" class="post-title">test</a>
                   <span class="post-date">30 Aug 2018</span>
                 </div>
               </div>
@@ -409,10 +412,10 @@
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
           <div class="single-footer-widget mb-60">
             <!-- Logo -->
-            <a href="#" class="d-block mb-4"><img src=" {% static'./img_index/core-img/logo.png ' %}" alt="" height="45" width="45"></a>
+            <a href="#" class="d-block mb-4"><img src=" {% static 'img/landing/core-img/logo.png'%}" alt="" height="45" width="45"></a>
             <p>Integer vehicula mauris libero, at molestie eros imperdiet sit amet. Suspendisse mattis ante sit amet ante.</p>
             <div class="copywrite-text">
-              <p>&copy; 
+              <p>&copy;
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Us</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
@@ -420,7 +423,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           </div>
         </div>
 
-        
+
 
         <!-- Single Footer Widget -->
         <div class="col-12 col-lg-4 col-xl-3">
@@ -448,15 +451,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
   <!-- ******* All JS ******* -->
   <!-- jQuery js -->
-  <script src="js/jquery.min.js"></script>
+  <script src="{% static 'js/landing/jquery.min.js' %}"></script>
   <!-- Popper js -->
-  <script src="js/popper.min.js"></script>
+  <script src="{% static 'js/landing/popper.min.js' %}"></script>
   <!-- Bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{% static 'js/landing/bootstrap.min.js' %}"></script>
   <!-- All js -->
-  <script src="js/mona.bundle.js"></script>
+  <script src="{% static 'js/landing/mona.bundle.js' %}"></script>
   <!-- Active js -->
-  <script src="js/default-assets/active.js"></script>
+  <script src="{% static 'js/landing/default-assets/active.js' %}"></script>
 
 </body>
 

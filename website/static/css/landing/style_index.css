@@ -48,15 +48,15 @@ Last Update: Dec 21, 2018
   [Font Family: 'HK Grotesk']
 --------------------------------------------- */
 /* Import Fonts & All CSS */
-@import url(css/default-assets/hkgrotesk-fonts.css);
-@import url(css/bootstrap.min.css);
-@import url(css/animate.css);
-@import url(css/default-assets/classy-nav.css);
-@import url(css/owl.carousel.min.css);
-@import url(css/magnific-popup.css);
-@import url(css/font-awesome.min.css);
-@import url(css/default-assets/slick.css);
-@import url(css/style.css);
+@import url(default-assets/hkgrotesk-fonts.css);
+@import url(bootstrap.min.css);
+@import url(animate.css);
+@import url(default-assets/classy-nav.css);
+@import url(owl.carousel.min.css);
+@import url(magnific-popup.css);
+@import url(font-awesome.min.css);
+@import url(default-assets/slick.css);
+@import url(style.css);
 /* :: 1.0 Reboot CSS */
 * {
   margin: 0;
