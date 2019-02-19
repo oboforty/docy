@@ -1,16 +1,12 @@
-{% extends base.html %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-<body>
-    <h1>Welcome, {{ username }}.</h1>
-    
 
+
+{%extends "base.html"%}
+{% block content %}
+  <br><br><br><br><br>
+    <h1>Welcome, {{ username }}.</h1>
 <form action="{% url 'login:logout' %}" method="post">
 	{% csrf_token %}
        <input type="submit" value="Logout">
     </form>
 
-</body>
-</html>
+{% endblock %}
