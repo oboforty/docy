@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 #from django.contrib.auth.models import User
 from .models import DoctorUser
 
-@login_required(login_url='/user/login')
+# @login_required(login_url='/user/login')
 def home(request):
 	return render(request, 'home.html',{'username': request.user.username})
 
@@ -30,7 +30,7 @@ def register(request):
 	password = request.POST.get('password','')
 	user = DoctorUser.objects.create_user(username, '', password)
 	user.save()
-	return redirect(reverse('login:login'))
+	return redirect(reverse('login:home'))
 
 @login_required(login_url='/user/login')
 def change_password(request):
@@ -46,5 +46,5 @@ def change_password(request):
 
 def mylogout(request):
 	logout(request)
-	return redirect(reverse('login:login'))
+	return redirect(reverse('login:home'))
 

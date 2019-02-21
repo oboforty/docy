@@ -2,11 +2,16 @@
 
 {%extends "base.html"%}
 {% block content %}
-  <br><br><br><br><br>
-    <h1>Welcome, {{ username }}.</h1>
-<form action="{% url 'login:logout' %}" method="post">
+{% if user.is_authenticated %}
+<h1>Welcome, {{ username }}.</h1>
 	{% csrf_token %}
-       <input type="submit" value="Logout">
-    </form>
+	<a href="{% url 'login:logout' %}">Logout</a>
+	<a href="{% url 'login:change_password' %}">Change Password</a>
+{% else %}
+<h1>Welcome, please register or login.</h1>
+	{% csrf_token %}
+	<a href="{% url 'login:register' %}">Register</a>
+	<a href="{% url 'login:login' %}">Login</a>
+{% endif %}
 
 {% endblock %}
