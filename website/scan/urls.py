@@ -11,7 +11,7 @@ urlpatterns = [
     path('upload_form/', views.change, name='upload_form'),
     path('test/', views.test, name='test'),
 
-    path('add/', views.edit, name='add'),
+    path('add/', views.add, name='add'),
     path('edit/<int:pid>/', views.edit, name='edit'),
     path('delete/<int:pid>/', views.delete, name='delete'),
     path('view/<int:pid>/', views.view, name='view')

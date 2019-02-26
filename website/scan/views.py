@@ -1,5 +1,5 @@
 from django.http import HttpResponse, HttpRequest
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan, Diagnosis
 from .models import PatientForm
 from typing import Sequence
@@ -61,31 +61,37 @@ def test(request: HttpRequest):
 		"scan": scan.toView() if scan else None,
 	})
 
-def edit(request, pid=-1):
-	if pid != -1:
-		obj = Patient.objects.filter(pk=pid).first()
+def edit(request, pid):
+	patient = get_object_or_404(Patient, pk=pid)
 	if request.method == 'POST':
-		if pid != -1:
-			form = PatientForm(request.POST, instance=obj)
-		else:
-			form = PatientForm(request.POST)#add
+		form = PatientForm(request.POST, instance=patient)
 		if form.is_valid():
 			form.save()
 			return redirect(reverse('scan:patients'))
-		return render(request, 'edit.html', {'form':form})
 	else:
-		if pid != -1:
-			form = PatientForm(instance=obj)
-		else:
-			form = PatientForm()#add
-		return render(request, 'edit.html', {'form':form})
+		form = PatientForm(instance=patient)
+	return render(request, 'patient/edit.html', {'form':form})
+
+def add(request):
+	if request.method == 'POST':
+		form = PatientForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return redirect(reverse('scan:patients'))
+	else:
+		form = PatientForm()
+	return render(request, 'patient/edit.html', {'form':form})
 
 def delete(request, pid):
-	obj = Patient.objects.filter(pk=pid)
-	obj.delete()
-	return redirect(reverse('scan:patients'))
+	patient = get_object_or_404(Patient, pk=pid)
+	form = PatientForm(instance=patient)
+	if request.method == 'POST':
+		patient.delete()
+		return redirect(reverse('scan:patients'))
+	else:
+		return render(request, 'patient/delete.html', {'form':form})
 
 def view(request, pid):
 	obj = Patient.objects.filter(pk=pid).first()
 	form = PatientForm(instance=obj)
-	return render(request, 'view.html', {'form':form})
+	return render(request, 'patient/view.html', {'form':form})

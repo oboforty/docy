@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Delete the patient?</p>
+<table>{{ form.as_table }}</table>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Yes" class="btn btn-danger">
+    <a href="{% url 'scan:patients' %}" class="btn btn-primary">No</a>
+</form>
+{% endblock %}
