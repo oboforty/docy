@@ -42,7 +42,7 @@ def change_password(request):
 	user.set_password(password)
 	user.save()
 	logout(request)
-	return redirect(reverse('login:login'))
+	return redirect(reverse('login:home'))
 
 def mylogout(request):
 	logout(request)

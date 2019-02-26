@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 <p>Delete the patient?</p>
-<table>{{ form.as_table }}</table>
+<table border="1">
+    {% for field in form %}
+        <tr>
+            <td>{{ field.label }}</td>
+            <td>{{ field.value }}</td>
+        </tr>
+    {% endfor %}
+</table>
 <form action="" method="post">
     {% csrf_token %}
     <input type="submit" value="Yes" class="btn btn-danger">
