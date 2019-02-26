@@ -46,10 +46,16 @@ class Command(BaseCommand):
         # parse CSV
         with codecs.open(filename, 'r', encoding='utf8') as csvfile:
             spamreader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-            
+            i = 0
             # go through each line
             for row in spamreader:
-                #try:
+
+                if i > 100:
+                    break
+
+                i += 1
+
+                try:
                    
                     new_patient= Patient()
                     new_patient.age= int(row['Age'])
@@ -85,11 +91,9 @@ class Command(BaseCommand):
                         new_patient.insulin= False
 
                     new_patient.save()
-                #except:
-                    #pass
-                    
-                
+                except Exception as e:
+                    raise e
 
 
-        # done
-        self.stdout.write(self.style.SUCCESS('Successfully imported file "%s"' % filename))
+            # done
+            self.stdout.write(self.style.SUCCESS('Successfully imported file "%s"' % filename))
