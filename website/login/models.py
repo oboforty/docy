@@ -3,5 +3,5 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 class DoctorUser(AbstractUser):
-    class Meta(AbstractUser.Meta):
-        pass
+	class Meta(AbstractUser.Meta):
+		pass

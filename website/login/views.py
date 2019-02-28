@@ -1,50 +1,30 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login, logout
-#from django.contrib.auth.models import User
 from .models import DoctorUser
+from .forms import RegisterForm
+from django.core.mail import send_mail
+from django.conf import settings
 
-# @login_required(login_url='/user/login')
+@login_required(login_url='/user/login')
 def home(request):
 	return render(request, 'home.html',{'username': request.user.username})
 
-def mylogin(request):
-	if request.method == 'GET':
-		return render(request, 'login.html')
-
-	elif request.method == 'POST':
-		username = request.POST.get('username','')
-		password = request.POST.get('password','')
-		user = authenticate(request, username=username, password=password)
-		if user is not None:
-			login(request, user)
-			# the url name 'home' under 'login' app
-			return redirect(reverse('login:home'))
-		else:
-			return render(request, 'login.html', {'username': username, 'password': password,})
 
 def register(request):
-	if request.method == 'GET':
-		return render(request, 'register.html')
-	username = request.POST.get('username','')
-	password = request.POST.get('password','')
-	user = DoctorUser.objects.create_user(username, '', password)
-	user.save()
-	return redirect(reverse('login:home'))
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('login:home'))
+    else:
+        form = RegisterForm()
+    return  render(request, 'register.html', context={'form':form})
 
-@login_required(login_url='/user/login')
-def change_password(request):
-	if request.method == 'GET':
-		return render(request, 'change_password.html',{'username': request.user.username})
-	username = request.user.username
-	password = request.POST.get('password','')
-	user = DoctorUser.objects.get(username=username)
-	user.set_password(password)
-	user.save()
-	logout(request)
-	return redirect(reverse('login:home'))
 
-def mylogout(request):
-	logout(request)
-	return redirect(reverse('login:home'))
-
+#def send(request):
+#	if request.method == 'POST':
+#		email = request.POST.get('email')
+#		print(email)
+#		msg='Forget password'
+#		send_mail('Docy',msg,settings.EMAIL_FROM,[email])
+#	return redirect(reverse('login:password_reset_done'))

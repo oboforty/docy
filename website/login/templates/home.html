@@ -5,8 +5,7 @@
 {% if user.is_authenticated %}
 <h1>Welcome, {{ username }}.</h1>
 	{% csrf_token %}
-	<a href="{% url 'login:logout' %}">Logout</a>
-	<a href="{% url 'login:change_password' %}">Change Password</a>
+
 {% else %}
 <h1>Welcome, please register or login.</h1>
 	{% csrf_token %}
