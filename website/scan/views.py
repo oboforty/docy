@@ -3,21 +3,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan, Diagnosis
 from .models import PatientForm
 from typing import Sequence
-from django.contrib.auth.models import User
-from django.shortcuts import render
-from .filters import UserFilter
 
 
-"""
-Search Bar
-"""
-def search(request):
-    user_list = User.objects.all()
-    user_filter = UserFilter(request.GET, queryset=user_list)
-    return render(request, 'scan/list.html', {'filter': user_filter})
 
 
-    
 def dashboard(request: HttpRequest):
 	"""
 	Doctor's dashboard

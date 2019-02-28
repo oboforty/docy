@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'scan',
-    'landing'
+    'landing',
+    # 'django_filters',
 ]
 
 MIDDLEWARE = [

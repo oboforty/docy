@@ -1,12 +1,7 @@
 from django.urls import path
 from . import views
 from django.conf.urls import url
-from scans import views
-
-"""search"""
-urlpatterns = [
-    url(r'^search/$', views.search, name='search'),
-
+from scan import views
 
 
 
