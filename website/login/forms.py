@@ -4,4 +4,4 @@ from .models import DoctorUser
 class RegisterForm(UserCreationForm):
 	class Meta(UserCreationForm.Meta):
 		model = DoctorUser
-		fields = ("username","email")
+		fields = UserCreationForm.Meta.fields + ("email", )
