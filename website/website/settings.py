@@ -151,3 +151,6 @@ EMAIL_HOST_PASSWORD = 'jmwcevlweageizwy'
 EMAIL_USE_TLS = True
 EMAIL_FROM = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL ='docyteam@gmail.com'
+
+#password reset link timeout, 1-2 days
+PASSWORD_RESET_TIMEOUT_DAYS= 1
