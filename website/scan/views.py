@@ -34,13 +34,21 @@ def patient_list(request: HttpRequest):
 	"""
 	List of patients
 	"""
-
-
-	patients: Sequence[Patient] = Patient.objects.all()
-
+	if request.method=="POST" :
+		search = request.GET.get('Search')
+		patients== Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))
+		
+	else:
+		patients: Sequence[Patient] = Patient.objects.all()
+	
 	return render(request, 'patient/list.html', {
-		'patients': patients
+		'patients': patients 
+
 	})
+
+
+
+
 
 def change(request: HttpRequest):
 	"""
@@ -97,3 +105,7 @@ def view(request, pid):
 	obj = Patient.objects.filter(pk=pid).first()
 	form = PatientForm(instance=obj)
 	return render(request, 'patient/view.html', {'form':form})
+
+
+
+
