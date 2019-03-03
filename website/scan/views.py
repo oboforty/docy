@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan, Diagnosis
 from .models import PatientForm
 from typing import Sequence
+from django.db.models import Q
 
 
 
@@ -34,9 +35,9 @@ def patient_list(request: HttpRequest):
 	"""
 	List of patients
 	"""
-	if request.method=="POST" :
+	if 'Search' in request.GET:
 		search = request.GET.get('Search')
-		patients== Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))
+		patients= Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))
 		
 	else:
 		patients: Sequence[Patient] = Patient.objects.all()
