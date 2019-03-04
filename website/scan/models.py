@@ -61,8 +61,10 @@ class PatientForm(ModelForm):
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
 
-    doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    diagnosis = models.ForeignKey('diagnosis', on_delete=models.CASCADE)
+   # doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    diag_date = models.DateField(null=True,blank=True)
+    diagnosis = models.CharField(max_length=200)
+    reason = models.CharField(max_length=200,blank=True)
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
 
     def toView(self):
@@ -70,11 +72,24 @@ class Scan(models.Model):
 
         return {
             'sid': self.sid,
-            'diagnosis': self.diagnosis.toView(),
+            'diag_date': self.diag_date,
+            'diagnosis': self.diagnosis,
+            'reason': self.reason,
+           # 'doctor': AUTH_USER_MODEL.first_name+ AUTH_USER_MODEL.last_name
+           
         }
 
+class ScanForm(ModelForm):
+    class Meta:
+        model = Scan
+        fields = ['sid','diag_date','diagnosis','reason']
+        widgets = {
+            'diag_date': DateInput()
+        }
+        
 
-class Diagnosis(models.Model):
+
+'''class Diagnosis(models.Model):
     dia_id = models.AutoField(primary_key=True)
     diagnosis = models.CharField(max_length=20)
 
@@ -85,3 +100,4 @@ class Diagnosis(models.Model):
             'dia_id': self.dia_id,
             'diagnosis': self.diagnosis,
         }
+'''

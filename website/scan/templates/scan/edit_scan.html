@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+
+
+    <form action="" method="post" id="upload_form">
+     {% csrf_token %}
+     <p class="bg-danger">
+      {% if form.errors %}
+        You got the following errors:
+        {{ form.errors }}
+      {% endif %}
+     </p>
+
+     <fieldset>
+
+        <label class="required" for="id_diag_date">Scan Date:</label>
+        <input type="date" name="diag_date" class="vDateField" size="10" required id="id_diag_date" value="{{ form.diag_date.value|date:'Y-m-d' }}">
+
+
+        <label class="required" for="id_reason">Reason:</label>
+        <input type="text" name="reason" class="vTextField" required id="id_reason" value="{{ form.reason.value }}">
+
+
+     </fieldset><br/>
+
+
+     <fieldset>
+        <label class="required" for="id_diagnosis">Diagnosis:</label>
+        <input type="text" name="diagnosis" class="form-control" required id="id_diagnosis">
+     </fieldset><br/>
+
+
+<!--      <fieldset>
+        <label for="ScanFile">File input</label>
+        <input type="file" class="form-control-file" id="ScanFile">
+     </fieldset><br/>
+ -->
+
+
+        <div class="submit-row">
+            <input type="submit" value="Save" class="default" name="_save">
+        </div>
+
+    </form>
+
+<a href="/scan/patients/">Back</a>
+
+{% endblock %}

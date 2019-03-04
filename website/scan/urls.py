@@ -14,5 +14,12 @@ urlpatterns = [
     path('add/', views.add, name='add'),
     path('edit/<int:pid>/', views.edit, name='edit'),
     path('delete/<int:pid>/', views.delete, name='delete'),
-    path('view/<int:pid>/', views.view, name='view')
+    path('view/<int:pid>/', views.view, name='view'),
+
+    path('add_scan/<int:pid>', views.add_scan, name='add_scan'),
+    path('edit_scan/<int:sid>', views.edit_scan, name= 'edit_scan'),
+    path('delete_scan/<int:sid>', views.delete_scan, name= 'delete_scan')
+
+
+
 ]
