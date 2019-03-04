@@ -7,3 +7,5 @@ class DoctorUserAdmin(admin.ModelAdmin):
 	search_fields = ['username', 'first_name', 'last_name', 'email']
 
 admin.site.register(DoctorUser, DoctorUserAdmin)
+
+#admin.site.register(DoctorUser)

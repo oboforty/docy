@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'scan',
-    'landing'
+    'landing',
+    # 'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -127,9 +128,29 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+#redirect to landing & home
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/user/'
+
 ##
 STATICFILES_DIRS = [
 
     os.path.join(BASE_DIR, 'static'),
 
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'docyteam@gmail.com'
+EMAIL_HOST_PASSWORD = 'jmwcevlweageizwy'
+EMAIL_USE_TLS = True
+EMAIL_FROM = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL ='docyteam@gmail.com'
+
+#password reset link timeout, 1-2 days
+PASSWORD_RESET_TIMEOUT_DAYS= 1

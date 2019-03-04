@@ -1,5 +1,9 @@
 from django.urls import path
 from . import views
+from django.conf.urls import url
+from scan import views
+
+
 
 app_name = 'scan'
 urlpatterns = [

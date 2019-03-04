@@ -1,0 +1,1 @@
+This part of app has used part of code and templates in https://github.com/xt998/wechatSystem, and in python package templates, also various kinds oof tutorials online

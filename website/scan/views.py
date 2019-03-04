@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan
 from .models import PatientForm, ScanForm
 from typing import Sequence
+from django.db.models import Q
+
+
 
 
 def dashboard(request: HttpRequest):
@@ -32,13 +35,21 @@ def patient_list(request: HttpRequest):
 	"""
 	List of patients
 	"""
-
-
-	patients: Sequence[Patient] = Patient.objects.all()
-
+	if 'Search' in request.GET:
+		search = request.GET.get('Search')
+		patients= Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))
+		
+	else:
+		patients: Sequence[Patient] = Patient.objects.all()
+	
 	return render(request, 'patient/list.html', {
-		'patients': patients
+		'patients': patients 
+
 	})
+
+
+
+
 
 def change(request: HttpRequest):
 	"""
@@ -129,6 +140,7 @@ def delete_scan(request, sid):
 def view(request, pid):
 	obj = Patient.objects.filter(pk=pid).first()
 	form = PatientForm(instance=obj)
+
 
 	scans= Scan.objects.filter(patient= pid)
 
