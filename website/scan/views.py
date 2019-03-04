@@ -104,6 +104,7 @@ def delete(request, pid):
 
 def edit_scan(request, sid):
 	scan = get_object_or_404(Scan, pk=sid)
+	pid = scan.patient.pid
 	if request.method == 'POST':
 		form = ScanForm(request.POST, instance=scan)
 		if form.is_valid():
@@ -111,7 +112,7 @@ def edit_scan(request, sid):
 			return redirect(reverse('scan:patients'))
 	else:
 		form = ScanForm(instance=scan)
-	return render(request, 'scan/edit_scan.html', {'form':form})
+	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
 def add_scan(request, pid):
 	if request.method == 'POST':
@@ -124,7 +125,7 @@ def add_scan(request, pid):
 			return redirect(reverse('scan:view', kwargs={'pid': pid}))
 	else:
 		form = ScanForm()
-	return render(request, 'scan/edit_scan.html', {'form':form})
+	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
 def delete_scan(request, sid):
 	scan = get_object_or_404(Scan, pk=sid)

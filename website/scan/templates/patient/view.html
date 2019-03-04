@@ -3,14 +3,16 @@
 
 
 {% block content %}
+<div class="row" >
+  <div class = "col-5">
+    {{ form.as_p}}
+  </div>
 
-{% csrf_token %}
+  <div class = "col-7">
 
-{{ form.as_p}}
-
-<a href="/scan/add_scan/{{pid}}" class="btn btn-primary">Add a scan</a>
+    <a href="/scan/add_scan/{{pid}}" class="btn btn-primary">Add a scan</a>
 <table class="table table-condensed table-hover table-striped" name="Scans">
-	 <thead>
+   <thead>
       <tr>
         <th>#</th>
         <th>Date</th>
@@ -23,7 +25,7 @@
 
     <tbody>
       {% for scan in scans %}
-      	<tr>
+        <tr>
           <td>{{ scan.sid }}</td>
           <td>{{ scan.diag_date }}</td>
           <td>{{ scan.reason }} </td>
@@ -38,6 +40,14 @@
     </tbody>
 
 </table>
+
+  </div>
+</div>
+{% csrf_token %}
+
+
+
+
 
 
 <a href="/scan/patients/">Back</a>

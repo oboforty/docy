@@ -29,7 +29,7 @@
 
      <fieldset>
         <label class="required" for="id_diagnosis">Diagnosis:</label>
-        <input type="text" name="diagnosis" class="form-control" required id="id_diagnosis">
+        <input type="text" name="diagnosis" class="form-control" required id="id_diagnosis" value="{{ form.diagnosis.value }}">
      </fieldset><br/>
 
 
@@ -46,6 +46,6 @@
 
     </form>
 
-<a href="/scan/patients/">Back</a>
+<a href="{% url 'scan:view' pid %}">Back</a>
 
 {% endblock %}
