@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<table border="1">
+    {% for field in form %}
+        <tr>
+            <td>{{ field.label }}</td>
+            {% if field.label == 'File' %}
+            <td><img src="{{ field.value.url }}" width="320"></td>
+            {% else %}
+            <td>{{ field.value }}</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+</table>
+<a href="{% url 'scan:view' pid=pid %}" class="btn btn-secondary">Back</a><br>
+{% endblock %}

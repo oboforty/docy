@@ -22,7 +22,9 @@ urlpatterns = [
 
     path('add_scan/<int:pid>', views.add_scan, name='add_scan'),
     path('edit_scan/<int:sid>', views.edit_scan, name= 'edit_scan'),
-    path('delete_scan/<int:sid>', views.delete_scan, name= 'delete_scan')
+    path('delete_scan/<int:sid>', views.delete_scan, name= 'delete_scan'),
+
+    path('view_scan/<int:pid>/<int:sid>/', views.view_scan, name='view_scan'),
 
 
 

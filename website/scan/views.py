@@ -4,6 +4,7 @@ from .models import Patient, Scan
 from .models import PatientForm, ScanForm
 from typing import Sequence
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 
 
@@ -105,7 +106,7 @@ def delete(request, pid):
 def edit_scan(request, sid):
 	scan = get_object_or_404(Scan, pk=sid)
 	if request.method == 'POST':
-		form = ScanForm(request.POST, instance=scan)
+		form = ScanForm(request.POST, request.FILES, instance=scan)
 		if form.is_valid():
 			form.save()
 			return redirect(reverse('scan:patients'))
@@ -115,7 +116,7 @@ def edit_scan(request, sid):
 
 def add_scan(request, pid):
 	if request.method == 'POST':
-		form = ScanForm(request.POST)
+		form = ScanForm(request.POST, request.FILES)
 
 		if form.is_valid():
 			new_scan= form.save(commit= False)
@@ -145,3 +146,9 @@ def view(request, pid):
 	scans= Scan.objects.filter(patient= pid)
 
 	return render(request, 'patient/view.html', {'form':form, 'scans':scans, 'pid': pid})
+
+@login_required(login_url='login:login')
+def view_scan(request, pid, sid):
+    scan = get_object_or_404(Scan, patient__pk=pid, pk=sid)
+    form = ScanForm(instance=scan)
+    return render(request, 'scan/view_scan.html', {'form':form, 'pid':pid})
