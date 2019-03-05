@@ -5,8 +5,42 @@
 {% block content %}
 
 {% csrf_token %}
+
 {{ form.as_p}}
-<a href="/scan/patients/">back</a>
+
+<a href="/scan/add_scan/{{pid}}" class="btn btn-primary">Add a scan</a>
+<table class="table table-condensed table-hover table-striped" name="Scans">
+	 <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Reason</th>
+        <th>Diagnosis</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      {% for scan in scans %}
+      	<tr>
+          <td>{{ scan.sid }}</td>
+          <td>{{ scan.diag_date }}</td>
+          <td>{{ scan.reason }} </td>
+          <td>{{ scan.diagnosis}} </td>
+          <td>
+            <a href="{% url 'scan:view_scan' pid=pid sid=scan.sid %}" class="btn btn-info">view</a>
+            <a href="/scan/delete_scan/{{ scan.sid }}" class="btn btn-danger">delete</a>
+            <a href="/scan/edit_scan/{{ scan.sid }}" class="btn btn-success">edit</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+
+</table>
+
+
+<a href="/scan/patients/">Back</a>
 
 {% endblock %}
 
