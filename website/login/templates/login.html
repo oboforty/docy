@@ -1,16 +1,64 @@
-{%extends "base.html"%}
+{%extends "base_landing.html"%}
+{% load i18n %}
+{% load static %}
+
 {% block content %}
-  <br><br><br><br><br>
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
+
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h5>Login</h5>
+
                 <form class="form" action="{% url 'login:login' %}" method="post">
-                    {% csrf_token %}
-                    {{ form.non_field_errors }}
-                    {% for field in form %}
-                        {{ field.label_tag }}
-                        {{ field }}
-                        {{ field.errors }}
-                    {% endfor %}<br>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                  {% csrf_token %}
+                  {{ form.non_field_errors }}
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" name="username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-key"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password" name="password" aria-label="Password" aria-describedby="basic-addon2">
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                  </div>
+
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                 </form>
-                
-        
-{% endblock %}                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+{% endblock %}

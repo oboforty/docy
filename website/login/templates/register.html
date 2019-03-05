@@ -1,15 +1,80 @@
 {%extends "base.html"%}
+{% load i18n %}
+{% load static %}
+
 {% block content %}
-  <br><br><br><br><br>
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
+
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h5>Register</h5>
+
                 <form class="form" action="{% url 'login:register' %}" method="post">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {{ field.label_tag }}
-                        {{ field }}
-                        {{ field.errors }}<br>
-                    {% endfor %}<br>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                  {% csrf_token %}
+                  {{ form.non_field_errors }}
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="area-username">
+                        <i class="fa fa-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" name="username" aria-label="Username" aria-describedby="area-username">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="area-email">
+                        @
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email" name="email" aria-label="Username" aria-describedby="area-email">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="area-password1">
+                        <i class="fa fa-key"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password" name="password1" aria-label="Password" aria-describedby="area-password1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="area-password2">
+                        <i class="fa fa-key"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password again" name="password2" aria-label="Password again" aria-describedby="area-password2">
+                  </div>
+
+
+                  <button class="btn btn-lg btn-danger btn-block text-uppercase" type="submit">Register</button>
                 </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
 {% endblock %}
 
 

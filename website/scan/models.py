@@ -73,7 +73,6 @@ class Scan(models.Model):
             'diagnosis': self.diagnosis.toView(),
         }
 
-
 class Diagnosis(models.Model):
     dia_id = models.AutoField(primary_key=True)
     diagnosis = models.CharField(max_length=20)
