@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan
@@ -38,14 +39,12 @@ def patient_list(request: HttpRequest):
 	"""
 	if 'Search' in request.GET:
 		search = request.GET.get('Search')
-		patients= Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))
-		
+		patients: Sequence[Patient] = Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))		
 	else:
 		patients: Sequence[Patient] = Patient.objects.all()
 	
 	return render(request, 'patient/list.html', {
-		'patients': patients 
-
+		'patients': patients
 	})
 
 

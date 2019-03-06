@@ -105,18 +105,3 @@ class ScanForm(ModelForm):
         widgets = {
             'diag_date': DateInput()
         }
-        
-
-
-'''class Diagnosis(models.Model):
-    dia_id = models.AutoField(primary_key=True)
-    diagnosis = models.CharField(max_length=20)
-
-    def toView(self):
-        # Converts to frontend view representation
-
-        return {
-            'dia_id': self.dia_id,
-            'diagnosis': self.diagnosis,
-        }
-'''
