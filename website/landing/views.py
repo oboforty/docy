@@ -10,3 +10,7 @@ def landing(request: HttpRequest):
   return render(request, 'landing.html', {
 
   })
+
+
+
+
