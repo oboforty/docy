@@ -9,8 +9,8 @@
         <th>#</th>
         <th>Date</th>
         <th>Reason</th>
-        <th>File</th>
         <th>Diagnosis</th>
+        <th>Actions</th>
       </tr>
     </thead>
 
@@ -21,9 +21,9 @@
           <td>{{ scan.sid }}</td>
           <td>{{ scan.diag_date }}</td>
           <td>{{ scan.reason }} </td>
-          <td><a href="/scan/view/{{ scan.sid }}">{{ File }}</a></td>
           <td>{{ scan.diagnosis}} </td>
           <td>
+            <a href="{% url 'scan:view_scan' pid=pid sid=scan.sid %}" class="btn btn-info">view</a>
             <a href="/scan/delete/{{ scan.sid }}" class="btn btn-danger">delete</a>
             <a href="/scan/edit/{{ scan.sid }}" class="btn btn-success">edit</a>
           </td>

@@ -5,7 +5,7 @@
 {% block content %}
 
 
-    <form action="" method="post" id="upload_form">
+    <form action="" method="post" id="upload_form" enctype="multipart/form-data">
      {% csrf_token %}
      <p class="bg-danger">
       {% if form.errors %}
@@ -33,11 +33,10 @@
      </fieldset><br/>
 
 
-<!--      <fieldset>
-        <label for="ScanFile">File input</label>
-        <input type="file" class="form-control-file" id="ScanFile">
+     <fieldset>
+        {{ form.file }}
      </fieldset><br/>
- -->
+
 
 
         <div class="submit-row">

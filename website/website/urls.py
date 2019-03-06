@@ -24,7 +24,6 @@ from landing import views
 urlpatterns = [
     # Index page:
     path('', views.landing, name='landing'),
-
     path('admin/', admin.site.urls),
     path('user/', include('login.urls')),
     path('scan/', include('scan.urls')),

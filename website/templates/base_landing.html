@@ -13,11 +13,13 @@
   <title>Docy</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="{% static 'img/landing/core-img/logo.png' %}">
+  <link rel="icon" href="{% static 'img/landing/core-img/logo.png' %}"  height="42" width="42" >
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'css/landing/style_index.css'%}">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <style type="text/css">
 
@@ -34,6 +36,7 @@
       background:  black;
     }
 
+
   </style>
 
 
@@ -41,11 +44,13 @@
 
 <body>
   <!-- Preloader -->
+  <!--
   <div id="preloader">
     <div class="wrapper">
       <div class="cssload-loader"></div>
     </div>
   </div>
+  -->
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area">
@@ -56,10 +61,10 @@
         <nav class="classy-navbar justify-content-between" id="monaNav">
 
           <!-- Background Curve -->
-          <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/curve.png'%});"></div>
+         <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
 
           <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="42" width="42"></a>
+          <a class="nav-brand" href="index.html"><img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="60" width="70"></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -76,22 +81,14 @@
             <!-- Nav Start -->
             <div class="classynav">
               <ul id="nav">
-                <li class="current-item"><a href="./base_landing.html">Home</a></li>
-
-                <li><a href="./aboutus.html">About Us</a></li>
-
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./base_landing.html">Home</a></li> 
                 <li><a href="{% url 'login:login' %}">Sign In</a></li>
                 <li><a href="{% url 'login:register' %}">Sign Up</a></li>
 
 
               </ul>
 
-              <!-- Search Icon -->
-              <div class="search-icon" data-toggle="modal" data-target="#searchModal">
-                <i class="icon_search"></i>
-              </div>
-            </div>
+             
             <!-- Nav End -->
 
           </div>
