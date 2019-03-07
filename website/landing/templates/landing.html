@@ -6,6 +6,7 @@
 {% block content %}
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <!-- ***** Welcome Area Start ***** -->
   <section class="welcome-area">
     <!-- Welcome Slides -->
@@ -42,7 +43,7 @@
         <!-- Background Curve -->
         <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static 'img/landing/bg-img/1.jpg'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="100ms" style="background-image: url({% static 'img/landing/bg-img/1.jpg'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -69,7 +70,7 @@
         <!-- Background Curve -->
         <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
         <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url( {% static 'img/landing/bg-img/2.jpg'%})" height="42" width="42"></div>
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="100ms" style="background-image: url( {% static 'img/landing/bg-img/2.jpg'%})" height="42" width="42"></div>
         <!-- Welcome Text -->
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -83,13 +84,7 @@
             </div>
           </div>
         </div>
-        <!-- Social Info -->
-
-        <!-- Pager -->
-        <div class="slide-pager">
-         <!--  <a href="#">Next: Jesse Edwards</a> -->
-        </div>
-      </div>
+        
 
     </div>
   </section>
@@ -97,37 +92,27 @@
 
   <!-- ***** About Us Area Start ***** -->
   <section class="mona-about-us-area mb-30 section-padding-80-0">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
 
-        <!-- About Us Thumbnail -->
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="col-lg-6 col-sm-6">
           <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="100ms">
             <span class="line"></span>
-            <img src="{% static 'img/landing/bg-img/7.jpg'%}" alt="">
+            <img src="{% static 'img/landing/bg-img/us.jpg'%}" alt="">
             <span class="line2"></span>
           </div>
         </div>
-
-        <!-- About Us Thumbnail -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="400ms">
-            <span class="line"></span>
-            <img src="{% static 'img/landing/bg-img/8.jpg'%}" alt="">
-            <span class="line2"></span>
-          </div>
-        </div>
+      
 
         <!-- About Us Content -->
-        <div class="col-12 col-lg-4">
-          <div class="about-us-content mb-50 wow fadeInUp" data-wow-delay="700ms">
-            <h2>Docy</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet ipsumlor eut consetetur sadipscing elitr.</p>
+       
+          <div class="col-lg-6 col-sm-6 text-center">
+            <h2>About us</h2>
+            <p> </p>
           </div>
         </div>
-      </div>
-    </div>
+   </div>
+ </section>
 
     <!-- Single Service Area -->
     <div class="container">
@@ -136,54 +121,52 @@
 
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-              <!-- <i class="icon-folder-open-alt "></i> -->
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+             <i class="fas fa-universal-access"></i>
               <h5>Easy Access</h5>
-              <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <p>Our users can easily access their data</p>
             </div>
           </div>
 
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-              <!-- <i class="icon_calendar"></i> -->
+            <i class="icon_calendar"></i> 
               <h5>Time Saver</h5>
-              <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <p>Our users can save time having their data organized by Docy</p>
             </div>
           </div>
 
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-              <!-- <i class="icon_male"></i> -->
+             <i class="fas fa-pen"></i>
               <h5>Best Clinical Dissusions</h5>
-              <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <p>Our users can provide the best clinical disccusions since they can keep track of their patients</p>
             </div>
           </div>
 
           <!-- Single Service Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-              <!-- <i class="icon_file"></i> -->
+             <i class="far fa-file"></i> 
               <h5>Annually Reports</h5>
-              <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <p>Our users can using Docy can have annually reports of their patients in form of graphs</p>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-  </section>
-  <!-- ***** About Us Area End ***** -->
-
-  <!-- ***** Model Area Start ***** -->
+  </div>
 
 
-  <!-- ***** Model Area End ***** -->
+
 
   <!-- ***** Client Feedback Area Start ***** -->
   <section class="clients-feedback-area section-padding-80 clearfix">
-    <div class="container">
+    <div class="container-fluid">
+       <div class="service-area mt-80">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10">
           <div class="slider slider-for">
@@ -194,8 +177,13 @@
                 <i class="icon_quotations" aria-hidden="true"></i>
               </div>
               <div class="client-description text-center">
-                <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                .”</h4>
+               <h4>“For every minute spent in organizing, an hour is earned
+                ”</h4>
+                <h6> Benjamin Franklin</h6>
+
+               <div class="quote-icon">
+                <i class="icon_quotations" aria-hidden="true"></i>
+              </div>
               </div>
             </div>
 
@@ -205,6 +193,7 @@
         </div>
       </div>
     </div>
+
   </section>
   <!-- ***** Client Feedback Area End ***** -->
 
@@ -214,9 +203,9 @@
       <div class="row">
         <div class="col-12">
           <div class="cta-content">
-            <h2>Sign Up for Free</h2>
-            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor.</h6>
-            <a href="#" class="btn mona-btn">Contact Us</a>
+            <h3>Sign Up</h3>
+            <h6>Feel free to try this new experience of patients' organizer</h6>
+              <a href="{% url 'login:register' %}"class="btn mona-btn">Sign Up</a>
           </div>
         </div>
       </div>
