@@ -7,7 +7,7 @@ from typing import Sequence
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 
-
+@login_required(login_url='login:login')
 def dashboard(request: HttpRequest):
 	"""
 	Doctor's dashboard
@@ -20,7 +20,7 @@ def dashboard(request: HttpRequest):
 
 	})
 
-
+@login_required(login_url='login:login')
 def scan_list(request: HttpRequest):
 	"""
 	List of scans
@@ -32,7 +32,7 @@ def scan_list(request: HttpRequest):
 		'scans': scans
 	})
 
-
+@login_required(login_url='login:login')
 def patient_list(request: HttpRequest):
 	"""
 	List of patients
@@ -47,8 +47,12 @@ def patient_list(request: HttpRequest):
 		'patients': patients
 	})
 
-
+@login_required(login_url='login:login')
 def edit(request, pid):
+	"""
+	Edit patient information
+	using form in patient/edit.html
+	"""
 	patient = get_object_or_404(Patient, pk=pid)
 	if request.method == 'POST':
 		form = PatientForm(request.POST, instance=patient)
@@ -59,8 +63,12 @@ def edit(request, pid):
 		form = PatientForm(instance=patient)
 	return render(request, 'patient/edit.html', {'form':form})
 
-
+@login_required(login_url='login:login')
 def add(request):
+	"""
+	Add new patient
+	using form in patient/edit.html
+	"""
 	if request.method == 'POST':
 		form = PatientForm(request.POST)
 		if form.is_valid():
@@ -70,8 +78,12 @@ def add(request):
 		form = PatientForm()
 	return render(request, 'patient/edit.html', {'form':form})
 
-
+@login_required(login_url='login:login')
 def delete(request, pid):
+	"""
+	Delete patient
+	using form in patient/delete.html
+	"""
 	patient = get_object_or_404(Patient, pk=pid)
 	form = PatientForm(instance=patient)
 	if request.method == 'POST':
@@ -80,7 +92,7 @@ def delete(request, pid):
 	else:
 		return render(request, 'patient/delete.html', {'form':form})
 
-
+@login_required(login_url='login:login')
 def edit_scan(request, sid):
 	"""
 	Edits scan with form
@@ -100,7 +112,7 @@ def edit_scan(request, sid):
 		form = ScanForm(instance=scan)
 	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
-
+@login_required(login_url='login:login')
 def add_scan(request, pid):
 	"""
 	Adds scan with form
@@ -121,7 +133,7 @@ def add_scan(request, pid):
 		form = ScanForm()
 	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
-
+@login_required(login_url='login:login')
 def delete_scan(request, sid):
 	"""
 	Deletes scan (with confirmation message)
@@ -140,9 +152,11 @@ def delete_scan(request, sid):
 	else:
 		return render(request, 'scan/delete_scan.html', {'form':form, 'pid': pid})
 
-
+@login_required(login_url='login:login')
 def view(request, pid):
-
+	"""
+	View patient information 
+	"""
 	obj = Patient.objects.filter(pk=pid).first()
 	form = PatientForm(instance=obj)
 
@@ -151,7 +165,7 @@ def view(request, pid):
 	return render(request, 'patient/view.html', {'form':form, 'scans':scans, 'pid': pid})
 
 
-#@login_required(login_url='login:login')
+@login_required(login_url='login:login')
 def view_scan(request, pid, sid):
 	"""
 	Shows scan page with some patient information

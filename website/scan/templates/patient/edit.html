@@ -4,84 +4,87 @@
 
 {% block content %}
 
-<form>
-    <div class="text-left">
-    <form action="" method="post" id="upload_form">
+    <h3>Basic Information</h3>
+
+    <form action="" method="post" >
         {% csrf_token %}
-    <h5>Basic Information</h5>
-       <div class="form-group">
-        <label class="required" for="id_first_name">First name</label>
-        <input type="text" name="first_name" class="form-control" maxlength="20" required id="id_first_name" value="{{ form.first_name.value|default_if_none:'' }}">
-         </div>
-          <div class="form-group">
-        <label class="required" for="id_last_name">Last name</label>
-        <input type="text" name="last_name" class="form-control" maxlength="20" required id="id_last_name" value="{{ form.last_name.value|default_if_none:'' }}"><br/>
-          </div>
-           <div class="form-group">
-        <label class="required" for="id_birth_date">Birth date</label>
-        <input type="date" name="birth_date" class="vDateField" size="10" required id="id_birth_date" value="{{ form.birth_date.value|date:'Y-m-d' }}">
-    </div>
- <div class="form-group">
-        <label class="required" for="id_gender">Gender</label>
-        {{form.gender}}
-</div>
- <div class="form-group">
-        <label class="required" for="id_age">Age</label>
-        <input type="number" name="age" class="vIntegerField" required id="id_age" value="{{ form.age.value }}">
-    </div>
-     <div class="form-group">
 
-        <label class="required" for="id_weight">Weight</label>
-        <input type="number" name="weight" step="any" required id="id_weight" value="{{ form.weight.value }}"><br/>
-    </div>
-    <br>
-    <h5>Chemiotherapy Information</h5>
- <div class="form-group">
-        {{ form.Chemo }}<label class="vCheckboxLabel" for="id_Chemo">Chemiotherapy</label><br/>
-    </div>
-     <div class="form-group">
-        <label class="required" for="id_Last_Chemo">Last Chemiotherapy</label>
-        <input type="date" name="Last_Chemo" class="vDateField" size="10" required id="id_Last_Chemo" value="{{ form.Last_Chemo.value|date:'Y-m-d' }}"><br/>
-    </div>
-    <br>
- <div class="form-group">
-<h5>More Information</h5>
- <div class="form-group">
-        {{ form.smoker }}<label class="vCheckboxLabel" for="id_smoker">Smoker</label>
+       
+<table class="table table-condensed table-hover table-striped">
+        <tr>
+          <th>First name</th>
+          <td>{{ form.first_name }}</td>
+        </tr>
 
-</div>
+        <tr>
+          <th>Last name</th>
+          <td>{{ form.last_name }}</td>
+        </tr>       
 
-        <label class="required" for="id_Packs_yearly">Packs yearly</label>
-        <input type="number" name="Packs_yearly" class="vIntegerField" required id="id_Packs_yearly" value="{{ form.Packs_yearly.value }}"><br/>
-    </div>
- <div class="form-group">
+        <tr>
+          <th>Birth date</th>
+          <td>{{ form.birth_date }}</td>
+        </tr>
 
-        {{ form.diabetes }}<label class="vCheckboxLabel" for="id_diabetes">Diabetes</label>
-    </div>
- <div class="form-group">
-        {{ form.insulin }}<label class="vCheckboxLabel" for="id_insulin">Insulin</label>
-</div>
+        <tr>
+          <th>Gender</th>
+          <td>{{ form.gender }}</td>
+        </tr>
 
-     
-  <div class="form-group">
-        <label class="required" for="id_diagnosis">Diagnosis</label>
-        <input type="text" name="diagnosis" class="form-control" maxlength="20" required id="id_diagnosis">
-   <br/>
-</div>
-         <div class="form-group">
-        <label for="ScanFile">Upload Files</label>
-        <input type="file" class="form-control-file" id="ScanFile">
-    
-</div>
+        <tr>
+          <th>Age</th>
+          <td>{{ form.age }}</td>
+        </tr>
+
+        <tr>
+          <th>Chemo</th>
+          <td>{{ form.Chemo }}</td>
+        </tr>
+
+        <tr>
+          <th>Last Chemo</th>
+          <td>{{ form.Last_Chemo }}</td>
+        </tr>
+
+        <tr>
+          <th>Smoker</th>
+          <td>{{ form.smoker }}</td>
+        </tr>
+
+        <tr>
+          <th>Packs yearly</th>
+          <td>{{ form.Packs_yearly }}</td>
+        </tr>
+
+        <tr>
+          <th>Diabetes</th>
+          <td>{{ form.diabetes }}</td>
+        </tr>
+
+        <tr>
+          <th>Insulin</th>
+          <td>{{ form.insulin }}</td>
+        </tr>
+
+        <tr>
+          <th>Weight</th>
+          <td>{{ form.weight }}</td>
+        </tr>
+     </table>
 
 
 
- <div class="form-group">
-  <button type="submit" class="btn btn-info" input type="submit" name="_save">Submit</button>
 
-            
-</div>
+
+
+    <input type="submit" value="Submit" class="btn btn-success">
+
+    <a href="/scan/patients" class="btn btn-danger">Cancel</a>
+
     </form>
+
+
+
 
 {% endblock %}
 

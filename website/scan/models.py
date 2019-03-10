@@ -8,14 +8,14 @@ import uuid
 # Create your models here.
 class Patient(models.Model):
     GENDER_CHOICES = (
-        (1, 'Male'),
-        (2, 'Female'),
+        ('Male', 'Male'),
+        ('Female', 'Female'),
         )
     pid = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     birth_date = models.DateField(null=True,blank=True)
-    gender = models.IntegerField(choices=GENDER_CHOICES)
+    gender = models.CharField(max_length=20,choices=GENDER_CHOICES)
     age = models.PositiveIntegerField(null=True,blank=True)
     Chemo = models.BooleanField(null=True,blank=True)
     Last_Chemo = models.DateField(null=True,blank=True)

@@ -5,7 +5,64 @@
 {% block content %}
 <div class="row" >
   <div class = "col-5">
-    {{ form.as_p}}
+    <br>
+     <p>
+   <h3 style="color:darkgrey">{{ form.first_name.value }} {{ form.last_name.value }}</h3>
+  </p>
+       <table width="250" height="350" bordercolor="#ccc">
+       
+        <tr>
+          <th>Birth date</th>
+          <td>{{ form.birth_date.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Gender</th>
+          <td class="field-gender">
+          {{ form.gender.value }}
+        </td>
+        </tr>
+
+        <tr>
+          <th>Age</th>
+          <td>{{ form.age.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Chemo</th>
+          <td>{{ form.Chemo.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Last Chemo</th>
+          <td>{{ form.Last_Chemo.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Smoker</th>
+          <td>{{ form.smoker.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Packs yearly</th>
+          <td>{{ form.Packs_yearly.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Diabetes</th>
+          <td>{{ form.diabetes.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Insulin</th>
+          <td>{{ form.insulin.value }}</td>
+        </tr>
+
+        <tr>
+          <th>Weight</th>
+          <td>{{ form.weight.value }}</td>
+        </tr>
+     </table>
   </div>
 
   <div class = "col-7">
@@ -47,10 +104,8 @@
 
 
 
-
-
-
-<a href="/scan/patients/">Back</a>
+<br>
+<a href="/scan/patients/" >Back</a>
 
 {% endblock %}
 
