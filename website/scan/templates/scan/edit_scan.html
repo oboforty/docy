@@ -17,11 +17,11 @@
      <fieldset>
 
         <label class="required" for="id_diag_date">Scan Date:</label>
-        <input type="date" name="diag_date" class="vDateField" size="10" required id="id_diag_date" value="{{ form.diag_date.value|date:'Y-m-d' }}">
+        <input type="date" name="diag_date" class="form-control" size="10" required id="id_diag_date" value="{{ form.diag_date.value|date:'Y-m-d' }}">
 
 
         <label class="required" for="id_reason">Reason:</label>
-        <input type="text" name="reason" class="vTextField" required id="id_reason" value="{{ form.reason.value }}">
+        <input type="text" name="reason" class="form-control" required id="id_reason" value="{{ form.reason.value }}">
 
 
      </fieldset><br/>
@@ -34,17 +34,25 @@
 
 
      <fieldset>
-        {{ form.file }}
+        <label class="required">Scan image:</label>
+
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" name="file" accept="image/*" required="" class="custom-file-input" id="inputGroupFile" aria-describedby="inputFile">
+            <label class="custom-file-label" for="inputGroupFile">Choose file</label>
+          </div>
+        </div>
+
      </fieldset><br/>
 
 
 
         <div class="submit-row">
-            <input type="submit" value="Save" class="default" name="_save">
+            <input type="submit" value="Save" class="btn btn-primary" name="_save">
         </div>
 
     </form>
 
-<a href="{% url 'scan:view' pid %}">Back</a>
+<a href="{% url 'scan:view' pid %}" class="btn btn-link">Back</a>
 
 {% endblock %}

@@ -1,17 +1,47 @@
 {% extends "base.html" %}
+{% load patient_filters %}
 {% load i18n %}
+
 {% block content %}
-<table border="1">
-    {% for field in form %}
-        <tr>
-            <td>{{ field.label }}</td>
-            {% if field.label == 'File' %}
-            <td><img src="{{ field.value.url }}" width="320"></td>
-            {% else %}
-            <td>{{ field.value }}</td>
-            {% endif %}
-        </tr>
-    {% endfor %}
-</table>
-<a href="{% url 'scan:view' pid=pid %}" class="btn btn-secondary">Back</a><br>
+
+  <p>
+    <span class="badge bg-info w-100 p-2" style="text-align: left">
+        Scan #{{ scan.sid }} |
+        Patient #{{ scan.patient.pid }} ({{ scan.patient|docyname }})
+    </span>
+  </p>
+
+  <div class="d-flex">
+    <div class="p-2 flex-grow-1">
+      {% if scan.file %}
+        <img class="img-fluid" src="{{ scan.file.url }}">
+      {% else %}
+        <p class="text-danger">No scan image available.</p>
+      {% endif %}
+    </div>
+    <div class="">
+      <div class="list-group">
+        <div class="list-group-item">
+          <strong>Date: </strong>
+          {{ scan.diag_date }}
+        </div>
+        <div class="list-group-item">
+          <strong>Diagnosis: </strong>
+          {{ scan.diagnosis }}
+        </div>
+        <div class="list-group-item">
+          <strong>Reason: </strong>
+          {{ scan.reason }}
+        </div>
+        <div class="list-group-item">
+          <strong>Patient: </strong>
+          {{ scan.patient|docyname }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <a href="{% url 'scan:view' pid=pid %}" class="btn btn-link">Back</a><br>
+
 {% endblock %}

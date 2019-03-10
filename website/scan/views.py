@@ -8,8 +8,6 @@ from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 
 
-
-
 def dashboard(request: HttpRequest):
 	"""
 	Doctor's dashboard
@@ -22,6 +20,7 @@ def dashboard(request: HttpRequest):
 
 	})
 
+
 def scan_list(request: HttpRequest):
 	"""
 	List of scans
@@ -32,6 +31,7 @@ def scan_list(request: HttpRequest):
 	return render(request, 'scan/list.html', {
 		'scans': scans
 	})
+
 
 def patient_list(request: HttpRequest):
 	"""
@@ -48,30 +48,6 @@ def patient_list(request: HttpRequest):
 	})
 
 
-
-
-
-def change(request: HttpRequest):
-	"""
-	TEST PAGE
-	"""
-
-	return render(request, 'upload_form.html')
-
-def test(request: HttpRequest):
-	"""
-	TEST PAGE
-	"""
-
-	#
-	patient = Patient.objects.order_by('?').first()
-	scan = Scan.objects.order_by('?').first()
-
-	return render(request, 'viewer.html', {
-		"patient": patient.toView() if patient else None,
-		"scan": scan.toView() if scan else None,
-	})
-
 def edit(request, pid):
 	patient = get_object_or_404(Patient, pk=pid)
 	if request.method == 'POST':
@@ -83,6 +59,7 @@ def edit(request, pid):
 		form = PatientForm(instance=patient)
 	return render(request, 'patient/edit.html', {'form':form})
 
+
 def add(request):
 	if request.method == 'POST':
 		form = PatientForm(request.POST)
@@ -93,6 +70,7 @@ def add(request):
 		form = PatientForm()
 	return render(request, 'patient/edit.html', {'form':form})
 
+
 def delete(request, pid):
 	patient = get_object_or_404(Patient, pk=pid)
 	form = PatientForm(instance=patient)
@@ -102,7 +80,15 @@ def delete(request, pid):
 	else:
 		return render(request, 'patient/delete.html', {'form':form})
 
+
 def edit_scan(request, sid):
+	"""
+	Edits scan with form
+
+	:param sid: scan id
+	:return:
+	"""
+	
 	scan = get_object_or_404(Scan, pk=sid)
 	pid = scan.patient.pid
 	if request.method == 'POST':
@@ -114,7 +100,15 @@ def edit_scan(request, sid):
 		form = ScanForm(instance=scan)
 	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
+
 def add_scan(request, pid):
+	"""
+	Adds scan with form
+
+	:param pid: scan's parent patient id
+	:return:
+	"""
+
 	if request.method == 'POST':
 		form = ScanForm(request.POST, request.FILES)
 
@@ -127,7 +121,15 @@ def add_scan(request, pid):
 		form = ScanForm()
 	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
+
 def delete_scan(request, sid):
+	"""
+	Deletes scan (with confirmation message)
+
+	:param sid: scan id
+	:return:
+	"""
+
 	scan = get_object_or_404(Scan, pk=sid)
 	form = ScanForm(instance=scan)
 	pid = scan.patient.pid
@@ -138,17 +140,27 @@ def delete_scan(request, sid):
 	else:
 		return render(request, 'scan/delete_scan.html', {'form':form, 'pid': pid})
 
+
 def view(request, pid):
+
 	obj = Patient.objects.filter(pk=pid).first()
 	form = PatientForm(instance=obj)
 
-
-	scans= Scan.objects.filter(patient= pid)
+	scans = Scan.objects.filter(patient= pid)
 
 	return render(request, 'patient/view.html', {'form':form, 'scans':scans, 'pid': pid})
 
-@login_required(login_url='login:login')
+
+#@login_required(login_url='login:login')
 def view_scan(request, pid, sid):
-    scan = get_object_or_404(Scan, patient__pk=pid, pk=sid)
-    form = ScanForm(instance=scan)
-    return render(request, 'scan/view_scan.html', {'form':form, 'pid':pid})
+	"""
+	Shows scan page with some patient information
+
+	:param pid: patient id
+	:param sid: scan id
+	:return:
+	"""
+
+	scan: Scan = get_object_or_404(Scan, patient__pk=pid, pk=sid)
+
+	return render(request, 'scan/view_scan.html', {'scan': scan, 'pid': pid})

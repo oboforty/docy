@@ -1,5 +1,6 @@
 # SQLite
 website/db.sqlite3
+website/media/
 
 # IDE
 .idea/
