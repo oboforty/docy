@@ -3,16 +3,22 @@
 {%extends "base.html"%}
 {% block content %}
 {% if user.is_authenticated %}
-<h1>Welcome, {{ username }}.</h1>
-	{% csrf_token %}
-	<a href="{% url 'login:logout' %}" class="btn btn-primary">Logout</a>
-	<a href="{% url 'login:password_change' %}" class="btn btn-secondary">Change Password</a>
+<h2>Welcome to Docy  {{ username }}!</h2>
+<br>
+<br>
 
+	
+<div class= "text-right">
+	{% csrf_token %}
+	<a href="{% url 'login:logout' %}" class="btn btn-dark">Sign out</a>
+	<a href="{% url 'login:password_change' %}" class="btn btn-info">Change Password</a>
+</div>
 {% else %}
-<h1>Welcome, please register or login.</h1>
+<h1>Welcome, please sign up or sign in</h1>
 	{% csrf_token %}
 	<a href="{% url 'login:register' %}">Register</a>
 	<a href="{% url 'login:login' %}">Login</a>
 {% endif %}
+
 
 {% endblock %}

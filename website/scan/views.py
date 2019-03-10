@@ -88,7 +88,7 @@ def edit_scan(request, sid):
 	:param sid: scan id
 	:return:
 	"""
-	
+
 	scan = get_object_or_404(Scan, pk=sid)
 	pid = scan.patient.pid
 	if request.method == 'POST':

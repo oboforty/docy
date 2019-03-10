@@ -2,96 +2,103 @@
 {% load i18n %}
 {% load static %}
 
-
 {% block content %}
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
   <!-- ***** Welcome Area Start ***** -->
   <section class="welcome-area">
-    <!-- Welcome Slides -->
-    <div class="welcome-slides owl-carousel">
+  <div class="single-welcome-slide">
+  <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});">
+  </div>
+</div>  
+ </section>
+     
+     
 
-      <!-- Single Welcome Slide -->
-      <div class="single-welcome-slide">
-        <!-- Background Curve -->
-       <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div> 
-        <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url({% static 'img/landing/bg-img/3.jpg' %})"
-        height="42" width="42" ></div>
-        <!-- Welcome Text -->
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-              <div class="welcome-text">
-               <!--  <h5 data-animation="bounceInUp" data-delay="100ms">GUI<br> -->
-                </h5>
 
-              </div>
-            </div>
+
+
+  <!-- <--***** About Us Area Start ***** -->
+  <section class="mona-about-us-area  section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-sm-6">
+          <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="100ms">
+            <span class="line"></span>
+            <img src="{% static 'img/landing/bg-img/dashboard.png'%}" alt="">
+            <span class="line2"></span>
           </div>
         </div>
+      
 
-        <!-- Pager -->
-        <div class="slide-pager">
-         <!--  <a href="#">Ne</a> -->
-        </div>
-      </div>
-
-      <!-- Single Welcome Slide -->
-      <div class="single-welcome-slide">
-        <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
-        <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="100ms" style="background-image: url({% static 'img/landing/bg-img/1.jpg'%})" height="42" width="42"></div>
-        <!-- Welcome Text -->
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-              <div class="welcome-text">
-              <!--   <h5 data-animation="bounceInUp" data-delay="100ms">Sign in<br></h5> -->
-
-
-
-              </div>
-            </div>
+        <!-- About the App Content -->
+       
+          <div class="col-lg-6 col-sm-6 text-center">
+            <h2>Docy</h2>
+            <p>Our application provides the ability to our users to organize in the best way possible their patients' data.</p>
           </div>
         </div>
-        <!-- Social Info -->
-
-        <!-- Pager -->
-        <div class="slide-pager">
-      <!--     <a href="#">Next: Shaila Ritu</a> -->
-        </div>
-      </div>
-
-      <!-- Single Welcome Slide -->
-      <div class="single-welcome-slide">
-        <!-- Background Curve -->
-        <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
-        <!-- Main Background Image -->
-        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="100ms" style="background-image: url( {% static 'img/landing/bg-img/2.jpg'%})" height="42" width="42"></div>
-        <!-- Welcome Text -->
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-              <div class="welcome-text">
-         <!--        <h5 data-animation="bounceInUp" data-delay="100ms">Sign up <br> -->
-                  </h5>
+   </div>
+ </section>
 
 
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+<!-- Single Service Area -->
+    <div class="container">
+      <div class="service-area">
+        <div class="row">
         
 
-    </div>
-  </section>
-  <!-- ***** Welcome Area End ***** -->
+          <!-- Single Service Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+             <i class="fas fa-universal-access"></i>
+              <h5>Easy Access</h5>
+              <p>Our users can easily access their data</p>
+            </div>
+          </div>
 
-  <!-- ***** About Us Area Start ***** -->
-  <section class="mona-about-us-area mb-30 section-padding-80-0">
+          <!-- Single Service Area -->
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+            <i class="icon_calendar"></i> 
+              <h5>Time Saver</h5>
+              <p>Our users can save time having their data organized by Docy</p>
+            </div>
+          </div>
+
+          <!-- Single Service Area -->
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+             <i class="fas fa-pen"></i>
+              <h5>Best Clinical Dissusions</h5>
+              <p>Our users can provide the best clinical disccusions since they can keep track of their patients</p>
+            </div>
+          </div>
+
+          <!-- Single Service Area -->
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+             <i class="far fa-file"></i> 
+              <h5>Annually Reports</h5>
+              <p>Our users can using Docy can have annually reports of their patients in form of graphs</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- About Us Content -->
+
+
+  <section class="mona-about-us-area section-padding-80-0">
     <div class="container-fluid">
       <div class="row">
 
@@ -108,70 +115,24 @@
        
           <div class="col-lg-6 col-sm-6 text-center">
             <h2>About us</h2>
-            <p> </p>
+            <p>Bionfomatician students created a fancy application</p>
           </div>
         </div>
    </div>
  </section>
 
-    <!-- Single Service Area -->
-    <div class="container">
-      <div class="service-area mt-80">
-        <div class="row">
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-             <i class="fas fa-universal-access"></i>
-              <h5>Easy Access</h5>
-              <p>Our users can easily access their data</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-            <i class="icon_calendar"></i> 
-              <h5>Time Saver</h5>
-              <p>Our users can save time having their data organized by Docy</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-             <i class="fas fa-pen"></i>
-              <h5>Best Clinical Dissusions</h5>
-              <p>Our users can provide the best clinical disccusions since they can keep track of their patients</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-             <i class="far fa-file"></i> 
-              <h5>Annually Reports</h5>
-              <p>Our users can using Docy can have annually reports of their patients in form of graphs</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <!-- ***** Client Feedback Area Start ***** -->
+  <!-- ***** Quote ***** -->
   <section class="clients-feedback-area section-padding-80 clearfix">
     <div class="container-fluid">
-       <div class="service-area mt-80">
+       <div class="service-area ">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10">
           <div class="slider slider-for">
 
-            <!-- Client Feedback Text -->
+            <!-- Quote -->
             <div class="client-feedback-text text-center">
               <div class="quote-icon">
                 <i class="icon_quotations" aria-hidden="true"></i>
@@ -189,15 +150,15 @@
 
         </div>
 
-        <!-- Client Thumbnail Area -->
+       
         </div>
       </div>
     </div>
 
   </section>
-  <!-- ***** Client Feedback Area End ***** -->
+  
 
-  <!-- ***** CTA Area Start ***** -->
+  <!-- ***** Sign up redireciton ***** -->
   <section class="mona-cta-area section-padding-80">
     <div class="container">
       <div class="row">
@@ -211,36 +172,33 @@
       </div>
     </div>
   </section>
-  <!-- ***** CTA Area End ***** -->
+  
 
-  <!-- ***** Blog Area Start ***** -->
+  <!-- ***** Upcoming features ***** -->
   <section class="mona-blog-area mb-50 section-padding-80-0">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
-            <h2>Latest Updates</h2>
+            <h2>Upcoming Features </h2>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <!-- Single Blog Post -->
 
-
-        <div class="col-12 col-lg-8">
+        <div class="container">
           <div class="row">
 
             <!-- Single Blog Post -->
              <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static 'img/landing/bg-img/4.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/report.jpg'%}" alt=""></a>
                 </div>
                 <div class="post-content">
-                  <a href="#" class="post-title">lorenn</a>
-                  <span class="post-date">30 Aug 2018</span>
+                  <a href="#" class="post-title">See Reports</a>
+                  <span class="post-date">4 February 2019</span>
                 </div>
               </div>
             </div>
@@ -250,28 +208,43 @@
             <div class="col-12 col-sm-6">
               <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static 'img/landing/bg-img/5.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/planner.jpg'%}" alt=""></a>
                 </div>
                 <div class="post-content">
-                  <a href="#" class="post-title">lorenn</a>
-                  <span class="post-date">30 Aug 2018</span>
+                  <a href="#" class="post-title">Add Appointment</a>
+                  <span class="post-date">19 December 2018</span>
                 </div>
               </div>
             </div>
 
             <!-- Single Blog Post -->
             <div class="col-12 col-sm-6">
-              <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="700ms">
+              <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="600ms">
                 <div class="post-thumbnail">
-                  <a href="#"><img src="{% static 'img/landing/bg-img/6.jpg'%}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/landing/bg-img/hospital.jpg'%}" alt=""></a>
                 </div>
                 <div class="post-content">
-                  <a href="#" class="post-title">test</a>
-                  <span class="post-date">30 Aug 2018</span>
+                  <a href="#" class="post-title">Connect to Hospital Database</a>
+                  <span class="post-date">4 September 2019</span>
                 </div>
               </div>
             </div>
 
+
+
+
+
+              <div class="col-12 col-sm-6">
+              <div class="single-blog-post mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="post-thumbnail text-center">
+                  <a href="#"><img src="{% static 'img/landing/bg-img/phone.jpg'%}" alt=""></a>
+                </div>
+                <div class="post-content">
+                  <a href="#" class="post-title">Mobile Application</a>
+                  <span class="post-date">19 December 2018</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
