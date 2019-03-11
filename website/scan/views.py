@@ -178,3 +178,10 @@ def view_scan(request, pid, sid):
 	scan: Scan = get_object_or_404(Scan, patient__pk=pid, pk=sid)
 
 	return render(request, 'scan/view_scan.html', {'scan': scan, 'pid': pid})
+
+@login_required(login_url='login:login')
+def charts(request):
+	"""
+	Render charts page
+	"""
+	return render(request, 'stat/charts.html')
