@@ -16,5 +16,23 @@
     </form>
 
     <!-- Navbar -->
-   
+    <ul class="navbar-nav ml-auto ml-md-0">
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          {% if user.is_authenticated %}
+            <a class="dropdown-item" href="#">{{ user.username }}</a>
+            <a class="dropdown-item" href="{% url 'login:password_change' %}">Change password</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'login:logout' %}" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          {% else %}
+            <a class="dropdown-item" href="{% url 'login:login' %}">Login</a>
+            <a class="dropdown-item" href="{% url 'login:register' %}">Register</a>
+          {% endif %}
+        </div>
+      </li>
+    </ul>
+
 </nav>
