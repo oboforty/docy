@@ -157,12 +157,11 @@ def view(request, pid):
 	"""
 	View patient information 
 	"""
-	obj = Patient.objects.filter(pk=pid).first()
-	form = PatientForm(instance=obj)
+	patient = Patient.objects.filter(pk=pid).first()
 
-	scans = Scan.objects.filter(patient= pid)
+	scans = Scan.objects.filter(patient=pid)
 
-	return render(request, 'patient/view.html', {'form':form, 'scans':scans, 'pid': pid})
+	return render(request, 'patient/view.html', {'patient': patient, 'scans': scans, 'pid': pid})
 
 
 @login_required(login_url='login:login')
