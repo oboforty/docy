@@ -690,11 +690,11 @@ ul {
     top: 0;
     right: 0; }
   .single-welcome-slide .main-bg-img {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 50%;
     height: calc(100% - 100px);
     bottom: 0;
-    right: 0;
+    right: 15%;
     z-index: 1; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .single-welcome-slide .main-bg-img {
@@ -735,7 +735,7 @@ ul {
         .single-welcome-slide .social-info a span {
           display: none; } }
       .single-welcome-slide .social-info a:focus, .single-welcome-slide .social-info a:hover {
-        color: #66fcf1; 
+        color: #66fcf1;
         box-shadow: none; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-welcome-slide .social-info a {
@@ -811,7 +811,7 @@ ul {
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #66fcf1; 
+    color: #66fcf1;
     font-weight: 600; }
     .welcome-text a:focus, .welcome-text a:hover {
       color: #232323; }
@@ -849,7 +849,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #66fcf1; 
+    background-color: #66fcf1;
     top: 0;
     left: 0;
     z-index: 10;
@@ -900,7 +900,7 @@ ul {
       display: block;
       font-size: 72px;
       margin-bottom: 20px;
-      color: #66fcf1; 
+      color: #66fcf1;
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
@@ -940,7 +940,7 @@ ul {
       margin: 5.5px;
       outline: none; }
     .clients-feedback-area .slick-dots li.slick-active button {
-      background-color: #66fcf1; 
+      background-color: #66fcf1;
       border-color: #66fcf1;  }
   .clients-feedback-area .slick-slide.client-thumbnail {
     display: -webkit-box;
@@ -1239,7 +1239,7 @@ ul {
   .about-us-thumbnail .line {
     width: 100px;
     height: 15px;
-      background-color: #66fcf1; 
+      background-color: #66fcf1;
     position: absolute;
     z-index: 10;
     top: -15px;
@@ -1253,7 +1253,7 @@ ul {
       content: '';
       height: 100px;
       width: 15px;
-      background-color: #66fcf1; 
+      background-color: #66fcf1;
       position: absolute;
       top: 0;
       right: 0;
@@ -1261,7 +1261,7 @@ ul {
   .about-us-thumbnail .line2 {
     width: 100px;
     height: 15px;
-    background-color: #66fcf1; 
+    background-color: #66fcf1;
     position: absolute;
     z-index: 10;
     bottom: -15px;
@@ -1275,7 +1275,7 @@ ul {
       content: '';
       height: 100px;
       width: 15px;
-      background-color: #66fcf1; 
+      background-color: #66fcf1;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -1325,12 +1325,13 @@ ul {
 .service-area {
   position: relative;
   z-index: 1;
+  border-top: 1px solid #c5c6c7;
   text-align: center;
   padding-top: 50px; }
   .service-area i {
     font-size: 42px;
     margin-bottom: 30px;
-   color: #66fcf1; 
+    color: #66fcf1;
     display: block; }
   .service-area h5 {
     -webkit-transition-duration: 500ms;
@@ -1342,7 +1343,7 @@ ul {
     font-size: 16px;
     margin-bottom: 0; }
   .service-area:focus h5, .service-area:hover h5 {
-   /* color: #66fcf1;  }*/
+    color: #66fcf1;  }
 
 .single-benefits-area {
   position: relative;
