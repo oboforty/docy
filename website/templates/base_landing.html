@@ -10,7 +10,7 @@
   <!-- Title -->
   <title>Docy</title>
   <!-- Favicon -->
-  <link rel="icon" href="{% static 'img/landing/core-img/logo.png' %}"  height="4" width="4" >
+  <link rel="icon" url="{% static 'img/landing/core-img/logo.png' %}" height="4" width="4" >
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'css/landing/style_index.css'%}">
@@ -53,7 +53,9 @@
          <div class="bg-curve" style="background-image: url({% static 'img/landing/core-img/test.png'%});"></div>
 
           <!-- Logo -->
-          <a class="nav-brand" href=""><img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="80" width="90"></a>
+          <a class="nav-brand" href="/">
+            <img src="{% static 'img/landing/core-img/logo.png'%}" alt="" height="80" width="90">
+          </a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
