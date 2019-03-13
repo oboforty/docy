@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load patient_filters %}
 
 
 {% block content %}
@@ -7,60 +8,60 @@
   <div class = "col-5">
     <br>
      <p>
-   <h3 style="color:darkgrey">{{ form.first_name.value }} {{ form.last_name.value }}</h3>
+   <h3 style="color:darkgrey">{{ patient.first_name }} {{ patient.last_name }}</h3>
   </p>
        <table width="250" height="350" bordercolor="#ccc">
        
         <tr>
           <th>Birth date</th>
-          <td>{{ form.birth_date.value }}</td>
+          <td>{{ patient.birth_date }}</td>
         </tr>
 
         <tr>
           <th>Gender</th>
           <td class="field-gender">
-          {{ form.gender.value }}
+          {{ patient|docygender }}
         </td>
         </tr>
 
         <tr>
           <th>Age</th>
-          <td>{{ form.age.value }}</td>
+          <td>{{ patient.age }}</td>
         </tr>
 
         <tr>
           <th>Chemo</th>
-          <td>{{ form.Chemo.value }}</td>
+          <td>{{ patient.Chemo }}</td>
         </tr>
 
         <tr>
           <th>Last Chemo</th>
-          <td>{{ form.Last_Chemo.value }}</td>
+          <td>{{ patient.Last_Chemo }}</td>
         </tr>
 
         <tr>
           <th>Smoker</th>
-          <td>{{ form.smoker.value }}</td>
+          <td>{{ patient.smoker }}</td>
         </tr>
 
         <tr>
           <th>Packs yearly</th>
-          <td>{{ form.Packs_yearly.value }}</td>
+          <td>{{ patient.Packs_yearly }}</td>
         </tr>
 
         <tr>
           <th>Diabetes</th>
-          <td>{{ form.diabetes.value }}</td>
+          <td>{{ patient.diabetes }}</td>
         </tr>
 
         <tr>
           <th>Insulin</th>
-          <td>{{ form.insulin.value }}</td>
+          <td>{{ patient.insulin }}</td>
         </tr>
 
         <tr>
           <th>Weight</th>
-          <td>{{ form.weight.value }}</td>
+          <td>{{ patient.weight }}</td>
         </tr>
      </table>
   </div>
