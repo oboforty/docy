@@ -7,12 +7,7 @@
 <br>
 <br>
 
-	
-<div class= "text-right">
-	{% csrf_token %}
-	<a href="{% url 'login:logout' %}" class="btn btn-dark">Sign out</a>
-	<a href="{% url 'login:password_change' %}" class="btn btn-info">Change Password</a>
-</div>
+
 {% else %}
 <h1>Welcome, please sign up or sign in</h1>
 	{% csrf_token %}

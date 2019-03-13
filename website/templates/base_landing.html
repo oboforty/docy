@@ -68,16 +68,17 @@
             </div>
 
             <!-- Nav Start -->
-            <div class="classynav">
+           <div class="classynav">
+            {% if user.is_authenticated %}
+
+            {%else%}
               <ul id="nav">
-                <li><a href="./base_landing.html">Home</a></li> 
+                <li><a href=  '/'>Home</a></li> 
                 <li><a href="{% url 'login:login' %}">Sign In</a></li>
                 <li><a href="{% url 'login:register' %}">Sign Up</a></li>
 
-
               </ul>
-
-             
+              {% endif %}
             <!-- Nav End -->
 
           </div>
