@@ -74,7 +74,7 @@ def user_directory_path(instance, filename):
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
 
-   # doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    doctor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     diag_date = models.DateField(null=True,blank=True)
     diagnosis = models.CharField(max_length=200)
     reason = models.CharField(max_length=200,blank=True)
@@ -94,7 +94,7 @@ class Scan(models.Model):
             'diag_date': self.diag_date,
             'diagnosis': self.diagnosis,
             'reason': self.reason,
-           # 'doctor': AUTH_USER_MODEL.first_name+ AUTH_USER_MODEL.last_name
+            'doctor': AUTH_USER_MODEL.first_name+ AUTH_USER_MODEL.last_name
            
         }
 

@@ -101,7 +101,7 @@ def edit_scan(request, sid):
 	:return:
 	"""
 
-	scan = get_object_or_404(Scan, pk=sid)
+	scan = get_object_or_404(Scan, pk=sid, doctor=request.user)
 	pid = scan.patient.pid
 	if request.method == 'POST':
 		form = ScanForm(request.POST, request.FILES, instance=scan)
@@ -127,6 +127,7 @@ def add_scan(request, pid):
 		if form.is_valid():
 			new_scan= form.save(commit= False)
 			new_scan.patient = Patient.objects.filter(pk=pid).first()
+			new_scan.doctor = request.user
 			new_scan.save()
 			return redirect(reverse('scan:view', kwargs={'pid': pid}))
 	else:
@@ -142,7 +143,7 @@ def delete_scan(request, sid):
 	:return:
 	"""
 
-	scan = get_object_or_404(Scan, pk=sid)
+	scan = get_object_or_404(Scan, pk=sid, doctor=request.user)
 	form = ScanForm(instance=scan)
 	pid = scan.patient.pid
 	

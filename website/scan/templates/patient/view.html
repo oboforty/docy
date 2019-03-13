@@ -90,8 +90,10 @@
           <td>{{ scan.diagnosis}} </td>
           <td>
             <a href="{% url 'scan:view_scan' pid=pid sid=scan.sid %}" class="btn btn-info">view</a>
+            {% if scan.doctor == user %}
             <a href="/scan/delete_scan/{{ scan.sid }}" class="btn btn-danger">delete</a>
             <a href="/scan/edit_scan/{{ scan.sid }}" class="btn btn-success">edit</a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}
