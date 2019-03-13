@@ -6,3 +6,36 @@
 
 .bg-babyblue { background-color: #90CFF0; color: white; font-size: 16px }
 .bg-babypink { background-color: #FFB6C1; color: white; font-size: 16px }
+
+
+/* Statistics */
+    .axis path,
+    .axis line{
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }
+
+    .axis text {
+        font-family: sans-serif;
+        font-size: 11px;
+    }
+
+    .bar rect {
+      shape-rendering: crispEdges;
+    }
+    .bar text {
+      fill: black;
+      font-family: sans-serif;
+      font-size: 15px;
+    }
+    .tooltip1 rect {
+      fill: white;
+      opacity: 0.5;
+    }
+    .tooltip1 text {
+      fill: black;
+      font-family: sans-serif;
+      font-size: 15px;
+      text-anchor: middle;
+    }
