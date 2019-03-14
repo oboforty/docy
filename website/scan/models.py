@@ -2,8 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.forms import ModelForm
 from django import forms
-import os
 import uuid
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 class Patient(models.Model):
@@ -71,6 +71,12 @@ def user_directory_path(instance, filename):
     filename = str(uuid.uuid4().hex) + '.' + ext
     return filename
 
+def validate_size(value):
+    # validate the size of upload image <= 200MB
+    max_size = 200 * 1024 * 1024
+    if value.size > max_size:
+        raise ValidationError('Image size should not exceed 200 MB!')
+
 class Scan(models.Model):
     sid = models.AutoField(primary_key=True)
 
@@ -79,7 +85,7 @@ class Scan(models.Model):
     diagnosis = models.CharField(max_length=200)
     reason = models.CharField(max_length=200,blank=True)
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
-    file = models.ImageField(upload_to=user_directory_path)
+    file = models.ImageField(upload_to=user_directory_path, validators=[validate_size])
 
     def delete(self, *args, **kwargs):
         # override delete method to delete the file
