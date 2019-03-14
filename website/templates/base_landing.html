@@ -72,7 +72,10 @@
             <!-- Nav Start -->
            <div class="classynav">
             {% if user.is_authenticated %}
-
+               <ul id="nav">
+                <li><a  class="btn btn-lg btn-dark btn-block" href="{% url 'scan:dashboard' %}">Dashboard</a></li>
+              
+            </ul>
             {%else%}
               <ul id="nav">
                 <li><a href=  '/'>Home</a></li> 
