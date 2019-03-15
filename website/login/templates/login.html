@@ -42,15 +42,15 @@
                     </div>
                     <input type="password" class="form-control" placeholder="Password" name="password" aria-label="Password" aria-describedby="basic-addon2" autocomplete="on">
                   </div>
+             
+
+                    <a class= "col-md-4" href="{% url 'login:password_reset' %}" > Forget Password
+                    </a>
 
 
-
-                  <label for="remember-me" class="text-info"><span>Remember Password</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+              <!--     <a class="btn btn-black" href=>Forget Password</a> -->
                   
-                 <!--  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Remember password</label>
-                  </div> -->
+              
 
                   <button class="btn btn-lg btn-info btn-block text-uppercase" type="submit">Sign In</button>
                 </form>
