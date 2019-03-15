@@ -44,11 +44,13 @@ class Command(BaseCommand):
         patient.age = int(row['Age'])
         patient.birth_date = datetime.strptime(row['Date of Birth'], "%d/%m/%Y")
 
+        VMALE, VFEMALE = Patient.GENDER_CHOICES[0][0], Patient.GENDER_CHOICES[1][0]
+
         # Sex determination
         if row['Sex'] == 'ΑΝΔΡΑΣ':
-            patient.gender = 0
+            patient.gender = VMALE
         else:
-            patient.gender = 1
+            patient.gender = VFEMALE
 
         if row['Smoker'] == 'ΝΑΙ':
             patient.smoker = True
