@@ -1,5 +1,8 @@
 # SQLite
 website/db.sqlite3
+website/db.sqlite3-journal
+website/pip.py
+website/get-pip.py
 website/media/
 
 # IDE

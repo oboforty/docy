@@ -23,7 +23,13 @@
 
                 <form class="form" action="{% url 'login:register' %}" method="post">
                   {% csrf_token %}
-                  {{ form.non_field_errors }}
+
+                 <p class="bg-danger">
+                  {% if form.errors %}
+                    You got the following errors:
+                    {{ form.errors }}
+                  {% endif %}
+                 </p>
 
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
