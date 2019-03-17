@@ -1,11 +1,11 @@
-from django.db.models import Q
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Patient, Scan
-from .models import PatientForm, ScanForm
+from .forms import PatientForm, ScanForm
 from typing import Sequence
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
+
 
 @login_required(login_url='login:login')
 def dashboard(request: HttpRequest):
@@ -20,17 +20,6 @@ def dashboard(request: HttpRequest):
 
 	})
 
-@login_required(login_url='login:login')
-def scan_list(request: HttpRequest):
-	"""
-	List of scans
-	"""
-
-	scans: Sequence[Scan] = Scan.objects.all()
-
-	return render(request, 'scan/list.html', {
-		'scans': scans
-	})
 
 @login_required(login_url='login:login')
 def patient_list(request: HttpRequest):
@@ -39,13 +28,27 @@ def patient_list(request: HttpRequest):
 	"""
 	if 'Search' in request.GET:
 		search = request.GET.get('Search')
-		patients: Sequence[Patient] = Patient.objects.filter(Q(first_name__icontains=search) | Q(last_name__icontains=search))		
+		patients: Sequence[Patient] = Patient.objects.filter(
+			Q(first_name__icontains=search) | Q(last_name__icontains=search))
 	else:
 		patients: Sequence[Patient] = Patient.objects.all()
-	
+
 	return render(request, 'patient/list.html', {
 		'patients': patients
 	})
+
+
+@login_required(login_url='login:login')
+def view(request, pid):
+	"""
+	View patient information
+	"""
+	patient = Patient.objects.filter(pk=pid).first()
+
+	scans = Scan.objects.filter(patient=pid)
+
+	return render(request, 'patient/view.html', {'patient': patient, 'scans': scans, 'pid': pid})
+
 
 @login_required(login_url='login:login')
 def edit(request, pid):
@@ -58,10 +61,11 @@ def edit(request, pid):
 		form = PatientForm(request.POST, instance=patient)
 		if form.is_valid():
 			form.save()
-			return redirect(reverse('scan:patients'))
+			return redirect(reverse('scan:view', kwargs={'pid': pid}))
 	else:
 		form = PatientForm(instance=patient)
 	return render(request, 'patient/edit.html', {'form':form})
+
 
 @login_required(login_url='login:login')
 def add(request):
@@ -78,6 +82,7 @@ def add(request):
 		form = PatientForm()
 	return render(request, 'patient/edit.html', {'form':form})
 
+
 @login_required(login_url='login:login')
 def delete(request, pid):
 	"""
@@ -91,6 +96,21 @@ def delete(request, pid):
 		return redirect(reverse('scan:patients'))
 	else:
 		return render(request, 'patient/delete.html', {'form':form})
+
+
+
+@login_required(login_url='login:login')
+def scan_list(request: HttpRequest):
+	"""
+	List of scans
+	"""
+
+	scans: Sequence[Scan] = Scan.objects.all()
+
+	return render(request, 'scan/list.html', {
+		'scans': scans
+	})
+
 
 @login_required(login_url='login:login')
 def edit_scan(request, sid):
@@ -107,10 +127,11 @@ def edit_scan(request, sid):
 		form = ScanForm(request.POST, request.FILES, instance=scan)
 		if form.is_valid():
 			form.save()
-			return redirect(reverse('scan:patients'))
+			return redirect(reverse('scan:view', kwargs={'pid': pid}))
 	else:
 		form = ScanForm(instance=scan)
-	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
+	return render(request, 'scan/edit_scan.html', {'form': form, 'pid': pid})
+
 
 @login_required(login_url='login:login')
 def add_scan(request, pid):
@@ -134,6 +155,7 @@ def add_scan(request, pid):
 		form = ScanForm()
 	return render(request, 'scan/edit_scan.html', {'form':form, 'pid': pid})
 
+
 @login_required(login_url='login:login')
 def delete_scan(request, sid):
 	"""
@@ -152,17 +174,6 @@ def delete_scan(request, sid):
 		return redirect(reverse('scan:view', kwargs={'pid': pid}))
 	else:
 		return render(request, 'scan/delete_scan.html', {'form':form, 'pid': pid})
-
-@login_required(login_url='login:login')
-def view(request, pid):
-	"""
-	View patient information 
-	"""
-	patient = Patient.objects.filter(pk=pid).first()
-
-	scans = Scan.objects.filter(patient=pid)
-
-	return render(request, 'patient/view.html', {'patient': patient, 'scans': scans, 'pid': pid})
 
 
 @login_required(login_url='login:login')

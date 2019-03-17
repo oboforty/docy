@@ -12,10 +12,10 @@ class PatientForm(ModelForm):
     first_name = forms.CharField(required=False)
     last_name = forms.CharField(required=False)
 
-    Chemo = forms.BooleanField()
-    smoker = forms.BooleanField()
-    diabetes = forms.BooleanField()
-    insulin = forms.BooleanField()
+    Chemo = forms.BooleanField(required=False)
+    smoker = forms.BooleanField(required=False)
+    diabetes = forms.BooleanField(required=False)
+    insulin = forms.BooleanField(required=False)
 
     class Meta:
         model = Patient
@@ -27,6 +27,8 @@ class PatientForm(ModelForm):
 
 
 class ScanForm(ModelForm):
+    file = forms.FileField(required=False)
+
     class Meta:
         model = Scan
         fields = ['sid','diag_date','diagnosis','reason', 'file']

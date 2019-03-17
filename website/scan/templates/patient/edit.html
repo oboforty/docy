@@ -8,82 +8,112 @@
 
     <form action="" method="post" >
         {% csrf_token %}
+         <p class="bg-danger">
+          {% if form.errors %}
+            You got the following errors:
+            {{ form.errors }}
+          {% endif %}
+         </p>
 
-       
-<table class="table table-condensed table-hover table-striped">
-        <tr>
-          <th>First name</th>
-          <td>{{ form.first_name }}</td>
-        </tr>
+        <table class="table table-condensed table-hover table-striped">
+          <tbody>
+            <tr>
+              <th>First name</th>
+              <td><input type="text" name="first_name" class="form-control" maxlength="20" id="id_first_name" value="{{ form.first_name.value }}"></td>
+            </tr>
 
-        <tr>
-          <th>Last name</th>
-          <td>{{ form.last_name }}</td>
-        </tr>       
+            <tr>
+              <th>Last name</th>
+              <td><input type="text" name="last_name" class="form-control" maxlength="20" id="id_last_name" value="{{ form.last_name.value }}"></td>
+            </tr>
 
-        <tr>
-          <th>Birth date</th>
-          <td>{{ form.birth_date }}</td>
-        </tr>
+            <tr>
+              <th>Birth date</th>
+              <td><input type="date" name="birth_date" class="form-control" value="{{ form.birth_date.value|date:'Y-m-d' }}" id="id_birth_date"></td>
+            </tr>
 
-        <tr>
-          <th>Gender</th>
-          <td>{{ form.gender }}</td>
-        </tr>
+            <tr>
+              <th>Gender</th>
+              <td>
+                <select name="gender" class="form-control" required id="id_gender">
+                  <option value="">---------</option>
 
-        <tr>
-          <th>Age</th>
-          <td>{{ form.age }}</td>
-        </tr>
+                  <option value="Male" {% if form.gender.value == "Male" %}selected{% endif %} >Male</option>
 
-        <tr>
-          <th>Chemo</th>
-          <td>{{ form.Chemo }}</td>
-        </tr>
+                  <option value="Female" {% if form.gender.value == "Female" %}selected{% endif %}>Female</option>
 
-        <tr>
-          <th>Last Chemo</th>
-          <td>{{ form.Last_Chemo }}</td>
-        </tr>
+                </select>
+              </td>
+            </tr>
 
-        <tr>
-          <th>Smoker</th>
-          <td>{{ form.smoker }}</td>
-        </tr>
+            <tr>
+              <th>Age</th>
+              <td><input type="number" class="form-control"  name="age" value="{{ form.age.value }}" min="0" id="id_age"></td>
+            </tr>
 
-        <tr>
-          <th>Packs yearly</th>
-          <td>{{ form.Packs_yearly }}</td>
-        </tr>
+            <tr>
+              <th>Chemotherapy</th>
+              <td>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" name="Chemo" id="id_Chemo" {% if form.Chemo.value %}checked{% endif %}>
 
-        <tr>
-          <th>Diabetes</th>
-          <td>{{ form.diabetes }}</td>
-        </tr>
+                    <label class="custom-control-label" for="id_Chemo"></label>
+                  </div>
+              </td>
+            </tr>
 
-        <tr>
-          <th>Insulin</th>
-          <td>{{ form.insulin }}</td>
-        </tr>
+            <tr>
+              <th>Last Chemotherapy</th>
+              <td><input type="date" name="Last_Chemo" class="form-control" value="{{ form.Last_Chemo.value|date:'Y-m-d' }}" id="id_Last_Chemo"></td>
+            </tr>
 
-        <tr>
-          <th>Weight</th>
-          <td>{{ form.weight }}</td>
-        </tr>
-     </table>
+            <tr>
+              <th>Smoker</th>
+              <td>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" name="smoker" id="id_smoker" {% if form.smoker.value %}checked{% endif %}>
 
+                    <label class="custom-control-label" for="id_smoker"></label>
+                  </div>
+              </td>
+            </tr>
 
+            <tr>
+              <th>Packs yearly</th>
+              <td><input type="number" name="Packs_yearly" class="form-control" value="150.0" step="any" value="{{ form.Packs_yearly.value }}" id="id_Packs_yearly"></td>
+            </tr>
 
+            <tr>
+              <th>Diabetes</th>
+              <td>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" name="diabetes" id="id_diabetes" {% if form.diabetes.value %}checked{% endif %}>
 
+                    <label class="custom-control-label" for="id_diabetes"></label>
+                  </div>
+              </td>
+            </tr>
 
+            <tr>
+              <th>Insulin</th>
+              <td>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" name="insulin" id="id_insulin" {% if form.insulin.value %}checked{% endif %}>
 
-    <input type="submit" value="Submit" a href="/scan/patients" class="btn btn-success">
-    <a href="/scan/patients" class="btn btn-danger">Cancel</a>
+                    <label class="custom-control-label" for="id_insulin"></label>
+                  </div>
+              </td>
+            </tr>
 
+            <tr>
+              <th>Weight</th>
+              <td><input type="number" name="weight" class="form-control" step="any" id="id_weight" value="{{ form.weight.value }}"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <input type="submit" value="Submit" href="/scan/patients" class="btn btn-success">
+        <a href="/scan/patients" class="btn btn-danger">Cancel</a>
     </form>
 
-
-
-
 {% endblock %}
-
