@@ -1,7 +1,5 @@
 from django.db import models
 from django.conf import settings
-from django.forms import ModelForm
-from django import forms
 import uuid
 from django.core.exceptions import ValidationError
 
@@ -52,19 +50,6 @@ class Patient(models.Model):
         }
 
 
-class DateInput(forms.DateInput):
-    input_type = 'date'
-
-
-class PatientForm(ModelForm):
-    class Meta:
-        model = Patient
-        fields = '__all__'
-        widgets = {
-            'birth_date': DateInput(),
-            'Last_Chemo': DateInput()
-        }
-
 def user_directory_path(instance, filename):
     # random file name
     ext = filename.split('.')[-1]
@@ -102,12 +87,4 @@ class Scan(models.Model):
             'reason': self.reason,
             'doctor': AUTH_USER_MODEL.first_name+ AUTH_USER_MODEL.last_name
            
-        }
-
-class ScanForm(ModelForm):
-    class Meta:
-        model = Scan
-        fields = ['sid','diag_date','diagnosis','reason', 'file']
-        widgets = {
-            'diag_date': DateInput()
         }
