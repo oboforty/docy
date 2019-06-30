@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import url
 
 # mapping for opening roots into views, if you type this url with show this views and this block of code
 from landing import views
@@ -28,3 +29,6 @@ urlpatterns = [
     path('user/', include('login.urls')),
     path('scan/', include('scan.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += [
+    url(r'^captcha/', include('captcha.urls')),
+]

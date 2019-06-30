@@ -1,5 +1,4 @@
 # SQLite
-website/db.sqlite3
 website/db.sqlite3-journal
 website/pip.py
 website/get-pip.py
@@ -64,7 +63,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/

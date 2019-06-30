@@ -13,7 +13,13 @@
         {{ form.errors }}
       {% endif %}
      </p>
-
+     {% if messages %}
+     <ul>
+        {% for message in messages %}
+           <li>{{ message }}</li>
+        {% endfor %}
+     </ul>
+     {% endif %}
      <fieldset>
 
         <label class="required" for="id_diag_date">Scan Date:</label>
@@ -38,7 +44,7 @@
 
         <div class="input-group">
           <div class="custom-file">
-            <input type="file" name="file" accept="image/*" class="custom-file-input" id="inputGroupFile" aria-describedby="inputFile">
+            <input type="file" name="scan" accept="image/*" class="custom-file-input" id="inputGroupFile" aria-describedby="inputFile">
             <label class="custom-file-label" for="inputGroupFile">Choose file</label>
           </div>
         </div>

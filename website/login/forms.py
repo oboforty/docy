@@ -3,6 +3,7 @@ from .models import DoctorUser
 from django.contrib.auth.forms import (
     AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
 )
+from captcha.fields import CaptchaField
 
 class RegisterForm(UserCreationForm):
 	class Meta(UserCreationForm.Meta):
@@ -21,6 +22,7 @@ class MyPasswordChangeForm(PasswordChangeForm):
 
 
 class MyPasswordResetForm(PasswordResetForm):
+	captcha = CaptchaField()
 #	class Meta(PasswordResetForm.Meta):
 	pass
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'scan',
     'landing',
     # 'django_filters',
+    'captcha',
 ]
 
 MIDDLEWARE = [

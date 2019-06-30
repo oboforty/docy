@@ -13,8 +13,8 @@
 
   <div class="d-flex">
     <div class="p-2 flex-grow-1">
-      {% if scan.file %}
-        <img class="img-fluid" src="{{ scan.file.url }}">
+      {% if scan.scan %}
+        <img class="img-fluid" src="{{ scan.scan.url }}">
       {% else %}
         <p class="text-danger">No scan image available.</p>
       {% endif %}

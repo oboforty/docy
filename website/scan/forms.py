@@ -31,7 +31,7 @@ class ScanForm(ModelForm):
 
     class Meta:
         model = Scan
-        fields = ['sid','diag_date','diagnosis','reason', 'file']
+        fields = ['sid','diag_date','diagnosis','reason', 'scan']
         widgets = {
             'diag_date': DateInput()
         }
