@@ -10,12 +10,7 @@
 5. In adding scans, we were allowed to simply upload a PDF file (your project report), and it will allow uploading any type of files, we just changed the extension of the file to jpg and we were successful in uploading it. we suppose it will allow any size of files too? we didn't check that though.
 - Only image file types are allowed. The size limit is decreased from 200MB to 2MB for easy checking.
 ---
-## Other issues
-- even when we were not the ones who entered some patient data, we were allowed to delete the patient.
-  - Our design is that any doctor can edit and delete any patient.
-- we were even allowed to delete a patient which already has scans. we are not sure it will delete the scan history and files too.
-  - Scan is on delete cascade if patient is deleted.
----
+
 ## Installation Guide
 1) First, install python3.X (recommended version: 3.6+)
 
